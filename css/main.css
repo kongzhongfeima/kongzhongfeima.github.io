@@ -900,7 +900,7 @@ pre .javascript .function {
 .btn {
   background: #fff;
   border: 2px solid #555;
-  border-radius: 2px;
+  border-radius: 16px;
   color: #555;
   display: inline-block;
   font-size: 0.875em;
@@ -1703,7 +1703,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #28ecff;
+  background: #ff983e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
