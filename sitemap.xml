@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://kongzhongfeima.github.io/tags/index.html</loc>
+    
+    <lastmod>2019-08-25T08:50:56.075Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://kongzhongfeima.github.io/blog/%E5%85%8D%E8%B4%B9SSR.html</loc>
     
     <lastmod>2019-08-25T02:14:27.182Z</lastmod>
@@ -54,13 +61,6 @@
     <loc>http://kongzhongfeima.github.io/categories/index.html</loc>
     
     <lastmod>2019-08-22T04:36:43.088Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://kongzhongfeima.github.io/tags/index.html</loc>
-    
-    <lastmod>2019-08-22T04:36:16.542Z</lastmod>
     
   </url>
   
