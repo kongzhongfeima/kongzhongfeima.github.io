@@ -1610,6 +1610,34 @@ pre .javascript .function {
   margin: 2em 0 0;
   padding: 0.5em 1em;
 }
+.post-widgets {
+  border-top: 1px solid #eee;
+  margin-top: 45px;
+  text-align: center;
+}
+.wp_rating {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  padding-top: 6px;
+  text-align: center;
+}
+.social-like {
+  display: flex;
+  font-size: 0.875em;
+  justify-content: center;
+  text-align: center;
+}
+.vk_like {
+  align-self: center;
+  height: 21px;
+  padding-top: 7px;
+  width: 85px;
+}
+.fb_like {
+  align-self: center;
+  height: 30px;
+}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1703,7 +1731,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #f6f;
+  background: #cb5cbe;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
