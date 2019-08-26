@@ -1055,7 +1055,7 @@ pre .javascript .function {
   right: 30px;
   text-align: center;
   transition-property: bottom;
-  width: 24px;
+  width: initial;
   z-index: 1050;
   transition-delay: 0s;
   transition-duration: 0.2s;
@@ -1731,7 +1731,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #7737ff;
+  background: #f270ff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
