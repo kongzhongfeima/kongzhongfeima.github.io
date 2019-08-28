@@ -1098,6 +1098,7 @@ pre .javascript .function {
   line-height: 1.375em;
   padding: 0 40px;
   position: relative;
+  color: #ffb6c1 !important;
 }
 .brand:hover {
   color: #222;
@@ -1122,7 +1123,6 @@ pre .javascript .function {
   margin-top: 10px;
 }
 .use-motion .brand {
-  color: #ffb6c1 !important;
   opacity: 0;
 }
 .use-motion .logo,
@@ -1185,7 +1185,6 @@ pre .javascript .function {
 }
 .menu .menu-item a,
 .menu .menu-item span.exturl {
-  color: #ffb6c1 !important;
   border-bottom: 1px solid transparent;
   display: block;
   font-size: 0.8125em;
@@ -1222,6 +1221,14 @@ pre .javascript .function {
   line-height: 1;
   margin: -20px auto 15px;
   text-align: center;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #2e8b57;
+  text-decoration: underline;
 }
 .post-sticky-flag {
   display: inline-block;
@@ -1640,11 +1647,6 @@ pre .javascript .function {
   border-bottom-color: #eee;
   color: #eee;
 }
-@media (max-width: 991px) {
-  .sidebar {
-    display: none;
-  }
-}
 .sidebar-inner {
   color: #999;
   padding: 20px 10px;
@@ -1713,7 +1715,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #dd3dbf;
+  background: #424f04;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1840,7 +1842,6 @@ pre .javascript .function {
   .sidebar-toggle {
     opacity: 0.8;
     right: 20px;
-    display: none;
   }
 }
 .sidebar-toggle-line {
@@ -2570,7 +2571,7 @@ hr {
 }
 .posts-expand .post-title,
 .posts-expand .post-meta {
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .posts-expand .post-title,
@@ -2613,9 +2614,12 @@ hr {
 }
 .post-button {
   margin-top: 20px;
-  text-align: left;
+  text-align: center;
 }
 .post-button a {
+  padding: 5;
+  font-size: 1em;
+  color: #666;
   background: none;
   border: none;
   border-bottom: 2px solid #666;
@@ -2624,7 +2628,8 @@ hr {
   transition-property: border;
 }
 .post-button a:hover {
-  border-bottom-color: #222;
+  color: #f08080;
+  border-bottom-color: #555;
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
@@ -2670,7 +2675,7 @@ hr {
 }
 .footer-inner {
   margin: 0 auto;
-  text-align: left;
+  text-align: center;
 }
 @media (max-width: 767px) {
   .footer-inner {
