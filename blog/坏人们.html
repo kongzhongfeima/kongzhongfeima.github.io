@@ -20,6 +20,7 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
 
@@ -31,8 +32,8 @@
     scheme: 'Mist',
     version: '7.3.0',
     exturl: false,
-    sidebar: {"position":"right","width":200,"display":"hide","offset":12,"onmobile":true},
-    back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
+    sidebar: {"position":"right","width":240,"display":"hide","offset":12,"onmobile":true},
+    back2top: {"enable":false,"sidebar":false,"scrollpercent":true},
     save_scroll: false,
     copycode: {"enable":true,"show_result":true,"style":"flat"},
     fancybox: false,
@@ -438,6 +439,19 @@
         
 
         
+  <div class="post-widgets">
+    <div class="social-share">
+      
+      
+        <div id="needsharebutton-postbottom">
+          <span class="btn">
+            <i class="fa fa-share-alt" aria-hidden="true"></i>
+          </span>
+        </div>
+      
+    </div>
+  
+  </div>
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
@@ -585,7 +599,7 @@
         </div>
       <!--/noindex-->
       
-	  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=456167591&auto=1&height=32"></iframe>
+	  <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=210 height=40 src="//music.163.com/outchain/player?type=2&id=456167591&auto=1&height=32"></iframe>
 
     </div>
   </aside>
@@ -671,13 +685,38 @@ show_date_time();
         
       </div>
     </footer>
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-          <span id="scrollpercent"><span>0</span>%</span>
-        
-      </div>
 
     
+  
+  <div id="needsharebutton-float">
+    <span class="btn">
+      <i class="fa fa-share-alt" aria-hidden="true"></i>
+    </span>
+  </div>
+<script src="/lib/needsharebutton/needsharebutton.js"></script>
+<script>
+    pbOptions = {};
+      pbOptions.iconStyle = "default";
+    
+      pbOptions.boxForm = "horizontal";
+    
+      pbOptions.position = "bottomCenter";
+    
+      pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+    
+    new needShareButton('#needsharebutton-postbottom', pbOptions);
+    flOptions = {};
+      flOptions.iconStyle = "default";
+    
+      flOptions.boxForm = "vertical";
+    
+      flOptions.position = "topRight";
+    
+      flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
+    
+    new needShareButton('#needsharebutton-float', flOptions);
+</script>
+
 
   </div>
 
@@ -685,9 +724,6 @@ show_date_time();
     
     
   
-    
-  
-  <script color='205,85,85' opacity='0.8' zIndex='-1' count='70' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
   <script src="/lib/reading_progress/reading_progress.js"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
@@ -877,11 +913,5 @@ show_date_time();
   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
 <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
 <script type="text/javascript" src="/js/fireworks.js"></script>
- <!--看板娘！-->
-<script src="/live2d-widget/autoload.js"></script>  
-<!--动态线条背景-->
-<script type="text/javascript"
-color="220,220,220" opacity='0.7' zIndex="-2" count="200" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js">
-</script>
 </body>
 </html>

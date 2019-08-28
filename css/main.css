@@ -1040,37 +1040,6 @@ pre .javascript .function {
   margin-top: 0;
   padding-top: 0;
 }
-.back-to-top {
-  background: #222;
-  bottom: -100px;
-  box-sizing: border-box;
-  color: #fff;
-  cursor: pointer;
-  font-size: 12px;
-  opacity: 1;
-  padding: 0 6px;
-  position: fixed;
-  right: 30px;
-  text-align: center;
-  transition-property: bottom;
-  width: initial;
-  z-index: 1050;
-  transition-delay: 0s;
-  transition-duration: 0.2s;
-  transition-timing-function: ease-in-out;
-}
-.back-to-top:hover {
-  color: #87daff;
-}
-.back-to-top.back-to-top-on {
-  bottom: 19px;
-}
-@media (max-width: 991px) {
-  .back-to-top {
-    opacity: 0.8;
-    right: 20px;
-  }
-}
 .header {
   background: transparent;
 }
@@ -1617,6 +1586,34 @@ pre .javascript .function {
   margin: 2em 0 0;
   padding: 0.5em 1em;
 }
+.post-widgets {
+  border-top: 1px solid #eee;
+  margin-top: 45px;
+  text-align: center;
+}
+.wp_rating {
+  height: 20px;
+  line-height: 20px;
+  margin-top: 10px;
+  padding-top: 6px;
+  text-align: center;
+}
+.social-like {
+  display: flex;
+  font-size: 0.875em;
+  justify-content: center;
+  text-align: center;
+}
+.vk_like {
+  align-self: center;
+  height: 21px;
+  padding-top: 7px;
+  width: 85px;
+}
+.fb_like {
+  align-self: center;
+  height: 30px;
+}
 .reading-progress-bar {
   background: #37c6c0;
   display: block;
@@ -1715,7 +1712,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #45f403;
+  background: #4f229c;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
@@ -1895,7 +1892,6 @@ pre .javascript .function {
 .post-toc .nav-item {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
   line-height: 1.8;
 }
 .post-toc .nav .nav-child {
@@ -2136,6 +2132,30 @@ pre .javascript .function {
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+#needsharebutton-postbottom {
+  cursor: pointer;
+  height: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+#needsharebutton-postbottom .btn {
+  border: 1px solid #222;
+  border-radius: 3px;
+  display: initial;
+  padding: 1px 4px;
+}
+#needsharebutton-float {
+  bottom: 88px;
+  cursor: pointer;
+  left: -8px;
+  position: fixed;
+  z-index: 9999;
+}
+#needsharebutton-float .btn {
+  border: 1px solid #222;
+  border-radius: 4px;
+  padding: 0 10px 0 14px;
 }
 .popular-posts-header {
   border-bottom: 1px solid #eee;
