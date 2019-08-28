@@ -299,7 +299,7 @@ window.addEventListener('DOMContentLoaded', () => {
           <div id="search-loading-icon">
             <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
           </div>
-        </div>`);
+        </div>);
     document.querySelector('#search-loading-icon').css({
       margin: '20% auto 0 auto',
       'text-align': 'center'
