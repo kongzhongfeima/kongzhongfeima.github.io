@@ -1040,6 +1040,24 @@ pre .javascript .function {
   margin-top: 0;
   padding-top: 0;
 }
+.back-to-top {
+  background: #222;
+  cursor: pointer;
+  font-size: 12px;
+  margin: 8px -10px -20px;
+  opacity: 1;
+  text-align: center;
+  visibility: hidden;
+}
+.back-to-top:hover {
+  opacity: 0.8;
+}
+.back-to-top.back-to-top-on {
+  visibility: visible;
+  transition-delay: 0s;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
 .header {
   background: transparent;
 }
@@ -1712,7 +1730,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #4f229c;
+  background: #ffecff;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
