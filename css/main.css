@@ -1645,16 +1645,6 @@ pre .javascript .function {
   align-self: center;
   height: 30px;
 }
-.reading-progress-bar {
-  background: #37c6c0;
-  display: block;
-  height: 2px;
-  left: 0;
-  position: fixed;
-  top: 0;
-  width: 0;
-  z-index: 9999;
-}
 .sidebar {
   background: #222;
   bottom: 0;
@@ -1743,7 +1733,7 @@ pre .javascript .function {
 }
 .links-of-author a::before,
 .links-of-author span.exturl::before {
-  background: #751ff2;
+  background: #eb125e;
   border-radius: 50%;
   content: ' ';
   display: inline-block;
