@@ -4,7 +4,7 @@
 
 
 
-<html class="theme-next gemini use-motion" lang="zh-CN">
+<html class="theme-next mist use-motion" lang="zh-CN">
 <head>
   <meta charset="UTF-8">
 <meta name="generator" content="Hexo 3.9.0">
@@ -20,7 +20,7 @@
 
 
 <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css?v=4.7.0">
-  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
   <link rel="stylesheet" href="/lib/pace/pace-theme-minimal.min.css?v=1.0.2">
   <script src="/lib/pace/pace.min.js?v=1.0.2"></script>
 
@@ -29,14 +29,14 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Mist',
     version: '7.3.0',
     exturl: false,
-    sidebar: {"position":"left","display":"hide","offset":12,"onmobile":false},
+    sidebar: {"position":"right","display":"hide","offset":12,"onmobile":false},
     back2top: {"enable":true,"sidebar":false,"scrollpercent":true},
     save_scroll: false,
-    copycode: {"enable":true,"show_result":true,"style":null},
-    fancybox: false,
+    copycode: {"enable":true,"show_result":true,"style":"flat"},
+    fancybox: ture,
     mediumzoom: false,
     lazyload: false,
     pangu: false,
@@ -129,7 +129,7 @@
 <!--    我加的    -->
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-CN">
 
-  <div class="container sidebar-position-left">
+  <div class="container sidebar-position-right">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -246,6 +246,8 @@
     
   </ul>
 
+    
+
 </nav>
   <div class="site-search">
     
@@ -277,13 +279,12 @@
     <main id="main" class="main">
       <div class="main-inner">
         <div class="content-wrap">
-            
-
           <div id="content" class="content page-post-detail">
             
 
   <div id="posts" class="posts-expand">
     
+    <div class="reading-progress-bar"></div>
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
   
@@ -398,6 +399,8 @@
 </div>
 		
     </div>
+      
+
         
       
         
@@ -411,7 +414,7 @@
     <a href="http://kongzhongfeima.github.io/blog/hui-jia-di-er-tian.html" title="回家第二天">http://kongzhongfeima.github.io/blog/hui-jia-di-er-tian.html</a>
   </li>
   <li class="post-copyright-license">
-    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！</li>
 </ul>
 </div>
 
@@ -420,19 +423,6 @@
       <footer class="post-footer">
 
         
-  <div class="post-widgets">
-    <div class="social-share">
-      
-      
-        <div id="needsharebutton-postbottom">
-          <span class="btn">
-            <i class="fa fa-share-alt" aria-hidden="true"></i>
-          </span>
-        </div>
-      
-    </div>
-  
-  </div>
 
           <div class="post-nav">
             <div class="post-nav-next post-nav-item">
@@ -554,7 +544,7 @@
       
         
       
-        <a href="/shaofeng_zhao@yeah.net" title="E-Mail &rarr; shaofeng_zhao@yeah.net"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+        <a href="https://shaofeng_zhao@yeah.net" title="E-Mail &rarr; https://shaofeng_zhao@yeah.net" rel="noopener" target="_blank"><i class="fa fa-fw fa-envelope"></i>E-Mail</a>
       </span>
     
   </div>
@@ -605,7 +595,7 @@
   <!-- 
   <div class="powered-by">由 <a href="https://hexo.io" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v3.9.0</div>
   <span class="post-meta-divider">|</span>
-  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> v7.3.0</div>
+  <div class="theme-info">主题 – <a href="https://theme-next.org" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> v7.3.0</div>
   -->
 
 <div id="days"></div>
@@ -673,36 +663,6 @@ show_date_time();
       </div>
 
     
-  
-  <div id="needsharebutton-float">
-    <span class="btn">
-      <i class="fa fa-share-alt" aria-hidden="true"></i>
-    </span>
-  </div>
-<script src="/lib/needsharebutton/needsharebutton.js"></script>
-<script>
-    pbOptions = {};
-      pbOptions.iconStyle = "default";
-    
-      pbOptions.boxForm = "horizontal";
-    
-      pbOptions.position = "bottomCenter";
-    
-      pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-    
-    new needShareButton('#needsharebutton-postbottom', pbOptions);
-    flOptions = {};
-      flOptions.iconStyle = "default";
-    
-      flOptions.boxForm = "vertical";
-    
-      flOptions.position = "topRight";
-    
-      flOptions.networks = "Weibo,Wechat,Douban,QQZone,Twitter,Facebook";
-    
-    new needShareButton('#needsharebutton-float', flOptions);
-</script>
-
 
   </div>
 
@@ -712,8 +672,10 @@ show_date_time();
   
     
   
-  <script color='0,0,255' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
+  <script color='205,85,85' opacity='0.5' zIndex='-1' count='99' src="/lib/canvas-nest/canvas-nest.min.js"></script>
   <script src="/lib/jquery/index.js?v=3.4.1"></script>
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
+  <script src="/lib/reading_progress/reading_progress.js"></script>
   <script src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
   <script defer src="/lib/three/three.min.js"></script>
@@ -722,7 +684,8 @@ show_date_time();
 <script src="/js/utils.js?v=7.3.0"></script>
   <script src="/js/motion.js?v=7.3.0"></script>
 
-<script src="/js/schemes/pisces.js?v=7.3.0"></script>
+
+  <script src="/js/schemes/muse.js?v=7.3.0"></script>
 
 
 
@@ -734,6 +697,14 @@ show_date_time();
   
 
 
+  <script src="/lib/bookmark/bookmark.min.js?v=1.0"></script>
+  <script>
+  if (CONFIG.page.isPost) {
+    bookmark.scrollToMark('auto', "#更多");
+  } else {
+    bookmark.loadBookmark();
+  }
+  </script>
 
 
 
