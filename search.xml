@@ -1,382 +1,159 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search> 
-  
-  
-    
-    <entry>
-      <title>倒错的死结</title>
-      <link href="//blog/%E6%AD%BB%E7%BB%93%E3%80%81%E5%80%92%E9%94%99.html"/>
-      <url>//blog/%E6%AD%BB%E7%BB%93%E3%80%81%E5%80%92%E9%94%99.html</url>
-      
-        <content type="html"><![CDATA[<p>🌱昨天去项目实习答辩有感</p><a id="more"></a><p>🌱</p><hr><p>🌱对软软的女生声音没有抵抗能力，酥麻的感觉<br>🌱上次听到 <strong><em>我咬你啊</em></strong> 就感觉回到高中时代<br>🌱现在没有人会经常这句话吧 不能说好怀念<br>🌱因为我现在还年轻，怎么能怀念呢，岂不让人耻笑！<br>🌱</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 手记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>梦呓</title>
-      <link href="//blog/%E6%A2%A6%E5%91%93.html"/>
-      <url>//blog/%E6%A2%A6%E5%91%93.html</url>
-      
-        <content type="html"><![CDATA[<p>🌱昨天晚上做梦梦见一只小猫咪，忽然变大然后咬了我一口<br>🌱感觉好真实，不知道要不要去打疫苗</p><a id="more"></a><p>🌱好像又梦见漂亮的女朋友不想结婚<br>🌱大概是爱情保卫战看多了吧</p><hr><p>🌱偶然看到 <strong><em>神的逻辑、夏与冬、钟城</em></strong> 还是很开心<br>🌱感觉我啥时候要把这些震撼我的作品再读读实体</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 手记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>北斗ing</title>
-      <link href="//blog/%E5%8C%97%E6%96%97ing.html"/>
-      <url>//blog/%E5%8C%97%E6%96%97ing.html</url>
-      
-        <content type="html"><![CDATA[<p>RIENX格式（上）：2.10版本内容解析和说明</p><a id="more"></a><p><img src="/blog/北斗ing/1.png" alt="0"><br><img src="/blog/北斗ing/2.png" alt="1"><br><img src="/blog/北斗ing/3.png" alt="2"><br><img src="/blog/北斗ing/4.png" alt="3"><br><img src="/blog/北斗ing/5.png" alt="4"></p><h3 id="RTK（-Real-time-kinematic）指的是实时动态测量，也叫载波相位差分定位"><a href="#RTK（-Real-time-kinematic）指的是实时动态测量，也叫载波相位差分定位" class="headerlink" title="RTK（ Real-time kinematic）指的是实时动态测量，也叫载波相位差分定位"></a>RTK（ Real-time kinematic）指的是实时动态测量，也叫载波相位差分定位</h3><p>是 GNSS 相对定位技术的一种，主要通过基准站和流动站（接收机位置）之间的实时数据链路和载波相对定位快速解算技术，实现高精度动态相对定位。</p><p>具体实现方法就是，在地面设置固定的基准站（要保证位置精准标定），用来接收卫星信号，通过两种方式为用户提供差分服务，一种是用已知的基准站位置解算所收到信号中的误差，误差通过网络播发的形式传输给附近的用户接收机，由于参考站和接收机端的误差存在时间和空间上的相关性，在接收机端减掉误差后，得到的就是一个高精度位置信息了。另一种方法是将基准站接收机收到的观测量直接发送给用户，用户端通过“求差”的方式消除或减少误差的影响。这就是高精度 GNSS 定位技术的基本原理。第二种方法的效果较好，所以被广泛采用。</p><h3 id="可以用的"><a href="#可以用的" class="headerlink" title="可以用的"></a>可以用的</h3><p>由于载波相位观测值的波长仅为对应伪距观测值的1/100，其测量精度相对较高，所以在精密定位时通常使用载波相位方法。但由于GPS信号结构的限制，在相位观测量中总是包含着一个初始相位整周数，因此，GPS整周模糊度的解算成了采用载波相位进行精密相对定位的关键问题。准确、快速的解算出整周模糊度，不仅能够缩短定位时间，还能够保障相对定位的精度。<br>其主要思路可分为3个步骤：（1）标准最小二乘平差求基线和整周模糊度浮点解；（2）整数最小二乘估计求整周模糊度固定解；（3）基线固定解。</p><p><a href="https://blog.csdn.net/yuan22900/article/details/50435499" target="_blank" rel="noopener">RIENX格式（上）：2.10版本内容解析和说明</a><a href="https://blog.csdn.net/yuan22900/article/details/50435499" target="_blank" rel="noopener">https://blog.csdn.net/yuan22900/article/details/50435499</a><br>MATLAB算法VIP可见：<br><a href="https://blog.csdn.net/iamlsj/article/details/38061929" target="_blank" rel="noopener">MATLAB算法VIP可见：</a><a href="https://blog.csdn.net/iamlsj/article/details/38061929" target="_blank" rel="noopener">https://blog.csdn.net/iamlsj/article/details/38061929</a><br><a href="https://blog.csdn.net/weixin_41498178/article/details/79304849" target="_blank" rel="noopener">VIP</a><br><a href="https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default" target="_blank" rel="noopener">载波相位 单差法 双查发 三叉发</a> <a href="https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default" target="_blank" rel="noopener">https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default</a><br><a href="https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html" target="_blank" rel="noopener">载波毕设</a><a href="https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html</a><br><a href="https://www.dssz.com/user/down.php" target="_blank" rel="noopener">记得领完积分下东西 搜载波相位 （看过1—4）</a><a href="https://www.dssz.com/user/down.php" target="_blank" rel="noopener">https://www.dssz.com/user/down.php</a><br><a href="http://www.doc88.com/p-536463024180.html" target="_blank" rel="noopener">matlab载波相位符号定时联合估计</a><a href="http://www.doc88.com/p-536463024180.html" target="_blank" rel="noopener">http://www.doc88.com/p-536463024180.html</a><br><a href="https://download.csdn.net/download/songliang12/9563542" target="_blank" rel="noopener">GPS载波相位平滑伪距</a><a href="https://download.csdn.net/download/songliang12/9563542" target="_blank" rel="noopener">https://download.csdn.net/download/songliang12/9563542</a><br><a href="http://www.pudn.com/Download/item/id/1774260.html" target="_blank" rel="noopener">纯下载无介绍 不靠谱</a><a href="http://www.pudn.com/Download/item/id/1774260.html" target="_blank" rel="noopener">http://www.pudn.com/Download/item/id/1774260.html</a><br>Google  载波相位 测距 程序<br>Google 载波相位观测值的组成部分<br><a href="https://www.docin.com/p-2126879971.html" target="_blank" rel="noopener">貌似同一个毕设</a><a href="https://www.docin.com/p-2126879971.html" target="_blank" rel="noopener">https://www.docin.com/p-2126879971.html</a><br><a href="https://www.bilibili.com/video/av39735562/" target="_blank" rel="noopener">武汉大学老师讲解</a><a href="https://www.bilibili.com/video/av39735562/" target="_blank" rel="noopener">https://www.bilibili.com/video/av39735562/</a><br><a href="https://www.bilibili.com/video/av39840214/?p=2" target="_blank" rel="noopener">武汉大学老师继续讲解</a><a href="https://www.bilibili.com/video/av39840214/?p=2" target="_blank" rel="noopener">https://www.bilibili.com/video/av39840214/?p=2</a><br><a href="https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3" target="_blank" rel="noopener">GPS测距码测量合集</a><a href="https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3" target="_blank" rel="noopener">https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3</a><br><a href="https://mp.weixin.qq.com/s/cx3gF6sRMwyPTg81fGUrwg" target="_blank" rel="noopener">高精度GNSS技术如何解决IoT场景下的时空定位问题</a><br><a href="http://kom.aau.dk/~borre/easy/" target="_blank" rel="noopener">莫名其妙的网站还有一些零碎的源代码</a></p><h3 id="DGPS简介"><a href="#DGPS简介" class="headerlink" title="DGPS简介"></a>DGPS简介</h3><p>DGPS:差分全球定位系统(Differential Global Position System).</p><p>目前 GPS 系统提供的定位精度是优于 10 米，而为得到更高的定位精度，我们通常采用差分 GPS 技术：将一台 GPS 接收机安置在基准站上进行观测。根据基准站已知精密坐标，计算出基准站到卫星的距离改正数，并由基准站实时将这一数据发送出去。用户接收机在进行 GPS 观测的同时，也接收到基准站发出的改正数，并对其定位结果进行改正，从而提高定位精度。</p><h3 id="差分-GPS-分为两大类：伪距差分和载波相位差分"><a href="#差分-GPS-分为两大类：伪距差分和载波相位差分" class="headerlink" title="差分 GPS 分为两大类：伪距差分和载波相位差分"></a>差分 GPS 分为两大类：伪距差分和载波相位差分</h3><p>差分的优点</p><p>（1）消除卫星钟钟差</p><p>（2）消除卫星星历误差</p><p>（3）消除电离层延迟</p><p>（4）消除对流层延迟</p><p>（5）将接收机钟钟差做为未知数求出以上措施将有效地提高GPS定位精度，一般而言，以坐标方式差分可达±5m的精度，以伪距方式可达±（1～3）m级精度，以载波相位方式可达±（1～3）cm的精度，高程精度为平面精度的2～3倍。</p><h3 id="导航电文概述"><a href="#导航电文概述" class="headerlink" title="导航电文概述"></a>导航电文概述</h3><p> 导航电文划分<br>根据速率和结构不同，导航电文分为 D1 导航电文和 D2 导航电文。D1<br>导航电文速率为 50 bps，并调制有速率为 1 kbps 的二次编码，内容包含基<br>本导航信息（本卫星基本导航信息、全部卫星历书信息、与其它系统时间<br>同步信息）；D2 导航电文速率为 500 bps，内容包含基本导航信息和增强服<br>务信息（北斗系统的差分及完好性信息和格网点电离层信息）。<br>MEO/IGSO 卫星的 B1I 信号播发 D1 导航电文，GEO 卫星的 B1I 信号<br>播发 D2 导航电文。</p><h3 id="整周模糊度"><a href="#整周模糊度" class="headerlink" title="整周模糊度"></a>整周模糊度</h3><p>如果需要高精度定位，需要用到载波相位测量值，一般是N个载波波长加上相位差再加上其他误差（如电离层延迟、对流层延迟、时钟误差、多径效应误差等），这里的N就是整周模糊度，因为信号发射和接收存在时钟误差，所以是一个未知的模糊值。</p><h3 id="LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。"><a href="#LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。" class="headerlink" title="LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。"></a>LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。</h3><p><img src="/blog/北斗ing/9.png" alt="9"><br><img src="/blog/北斗ing/10.png" alt="10"></p><h3 id="整周模糊度的求解技术"><a href="#整周模糊度的求解技术" class="headerlink" title="整周模糊度的求解技术"></a>整周模糊度的求解技术</h3><p>按精密相对定位的应用不同，整周模糊度求解算法大致可以分为两类：一类是，用于接收机可静止几小时甚至几天的静态定位；一类是包括实时动态RTK在内的非静态定位。</p><p>整周模糊度的求解不但要求移动中用户接收机在不经静态初始化的情况下完成整周模糊度的求解，而且还要求接收机能够容忍不时发生的对卫星信号的跟踪失锁。</p><p>不同的整周模糊度求解算法有着不同的求解思路。</p><p>1.利用伪距帮助估算整周模糊度的取整算法是最简单，最直接的一种。</p><p>2.其他的算法则集中在求解一个整数型最小二乘问题。基于求解整数型最小二乘问题的整周模糊度求解算法一般是将某个目标函数最小化。目前应用最多的是使模糊度残余平方和最小。</p><p>因为一类整周模糊度求解算法是依据某种准则通过搜索的方式来确定整周模糊度，因而在那些基于模糊度残余平方和最小原则的整数型最小二乘估计算法中，较为著名的是最小二乘模糊度搜索法（LSAST），LAMBDA算法等。</p><p>还有一类整周模糊度求解算法不需要搜索，他是利用不同频率测量值组合出不同波长的测量值，并逐级确定他们的整周模糊度。</p><p>整周模糊度的求解一般需要两步完成：首先是通过一定算法求解出整周模糊度，然后再验证所解得的整周模糊度值得正确性。模糊度残差值的大小通常被用来验证整周模糊度求解值得正误，而有的验证方法需要首先求解出最优和次优两个整周模糊度。</p><p>评价一个整周模糊度求解算法的好坏通常是依据他的计算量和准确度。同时，既然载波相位测量值中的整周模糊度能被求解出来，那么测量值中的周跳错误自然也就能被检测出来，并且还有可能被修复。</p><h3 id="快速求解整周模糊度："><a href="#快速求解整周模糊度：" class="headerlink" title="快速求解整周模糊度："></a>快速求解整周模糊度：</h3><p><img src="/blog/北斗ing/6.png" alt="6"><br><img src="/blog/北斗ing/7.png" alt="7"><br><img src="/blog/北斗ing/11.png" alt="11"></p><blockquote class="blockquote-center">O : 观测数据   N ： 星历数据</blockquote>[发布源码功能目前已关闭。](http://www.biguo100.com/user/unew.asp)<h3 id="LAMBDA法"><a href="#LAMBDA法" class="headerlink" title="LAMBDA法"></a>LAMBDA法</h3><p>LAMBDA法全称最小二乘模糊度降相关平差法（Least-square AMBiguity Decorrelation Adjustment）是由荷兰Delft大学的Teunissen教授提出的。该方法可缩小搜索的范围，加快搜索过程，是目前快速静态定位中最成功的一种模糊度搜索方法。</p><p>整数变换<br>经典算法中在确定整数模糊度组合主要遇到问题为，由于观测时间短，初始解中的实数模糊度参数精度低，参数的相关性又很强。<br>在LAMBDA中，不直接对实数模糊度参数进行搜索，而是先对初始解中的实数模糊度N^及其协因数阵QN^进行整数变换。N^及其协因数阵QN^进行整数变换。<br><img src="/blog/北斗ing/8.png" alt="8"><br>逆变换求得的参数NN就是我们最初要寻找的最佳的整数模糊度向量。<br>书上讲到，通过对协因数阵Q−1N^进行LTDL分解进行整数变换，但是具体方法并未进行详细的叙述</p><h3 id="LAMDA1"><a href="#LAMDA1" class="headerlink" title="LAMDA1"></a>LAMDA1</h3><p>This version (lambda1) is intended to be used mainly for research.<br>% It has more options than the original code, such as output of<br>% intermediate results, optional number of candidates to be returned<br>% and so on. If you are not interested in these options, you can use<br>% “lambda2”</p><h3 id="LAMDA2"><a href="#LAMDA2" class="headerlink" title="LAMDA2"></a>LAMDA2</h3><p>This is the other one of the main routines. Compared to routine lambda1.m, this routine is simplified. It is not<br>possible to generate intermediate output, and it is not possible to select the number of candidates to be computed<br>(the routine will return 2 candidates).<br>Usage: [afixed,sqnorm,Qahat,Z] = lambda2 (afloat,Qahat);</p><p>afloat  Input  Original float ambiguities<br>Qahat   Input  Corresponding variance-covariance matrix<br>afixed   Output Array with estimated integer candidates, sorted according<br>to the corresponding squared norms, best candidate first<br>sqnorm  Output Corresponding squared norms<br>Qzhat   Output Decorrelated variance-covariance matrix<br>Z      Output Z-transformation matrix</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 折腾ing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>未完成的</title>
-      <link href="//blog/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84.html"/>
-      <url>//blog/%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84.html</url>
-      
-        <content type="html"><![CDATA[<p>我好菜啊！</p><a id="more"></a><blockquote class="blockquote-center">本地搜索 七牛存储 音乐框大小 文章置顶 主题颜色 背景图片 邮箱链接 阅读电影前图片 menu中文 readmore </blockquote>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 折腾ing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>日系推理小说合集[TXT]</title>
-      <link href="//blog/%E6%97%A5%E7%B3%BB%E6%8E%A8%E7%90%86%E5%B0%8F%E8%AF%B4%E5%90%88%E9%9B%86-TXT.html"/>
-      <url>//blog/%E6%97%A5%E7%B3%BB%E6%8E%A8%E7%90%86%E5%B0%8F%E8%AF%B4%E5%90%88%E9%9B%86-TXT.html</url>
-      
-        <content type="html"><![CDATA[<p>在网上那个找的80余本txt日本推理</p><a id="more"></a><p><a href="http://www.1xx.fun/2241.html" target="_blank" rel="noopener">http://www.1xx.fun/2241.html</a></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 折腾ing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>折原一</title>
-      <link href="//blog/%E6%8A%98%E5%8E%9F%E4%B8%80.html"/>
-      <url>//blog/%E6%8A%98%E5%8E%9F%E4%B8%80.html</url>
-      
-        <content type="html"><![CDATA[<p>这两天看了三本叙诡的书</p><a id="more"></a><h3 id="圣母"><a href="#圣母" class="headerlink" title="圣母"></a><strong><em>圣母</em></strong></h3><p><a href="https://kongzhongfeima.github.io/blog/%E5%9C%A3%E6%AF%8D.html">详见</a></p><h3 id="倒错的归结"><a href="#倒错的归结" class="headerlink" title="倒错的归结"></a><strong><em>倒错的归结</em></strong></h3><p>🌱出场人物：</p><ul><li>山本安雄 在案件中打酱油 不如秀子</li><li>秀子 雪月花之母 作壁上观</li><li>修平 本家之子 欠债后悔悟 自杀未果 坊间却传出意外身亡 终自杀</li><li>和尚 当家之友</li><li>酒鬼 当家之友 杀花代后服毒 两次浮身堂实践见证人</li><li>保险调查员 怀疑修平未残疾诈骗保险金</li><li>雪代 写生 短发 现代女性</li><li>月代 写作 长发 大家闺秀</li><li>花代 弹琴 短发 活泼 现代女性 体型与雪代相似</li></ul><p>🌱这应该是继 <strong><em>沉默的教室</em></strong> 后第二本阿折的书<br>🌱看完之后 有种似曾相识的感觉（脑髓地狱——作中作中作加该死的手记）<br>🌱这个作品不好多说 因为我看书评都没看懂:）<br>🌱惊了! 作品中还没给出传说中和尚死因和花代死因 连雪代的都漏洞百出<br>🌱以前看评论说阿折是为了叙诡而叙诡 悔不听老人言啊<br>🌱山本安雄可真是盗作的天才啊 在 <strong><em>轮舞</em></strong> 里也盗 在这里还到月代小姐的（胖月代、瘦月代 傻傻分不清楚）<br>🌎第一场事件 雪代为家族驱邪 在浮身堂中被箭刺死 身边酒鬼被敲晕 <strong>疑点</strong>：敲酒鬼的正是所谓的雪代（其实是花代 为了刺杀成功 将其击晕）雪代的袜子在地上 <strong>真相</strong>（不合理啊 要是旁观者动作快点怎么办 就没有换妆时间 而且 如果第一个进去的不是雪代怎么办） 在堂内的是花代伪装成雪代（雪代胆小 不敢在堂内）  花代假装出事大叫 雪代听到后第一的赶到 进门后被花代刺死 花代抓紧换装 袜子麻烦故散落在地（这里的叙诡还行 可行性大打折扣）<br>🌎第二场事件 警察想重现第一次的现场（这不应该是侦探做的吗）花代和酒鬼又一次同处堂内 酒鬼溺死花代后 服毒自尽（溺死花代的竟然是酒鬼瓶中的海水 溺死后又灌入瓶中 该死的家政妇把真的酒和海水混了 你可真是个捣蛋鬼:） 故花代死法令人诧异   ）<br>🌱话说 秀子说 三姐妹同时看上神经病山本 （上吊之岛上没有男的吗 我看分家之子武彦就比山本强）</p><h3 id="倒错的轮舞"><a href="#倒错的轮舞" class="headerlink" title="倒错的轮舞"></a><strong><em>倒错的轮舞</em></strong></h3><p>🌱出场人物：</p><ul><li>山本安雄 精神病作家 小强体质 盗作后被盗 其母又盗回</li><li>永岛一郎 利益驱使 盗作后又盗作 杀山本友人</li><li>白鸟翔 <strong><em>幻影女郎</em></strong> 作者 被盗后盗山本作</li><li>广美 身材娇小丰盈 没脑子</li></ul><p>🌱看完归结后 立即看的 <strong><em>轮舞</em></strong> 对精神病山本甚表同情<br>🌱在书店找本书 比划着抄 就想拿着去投奖 最可笑的是朋友还有后来捡到手稿的永岛一郎都不知道白鸟这个作家<br>🌱话说 白鸟也很可怜啊 自己辛苦写的 <strong><em>幻影女郎</em></strong> 被盗作 反被山本成盗作 还被山本当做在站台推他的凶手 生活被山本搞得一团糟 小女友也被永岛qj后扼晕 白鸟后扼死女友（这点不同人的作品有顺序的差异 可能永岛扼死广美） 锒铛入狱 不过后面竟然盗取山本作 （你盗他的干嘛 不知道他是神经病吗）最终被山本之母盗回 over<br>🌱永岛也是可怜虫、糊涂鬼 被小姐调侃后笔名叫做白鸟 竟然拿着拾来的（还是去年已经发表过的作品）投奖 还杀害山本之友、广美（杀不杀不确定）在白鸟公寓击晕山本（这该死的小强体质） 终被逮捕<br>🌱最后我希望山本不要再盗作了 你看你写的 <strong><em>倒错的轮舞</em></strong> 除了名字借用的之外 不是很好吗 记得订报纸 不然应征第几届的奖都可能搞错:）</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 最爱推理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>免费SSR\各种hexo居中</title>
-      <link href="//blog/%E5%85%8D%E8%B4%B9SSR.html"/>
-      <url>//blog/%E5%85%8D%E8%B4%B9SSR.html</url>
-      
-        <content type="html"><![CDATA[<p>###<strong><em>免费SSR\各种hexo居中</em></strong></p><a id="more"></a><p><a href="https://flywind.ml/free-ssr" target="_blank" rel="noopener">更新不频繁</a><br><a href="https://lncn.org/" target="_blank" rel="noopener">更新频繁</a></p><p><strong><blockquote class="blockquote-center"> 居中 </blockquote></strong><br><a href="https://theme-next.iissnan.com/tag-plugins.html" target="_blank" rel="noopener">各种hexo居中</a></p><p><a href="https://www.cosplay.cloud/pixiv/1001.html" target="_blank" rel="noopener">黑化saber图片</a><br><a href="https://zhuanlan.zhihu.com/p/69211731" target="_blank" rel="noopener">hexo美化合集包括人体时钟</a></p><!--人体时钟背景透明--><script charset="Shift_JIS" src="http://chabudai.sakura.ne.jp/blogparts/honehoneclock/honehone_clock_tr.js"></script><p><object type="application/x-shockwave-flash" style="outline:none;" data="http://cdn.abowman.com/widgets/hamster/hamster.swf?" width="300" height="225"><param name="movie" value="http://cdn.abowman.com/widgets/hamster/hamster.swf?"><param name="AllowScriptAccess" value="always"><param name="wmode" value="opaque"></object></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 折腾ing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>到校第三天/倒错的归结</title>
-      <link href="//blog/%E5%88%B0%E6%A0%A1%E7%AC%AC%E4%B8%89%E5%A4%A9-%E5%80%92%E9%94%99%E7%9A%84%E5%BD%92%E7%BB%93.html"/>
-      <url>//blog/%E5%88%B0%E6%A0%A1%E7%AC%AC%E4%B8%89%E5%A4%A9-%E5%80%92%E9%94%99%E7%9A%84%E5%BD%92%E7%BB%93.html</url>
-      
-        <content type="html"><![CDATA[<p>脱力一般</p><a id="more"></a><p>有点难受 控制不了自己的情绪<br>一点不像成年人</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 手记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>圣母</title>
-      <link href="//blog/%E5%9C%A3%E6%AF%8D.html"/>
-      <url>//blog/%E5%9C%A3%E6%AF%8D.html</url>
-      
-        <content type="html"><![CDATA[<p><strong>圣母</strong><br><em>(叙诡)</em></p><a id="more"></a><p>🌱我看书是真的快 一会就把秋季李向子的 圣母 看完了<br>🌱阅读体验还不错 读到结局时就知道有叙诡了（事后诸葛亮 读到一半还以为一本普通社会派）</p><blockquote><p>叙诡本是甲之蜜糖 乙之砒霜</p></blockquote><p>🌱主要出场人物：</p><ul><li>田中真琴 <strong>薰之生母</strong> 高二 剑道二段 杀人犯</li><li>保奈美 <strong>真琴之母</strong>、<strong>薰之养母</strong>（最后交代） 不孕者（很难怀上）</li><li>薰 可爱的小妮儿</li><li>蓼科秀树 曾为强奸犯 后被栽赃（最后交代曾经*真琴）</li><li>真琴男同学 （最后交代此人暗恋真琴）</li><li>谷崎 警察 知性、负责</li></ul><p>🌱发现真的好多伏笔啊 记性不好的我都能列举一些<br>如 保奈美知道身边有变态时 很胆小 但是最后宰了秀树 书中提到秀树有她女儿图片 我还以为是小薰 原来是 真琴 这样就说的通了 秀树有图片是因为拍过真琴果照 保奈美宰人是因为秀树狠狠地伤害过真琴 并未付出任何代价<br>🌱还有 不知道写真琴高中同学是不是想让读者误以为是他帮忙善后 我当初就是这么想的（还沾沾自喜）亦有可能借他们之间的情愫说明 真琴不喜欢接触男生 与后文的悲惨经历呼应<br>🌱还有 书中挂掉的小男生都是小坏蛋 这也正是真琴杀他们的原因 我原以为 杀他们是为了获得心里安宁 像吉良吉影 原来是 怕小薰受伤害<br>🌱这本书我感觉 两个母亲的作为 我可以理解 也可以接受 一个 死过三个胎儿 另一个 经历过**  都是为了保护自己的女儿<br>🌱 不知道第一具尸体后面性侵的痕迹是？ 哦哦 前文说有润滑液暗示套套（聪明的母亲总能有办法: )    ）<br>🌱最后   书名取得好 <strong>恰是圣母</strong></p><hr><p>…我写这么认真也是为了我的新博客啊</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 最爱推理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>到校第二天</title>
-      <link href="//blog/%E5%88%B0%E6%A0%A1%E7%AC%AC%E4%BA%8C%E5%A4%A9.html"/>
-      <url>//blog/%E5%88%B0%E6%A0%A1%E7%AC%AC%E4%BA%8C%E5%A4%A9.html</url>
-      
-        <content type="html"><![CDATA[<p>今天是到校第二天</p><a id="more"></a><p>🌱到校后发现自己已经习惯学校的小床了 不晓得以后挣大钱了还能住惯酒店吗<br>🌱今天看了《圣母》写的还可以 具体的写在别处吧</p><h4 id="🌎自己在群里说的话越来越少-对他人事无兴趣"><a href="#🌎自己在群里说的话越来越少-对他人事无兴趣" class="headerlink" title="🌎自己在群里说的话越来越少 对他人事无兴趣"></a>🌎自己在群里说的话越来越少 对他人事无兴趣</h4><p>🌱不晓得他们这么多话 得意时还会想起他人吗<br>🌱哈哈 当初放手果然正确无比 麻木像一个冷血侦探<br>🌱不知道 她当初问我夏令营干嘛  希望她可以实现自己愿望  迪士尼去了吗 豆芽开花了吗</p><h5 id="🌎走时姐姐婆婆出了点毛病-不过我并不是很难受"><a href="#🌎走时姐姐婆婆出了点毛病-不过我并不是很难受" class="headerlink" title="🌎走时姐姐婆婆出了点毛病 不过我并不是很难受"></a>🌎走时姐姐婆婆出了点毛病 不过我并不是很难受</h5><p>🌱还是希望早点好吧 姐就不用整天跑了</p><h4 id="🌎昨天看了点-轮到你了-感觉公寓里没一个正常的人"><a href="#🌎昨天看了点-轮到你了-感觉公寓里没一个正常的人" class="headerlink" title="🌎昨天看了点 轮到你了 感觉公寓里没一个正常的人"></a>🌎昨天看了点 轮到你了 感觉公寓里没一个正常的人</h4><p>🌱小菜奈说的大象和长颈鹿是什么呢 很瘆人<br>🌱感觉结局要崩</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 手记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>为你写诗 为你静止</title>
-      <link href="//blog/%E4%B8%BA%E4%BD%A0%E5%86%99%E8%AF%97.html"/>
-      <url>//blog/%E4%B8%BA%E4%BD%A0%E5%86%99%E8%AF%97.html</url>
-      
-        <content type="html"><![CDATA[<p>为你失去理智</p><a id="more"></a><p>🌱现在看相亲节目 发现男女嘉宾越来越优秀了 吓人<br>🌱网上在家里把fen给整了  累人儿<br>🌱哎 一想到北斗就愁啊  不晓得朱老师咋给分<br>🌱有点累  明天老姐生日 为了我把日期提前了真好</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=456167591&auto=1&height=66"></iframe>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 手记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>推理者</title>
-      <link href="//blog/3.html"/>
-      <url>//blog/3.html</url>
-      
-        <content type="html"><![CDATA[<p>22</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我好难啊</title>
-      <link href="//blog/%E6%88%91%E5%A5%BD%E9%9A%BE%E5%95%8A%E2%80%94%E4%BD%86%E6%88%91%E7%9B%B8%E4%BF%A1%E7%88%B6%E6%AF%8D%E4%B8%8D%E4%BC%9A%E5%AB%8C%E5%BC%83%E6%88%91.html"/>
-      <url>//blog/%E6%88%91%E5%A5%BD%E9%9A%BE%E5%95%8A%E2%80%94%E4%BD%86%E6%88%91%E7%9B%B8%E4%BF%A1%E7%88%B6%E6%AF%8D%E4%B8%8D%E4%BC%9A%E5%AB%8C%E5%BC%83%E6%88%91.html</url>
-      
-        <content type="html"><![CDATA[<p>各单位注意：负面情绪即将决堤！</p><a id="more"></a><p>🌱我好难啊 要被郁闷淹没 damn北斗死活看不懂<br>🌱好久没受到这种委屈了 没办法 自找的（哈哈）<br>🌱不过 给我爸说他花费多的原因 他们也不管啊<br>🌱感觉被孤立了 还是小孩子好啊 犯什么错都可以被人原谅<br>🌱像我这种辣鸡 作甚都没成功过啊（尤其是北斗）<br>🌱老妈说她的指甲出问题了 又不想去医院 那一刻我好难受啊<br>🌱但是现在又不难受了 我是个畜生吧 明明瞬间还想拉着她去<br>🌱下一秒忘却 不能爱自己 爱家人 我还有什么资格爱别人呢<br>🌱以前觉得不爱别人就无法爱自己 现在觉得爱家人、爱自己更加重要<br>🌱可是现在是不是晚了呢 父母已经五十多了 父母在不远游<br>🌱可我现在四处流荡 前途未卜<br>🌱现在已经不知道什么是真的什么是假的了<br>🌱 刚才为父母难受 是我真的难受吗 还是为了安慰自己 给自己找借口 说自己曾经努力过<br>🌱我对父母的关心是虚假的吗 坠入对自我深深的厌恶中 谁能告诉我什么是真的什么是假的 我该怎么做呢<br>🌱亦或是 我把这些记下来 证明自己对她上心 来描绘我虚假的好孩子面具 好让自己不惭愧吗 让后来自己读到这里也被自己感动？（强烈的自我厌恶）<br>🌱都说人无法互相理解 我连自己父母的心情都无法理解 别的家庭也是这样的吗<br>🌱哈哈 都怪我不是富二代 否则与父母反目成仇 也不会有这样淤泥般丑陋的爱了（说的是 我对父母的爱 父母对我真的很好 恐怕像哪吒削骨还父、断发还母也无法报答了 我真没用 若是大一大二在努力一点 会不会现在不用上研究生 而供养父母呢）<br>🌱虽说成绩不差 也曾以为自己花费大量时间自习感到骄傲 可我还是用空闲时间打游戏 虽说大学生打游戏是常态 但是每个人的家境不同 像我这一般偏下的家境 我已经没有娱乐的权力了吧 我看推理小说、诗和远方时 父母还在苟且<br>🌱哈哈  有时想自己好累 忽觉无人劝慰 心头一紧 郁结于胸 因此在博客中记下 我陷入了自我怀疑、否定 未来难讲<br>🌱这些真的是我想说的吗 还是为了写博客强说愁 哎 分不清了 不过这句是真的：我会努力让父母过上好日子 不在风吹日晒 最好不为生计发愁 嗯 下辈子我做您们父母 为您们呕心沥血 鞠躬尽瘁 九死不悔！</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 手记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>00</title>
-      <link href="//blog/00.html"/>
-      <url>//blog/00.html</url>
-      
-        <content type="html"><![CDATA[<p>放过这个<br>试图调用Googleapi地图</p><a id="more"></a> <h1>asghai</h1>[另一个主题](https://github.com/Mrcxt/gridea-theme-lemon)<p>又一个天气插件</p><div id="tp-weather-widget"></div><script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script><script>tpwidget("init", {    "flavor": "slim",    "location": "WW0V9QP93VS8",    "geolocation": "enabled",    "language": "zh-chs",    "unit": "c",    "theme": "chameleon",    "container": "tp-weather-widget",    "bubble": "enabled",    "alarmType": "badge",    "color": "#00AFDB",    "uid": "U2425E6098",    "hash": "53ae1c1f0c18b4fa03958642dbe88ffe"});tpwidget("show");</script><p><strong><p style="background-color:rgb(255,255,0)">通过rgb值设置背景颜色</p></strong></p><p align="right"><object>    <embed src="F:/前端的/flash4923.swf" width="50%" height="50%"></object></p><p>来自网站的图片                                            <img src="http://www.w3school.com.cn/i/w3school_logo_white.gif">    </p><p align="right" style="background-color:rgb(255,255,0)"><object><embed src="F:/前端的/flash4926.swf" height="100%" width="100%"></object></p><p>音乐插件</p><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="//music.163.com/outchain/player?type=2&id=167912&auto=1&height=66"></iframe>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 折腾ing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>遍身罗绮者，不是养蚕人</title>
-      <link href="//blog/%E7%9A%86%E8%8B%A5%E8%9C%89%E8%9D%A3%E6%97%A0%E6%89%80%E4%BE%9D.html"/>
-      <url>//blog/%E7%9A%86%E8%8B%A5%E8%9C%89%E8%9D%A3%E6%97%A0%E6%89%80%E4%BE%9D.html</url>
-      
-        <content type="html"><![CDATA[<p>无用之事  重要之事</p><a id="more"></a><p>🌱真的难受啊 现在感觉在事业单位工作真好<br>🌱难道我还要度过可有可无的研究生阶段 再在工作中糟蹋青春<br>🌱 我读研究生只是为了工作要个更高的价钱<br>🌱现在想想 公务员还挺轻松 哈哈  本来就想过吉良吉影植物般的生活<br>🌱果然长大不是说的玩的 我从不认为工作能实现我的价值<br>🌱只有在爱好中 得到内心的片刻安宁<br>🌱不知道那些富二代还会考虑考试、工作这些琐事啊<br>🌱长大就是被无用的事消耗殆尽 最重要的东西都会不见<br>🌱只留下一小撮钱和可笑的地位<br>🌱不晓得什么时候可以实现财务自由 在家的这几天也因琐事一本推理没读完<br>🌱现在正为GPS项目实习焦头烂额<br>🌱对现在的我来说 只有读小说才感觉有意义<br>🌱哈哈  我家要是世世代代经营书店就好了<br>🌱福楼拜和契科夫的小说还没读过多少 岛田的也没时间读<br>🌱难以想象我以后工作还会有时间读吗 还是被柴米油盐磨光棱角</p><p>天气插件</p><div id="weather-float-he"></div><script type="text/javascript">WIDGET = {FID: 'KbzQ7JDMhF'}</script><script type="text/javascript" src="https://apip.weatherdt.com/float/static/js/r.js?v=1111"></script>又一个天气插件<div id="tp-weather-widget"></div><script>(function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js"))</script><script>tpwidget("init", {    "flavor": "slim",    "location": "WW0V9QP93VS8",    "geolocation": "enabled",    "language": "zh-chs",    "unit": "c",    "theme": "chameleon",    "container": "tp-weather-widget",    "bubble": "enabled",    "alarmType": "badge",    "color": "#00AFDB",    "uid": "U2425E6098",    "hash": "53ae1c1f0c18b4fa03958642dbe88ffe"});tpwidget("show");</script>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 手记 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>北斗</title>
-      <link href="//blog/%E5%8C%97%E6%96%97%E5%AE%9E%E4%B9%A0ing.html"/>
-      <url>//blog/%E5%8C%97%E6%96%97%E5%AE%9E%E4%B9%A0ing.html</url>
-      
-        <content type="html"><![CDATA[<p>RIENX格式（上）：2.10版本内容解析和说明</p><a id="more"></a><p><a href="https://blog.csdn.net/yuan22900/article/details/50435499" target="_blank" rel="noopener">RIENX格式（上）：2.10版本内容解析和说明</a><br>MATLAB算法VIP可见：<br><a href="https://blog.csdn.net/iamlsj/article/details/38061929" target="_blank" rel="noopener">MATLAB算法VIP可见：</a><br><a href="https://blog.csdn.net/weixin_41498178/article/details/79304849" target="_blank" rel="noopener">VIP</a><br><a href="https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default" target="_blank" rel="noopener">载波相位 单差法 双查发 三叉发</a><br><a href="https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html" target="_blank" rel="noopener">载波毕设</a><br><a href="https://www.dssz.com/user/down.php" target="_blank" rel="noopener">记得领完积分下东西 搜载波相位 （看过1—4）</a><br><a href="http://www.doc88.com/p-536463024180.html" target="_blank" rel="noopener">matlab载波相位符号定时联合估计</a><br><a href="https://download.csdn.net/download/songliang12/9563542" target="_blank" rel="noopener">GPS载波相位平滑伪距</a><br><a href="http://www.pudn.com/Download/item/id/1774260.html" target="_blank" rel="noopener">纯下载无介绍 不靠谱</a><br>Google  载波相位 测距 程序<br>Google 载波相位观测值的组成部分<br><a href="https://www.docin.com/p-2126879971.html" target="_blank" rel="noopener">貌似同一个毕设</a><br><a href="https://www.bilibili.com/video/av39735562/" target="_blank" rel="noopener">武汉大学老师讲解</a><br><a href="https://www.bilibili.com/video/av39840214/?p=2" target="_blank" rel="noopener">武汉大学老师继续讲解</a><br><a href="https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3" target="_blank" rel="noopener">GPS测距码测量合集</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>坏人们</title>
-      <link href="//blog/%E5%9D%8F%E4%BA%BA%E4%BB%AC.html"/>
-      <url>//blog/%E5%9D%8F%E4%BA%BA%E4%BB%AC.html</url>
-      
-        <content type="html"><![CDATA[<p>工部老师</p><a id="more"></a><p>前几天看了 宫部美雪的坏人们 发现自己的直觉还行   一眼瞧出夏建池是一个坏律师了   哪有整天把优质资源无偿奉献给朋友 事后还替他擦屁股的  话说他在医生杀人之前就已经和慎村有一腿了吧    果然慎村是个有脑汁的女人   不过没具体交代他们什么时候狼狈为奸的<br> 可恶啊   医生不是说没人喜欢呆板的律师吗  直到自己医院的地皮没了  再加上2000万存款变为200万  才发觉上了套</p><p> 或许我潜意识里就喜欢强势的女人吧  哈哈 是喜欢被摆布吗  被玩弄于鼓掌之中  虽然四岛丰很强势   但就是她把医生引诱到犯罪路上的   食髓知味   话说医生再次返回现场是真的不明智  （就怪医生太坏了 把牛骨头穿上袜子  还漏半截在土的外面   当警官说道 ：你不是去散心吗   为何到偏远的树林来回三次   ）</p><h2 id="今日诗词"><a href="#今日诗词" class="headerlink" title="今日诗词"></a>今日诗词</h2><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><div id="poem_sentence"></div><div id="poem_info"></div><script type="text/javascript">  jinrishici.load(function(result) {    var sentence = document.querySelector("#poem_sentence")    var info = document.querySelector("#poem_info")    sentence.innerHTML = result.data.content    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'  });</script> <script type="text/javascript" src="https://api.xygeng.cn/dailywd/api/getjs.php"></script><img src="https://api.xygeng.cn/bing/1920.php" alt="Bing每日图片超高清">]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 最爱推理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>为了N</title>
-      <link href="//blog/%E4%B8%BA%E4%BA%86N.html"/>
-      <url>//blog/%E4%B8%BA%E4%BA%86N.html</url>
-      
-        <content type="html"><![CDATA[<p>今天上午看完了为了N</p><a id="more"></a><p>实在喜欢 守护这一类的作品<br>是凑佳苗写的  估计我以后也不会去读原著<br>毕竟改编已经无可挑剔了</p><p>拙见： 我觉得成濑和西美是恋人  因为感觉两人心意相通<br>哈哈  一件误会还让西美以为共有犯罪  （她说是极致的爱）<br>而天空花园  成濑也相当于报恩吧<br>而安藤和她应该是朋友<br>安藤是她的光  向上看的光不能有杂质<br>所以她从一开始就没有告诉他<br>在最后还是保护他</p><p>感觉到了纯爱<br>哈哈 好像主题曲 中的：  it is so silly</p><p>还记得西美对成濑说：你做什么都没关系的</p><h2 id="今日诗词"><a href="#今日诗词" class="headerlink" title="今日诗词"></a>今日诗词</h2><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><div id="poem_sentence"></div><div id="poem_info"></div><script type="text/javascript">  jinrishici.load(function(result) {    var sentence = document.querySelector("#poem_sentence")    var info = document.querySelector("#poem_info")    sentence.innerHTML = result.data.content    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'  });</script><h4 id="来一张masa与荣仓奈奈的背影"><a href="#来一张masa与荣仓奈奈的背影" class="headerlink" title="来一张masa与荣仓奈奈的背影"></a>来一张masa与荣仓奈奈的背影</h4><p><img src="https://kongzhongfeima.github.io/post-images/1565412880858.jpg" alt></p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 最爱推理 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>回家第二天</title>
-      <link href="//blog/hui-jia-di-er-tian.html"/>
-      <url>//blog/hui-jia-di-er-tian.html</url>
-      
-        <content type="html"><![CDATA[<h3 id="上午多云-下午阵雨"><a href="#上午多云-下午阵雨" class="headerlink" title="上午多云 下午阵雨"></a>上午多云 下午阵雨</h3><a id="more"></a><p>🌱近来十分胆小，怎么可以给她安全感呢<br>🌱老爸在我回家之前去工地了 好想见他<br>🌱在父母面前自己依旧是孩子<br>🌱看了基本关于阿兹海默的推理<br>🌱不知道如果这个船长驾驶我周围的人我会如何做<br>🌱今天尝试用gridea搭建了自己的第一个博客 如果有时间试试WordPress<br>🌱不知道我的高中同学过得怎么样 寻找的东西找到了吗<br>🌱哈哈 想到小王子里关于人们坐火车的评论<br>大意是small king（也是little prince）问为何人们做这么快的交通工具，他们很急吗 他们怎么这么快就回来了 小王子认为大人们急急忙忙 却毫无所获</p><blockquote><p>“你好。”小王子说。“你好。”扳道工说。“你在这儿做什么？”小王子问。“我在分送旅客，一千人一拨。”扳道工说，“我发送运载旅客的列车，一会儿往右，一会儿往左。”说着，一列灯火通明的快车，像打雷似的轰鸣着驶过，震得扳道房直打颤。“他们好匆忙，”小王子说，“他们去找什么呢？”    “开火车的人自己也不知道。”扳道工说。    说话间，又一列灯火通明的快车，朝相反的方向轰鸣而去。“他们已经回来了？”小王子问。“不是刚才的那列，”扳道工说，“这是对开列车。”    “他们对原来的地方不满意吗？”    “人们对自己的地方从来不会满意。”扳道工说。    第三列灯火通明的快车轰鸣着驶过。“他们是去追赶第一批旅客吗？”小王子问。“他们没追赶谁，”扳道工说，“他们在里面睡觉，或者打哈欠。    只有孩子把鼻子贴在窗上看外面。”    “只有孩子知道自己在找什么，”小王子说，“他们在一个布娃娃身上花了好些时间，她对他们来说就成了很重要的东西。要是有人夺走他们的布娃娃，他们会哭的……”<br>    “他们真幸运。”扳道工说。</p></blockquote><p>是啊孩子真幸运</p><p>🌱故乡虽没有江南的富庶风光<br>🌱也没有海边城市的波粼闪闪<br>🌱但是我的记忆扎根于此<br>🌱既是无所有之乡<br>🌱绿意盎然亦是埋骨之地</p><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><div id="poem_sentence"></div><div id="poem_info"></div><script type="text/javascript">  jinrishici.load(function(result) {    var sentence = document.querySelector("#poem_sentence")    var info = document.querySelector("#poem_info")    sentence.innerHTML = result.data.content    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'  });</script><h3 id="今日份配图：我的白公主"><a href="#今日份配图：我的白公主" class="headerlink" title="今日份配图：我的白公主"></a>今日份配图：我的白公主</h3><p><img src="https://kongzhongfeima.github.io/post-images/1565357117967.jpg" alt></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>先试试啊</title>
-      <link href="//blog/%E6%97%A0%E4%BB%96.html"/>
-      <url>//blog/%E6%97%A0%E4%BB%96.html</url>
-      
-        <content type="html"><![CDATA[<p><a href="https://fehey.com/post/markdown-yu-fa-jian-dan-jiao-cheng/" target="_blank" rel="noopener">Markdown 语法简单教程</a></p><a id="more"></a><p>北村熏的空中飞马<br><a href="https://www.bilibili.com" target="_blank" rel="noopener">这是哔哩哔哩</a><br><strong>矮个人如何</strong></p><h2 id="嘎嘎"><a href="#嘎嘎" class="headerlink" title="嘎嘎"></a>嘎嘎</h2><h3 id="如图"><a href="#如图" class="headerlink" title="如图"></a>如图</h3><p>尝试调用今日诗词api（图形）<br><img src="https://v2.jinrishici.com/one.svg?font-size=20&spacing=2&color=brown" alt="今日诗词"><br>尝试调用今日诗词api（文字）<br><span id="jinrishici-sentence">正在加载今日诗词….</span></p><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><p>今日诗词api高级用法</p><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><div id="poem_sentence"></div><div id="poem_info"></div><script type="text/javascript">  jinrishici.load(function(result) {    var sentence = document.querySelector("#poem_sentence")    var info = document.querySelector("#poem_info")    sentence.innerHTML = result.data.content    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'  });</script><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=2423545044&auto=1&height=430"></iframe><script type="text/javascript" src="https://api.xygeng.cn/dailywd/api/getjs.php"></script><img src="https://api.xygeng.cn/bing/1920.php" alt="Bing每日图片超高清">]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> 折腾ing </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于</title>
-      <link href="//blog/about.html"/>
-      <url>//blog/about.html</url>
-      
-        <content type="html"><![CDATA[<p>这是关于的页面，可以在这里向世界介绍你！</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-  
-  
+<search>
+  <entry>
+    <title><![CDATA[倒错的死结]]></title>
+    <url>%2F%2Fblog%2F%E6%AD%BB%E7%BB%93%E3%80%81%E5%80%92%E9%94%99.html</url>
+    <content type="text"><![CDATA[🌱昨天去项目实习答辩有感 🌱 🌱对软软的女生声音没有抵抗能力，酥麻的感觉🌱上次听到 我咬你啊 就感觉回到高中时代🌱现在没有人会经常这句话吧 不能说好怀念🌱因为我现在还年轻，怎么能怀念呢，岂不让人耻笑！🌱]]></content>
+      <tags>
+        <tag>手记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[梦呓]]></title>
+    <url>%2F%2Fblog%2F%E6%A2%A6%E5%91%93.html</url>
+    <content type="text"><![CDATA[🌱昨天晚上做梦梦见一只小猫咪，忽然变大然后咬了我一口🌱感觉好真实，不知道要不要去打疫苗 🌱好像又梦见漂亮的女朋友不想结婚🌱大概是爱情保卫战看多了吧 🌱偶然看到 神的逻辑、夏与冬、钟城 还是很开心🌱感觉我啥时候要把这些震撼我的作品再读读实体]]></content>
+      <tags>
+        <tag>手记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[北斗ing]]></title>
+    <url>%2F%2Fblog%2F%E5%8C%97%E6%96%97ing.html</url>
+    <content type="text"><![CDATA[RIENX格式（上）：2.10版本内容解析和说明 RTK（ Real-time kinematic）指的是实时动态测量，也叫载波相位差分定位是 GNSS 相对定位技术的一种，主要通过基准站和流动站（接收机位置）之间的实时数据链路和载波相对定位快速解算技术，实现高精度动态相对定位。 具体实现方法就是，在地面设置固定的基准站（要保证位置精准标定），用来接收卫星信号，通过两种方式为用户提供差分服务，一种是用已知的基准站位置解算所收到信号中的误差，误差通过网络播发的形式传输给附近的用户接收机，由于参考站和接收机端的误差存在时间和空间上的相关性，在接收机端减掉误差后，得到的就是一个高精度位置信息了。另一种方法是将基准站接收机收到的观测量直接发送给用户，用户端通过“求差”的方式消除或减少误差的影响。这就是高精度 GNSS 定位技术的基本原理。第二种方法的效果较好，所以被广泛采用。 可以用的由于载波相位观测值的波长仅为对应伪距观测值的1/100，其测量精度相对较高，所以在精密定位时通常使用载波相位方法。但由于GPS信号结构的限制，在相位观测量中总是包含着一个初始相位整周数，因此，GPS整周模糊度的解算成了采用载波相位进行精密相对定位的关键问题。准确、快速的解算出整周模糊度，不仅能够缩短定位时间，还能够保障相对定位的精度。其主要思路可分为3个步骤：（1）标准最小二乘平差求基线和整周模糊度浮点解；（2）整数最小二乘估计求整周模糊度固定解；（3）基线固定解。 RIENX格式（上）：2.10版本内容解析和说明https://blog.csdn.net/yuan22900/article/details/50435499MATLAB算法VIP可见：MATLAB算法VIP可见：https://blog.csdn.net/iamlsj/article/details/38061929VIP载波相位 单差法 双查发 三叉发 https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default载波毕设https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html记得领完积分下东西 搜载波相位 （看过1—4）https://www.dssz.com/user/down.phpmatlab载波相位符号定时联合估计http://www.doc88.com/p-536463024180.htmlGPS载波相位平滑伪距https://download.csdn.net/download/songliang12/9563542纯下载无介绍 不靠谱http://www.pudn.com/Download/item/id/1774260.htmlGoogle 载波相位 测距 程序Google 载波相位观测值的组成部分貌似同一个毕设https://www.docin.com/p-2126879971.html武汉大学老师讲解https://www.bilibili.com/video/av39735562/武汉大学老师继续讲解https://www.bilibili.com/video/av39840214/?p=2GPS测距码测量合集https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3高精度GNSS技术如何解决IoT场景下的时空定位问题莫名其妙的网站还有一些零碎的源代码 DGPS简介DGPS:差分全球定位系统(Differential Global Position System). 目前 GPS 系统提供的定位精度是优于 10 米，而为得到更高的定位精度，我们通常采用差分 GPS 技术：将一台 GPS 接收机安置在基准站上进行观测。根据基准站已知精密坐标，计算出基准站到卫星的距离改正数，并由基准站实时将这一数据发送出去。用户接收机在进行 GPS 观测的同时，也接收到基准站发出的改正数，并对其定位结果进行改正，从而提高定位精度。 差分 GPS 分为两大类：伪距差分和载波相位差分差分的优点 （1）消除卫星钟钟差 （2）消除卫星星历误差 （3）消除电离层延迟 （4）消除对流层延迟 （5）将接收机钟钟差做为未知数求出以上措施将有效地提高GPS定位精度，一般而言，以坐标方式差分可达±5m的精度，以伪距方式可达±（1～3）m级精度，以载波相位方式可达±（1～3）cm的精度，高程精度为平面精度的2～3倍。 导航电文概述 导航电文划分根据速率和结构不同，导航电文分为 D1 导航电文和 D2 导航电文。D1导航电文速率为 50 bps，并调制有速率为 1 kbps 的二次编码，内容包含基本导航信息（本卫星基本导航信息、全部卫星历书信息、与其它系统时间同步信息）；D2 导航电文速率为 500 bps，内容包含基本导航信息和增强服务信息（北斗系统的差分及完好性信息和格网点电离层信息）。MEO/IGSO 卫星的 B1I 信号播发 D1 导航电文，GEO 卫星的 B1I 信号播发 D2 导航电文。 整周模糊度如果需要高精度定位，需要用到载波相位测量值，一般是N个载波波长加上相位差再加上其他误差（如电离层延迟、对流层延迟、时钟误差、多径效应误差等），这里的N就是整周模糊度，因为信号发射和接收存在时钟误差，所以是一个未知的模糊值。 LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。 整周模糊度的求解技术按精密相对定位的应用不同，整周模糊度求解算法大致可以分为两类：一类是，用于接收机可静止几小时甚至几天的静态定位；一类是包括实时动态RTK在内的非静态定位。 整周模糊度的求解不但要求移动中用户接收机在不经静态初始化的情况下完成整周模糊度的求解，而且还要求接收机能够容忍不时发生的对卫星信号的跟踪失锁。 不同的整周模糊度求解算法有着不同的求解思路。 1.利用伪距帮助估算整周模糊度的取整算法是最简单，最直接的一种。 2.其他的算法则集中在求解一个整数型最小二乘问题。基于求解整数型最小二乘问题的整周模糊度求解算法一般是将某个目标函数最小化。目前应用最多的是使模糊度残余平方和最小。 因为一类整周模糊度求解算法是依据某种准则通过搜索的方式来确定整周模糊度，因而在那些基于模糊度残余平方和最小原则的整数型最小二乘估计算法中，较为著名的是最小二乘模糊度搜索法（LSAST），LAMBDA算法等。 还有一类整周模糊度求解算法不需要搜索，他是利用不同频率测量值组合出不同波长的测量值，并逐级确定他们的整周模糊度。 整周模糊度的求解一般需要两步完成：首先是通过一定算法求解出整周模糊度，然后再验证所解得的整周模糊度值得正确性。模糊度残差值的大小通常被用来验证整周模糊度求解值得正误，而有的验证方法需要首先求解出最优和次优两个整周模糊度。 评价一个整周模糊度求解算法的好坏通常是依据他的计算量和准确度。同时，既然载波相位测量值中的整周模糊度能被求解出来，那么测量值中的周跳错误自然也就能被检测出来，并且还有可能被修复。 快速求解整周模糊度： O : 观测数据 N ： 星历数据 [发布源码功能目前已关闭。](http://www.biguo100.com/user/unew.asp) LAMBDA法LAMBDA法全称最小二乘模糊度降相关平差法（Least-square AMBiguity Decorrelation Adjustment）是由荷兰Delft大学的Teunissen教授提出的。该方法可缩小搜索的范围，加快搜索过程，是目前快速静态定位中最成功的一种模糊度搜索方法。 整数变换经典算法中在确定整数模糊度组合主要遇到问题为，由于观测时间短，初始解中的实数模糊度参数精度低，参数的相关性又很强。在LAMBDA中，不直接对实数模糊度参数进行搜索，而是先对初始解中的实数模糊度N^及其协因数阵QN^进行整数变换。N^及其协因数阵QN^进行整数变换。逆变换求得的参数NN就是我们最初要寻找的最佳的整数模糊度向量。书上讲到，通过对协因数阵Q−1N^进行LTDL分解进行整数变换，但是具体方法并未进行详细的叙述 LAMDA1This version (lambda1) is intended to be used mainly for research.% It has more options than the original code, such as output of% intermediate results, optional number of candidates to be returned% and so on. If you are not interested in these options, you can use% “lambda2” LAMDA2This is the other one of the main routines. Compared to routine lambda1.m, this routine is simplified. It is notpossible to generate intermediate output, and it is not possible to select the number of candidates to be computed(the routine will return 2 candidates).Usage: [afixed,sqnorm,Qahat,Z] = lambda2 (afloat,Qahat); afloat Input Original float ambiguitiesQahat Input Corresponding variance-covariance matrixafixed Output Array with estimated integer candidates, sorted accordingto the corresponding squared norms, best candidate firstsqnorm Output Corresponding squared normsQzhat Output Decorrelated variance-covariance matrixZ Output Z-transformation matrix]]></content>
+      <tags>
+        <tag>折腾ing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[未完成的]]></title>
+    <url>%2F%2Fblog%2F%E6%9C%AA%E5%AE%8C%E6%88%90%E7%9A%84.html</url>
+    <content type="text"><![CDATA[我好菜啊！ 本地搜索 七牛存储 音乐框大小 文章置顶 主题颜色 背景图片 邮箱链接 阅读电影前图片 menu中文 readmore]]></content>
+      <tags>
+        <tag>折腾ing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[日系推理小说合集[TXT]]]></title>
+    <url>%2F%2Fblog%2F%E6%97%A5%E7%B3%BB%E6%8E%A8%E7%90%86%E5%B0%8F%E8%AF%B4%E5%90%88%E9%9B%86-TXT.html</url>
+    <content type="text"><![CDATA[在网上那个找的80余本txt日本推理 http://www.1xx.fun/2241.html]]></content>
+      <tags>
+        <tag>折腾ing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[折原一]]></title>
+    <url>%2F%2Fblog%2F%E6%8A%98%E5%8E%9F%E4%B8%80.html</url>
+    <content type="text"><![CDATA[这两天看了三本叙诡的书 圣母详见 倒错的归结🌱出场人物： 山本安雄 在案件中打酱油 不如秀子 秀子 雪月花之母 作壁上观 修平 本家之子 欠债后悔悟 自杀未果 坊间却传出意外身亡 终自杀 和尚 当家之友 酒鬼 当家之友 杀花代后服毒 两次浮身堂实践见证人 保险调查员 怀疑修平未残疾诈骗保险金 雪代 写生 短发 现代女性 月代 写作 长发 大家闺秀 花代 弹琴 短发 活泼 现代女性 体型与雪代相似 🌱这应该是继 沉默的教室 后第二本阿折的书🌱看完之后 有种似曾相识的感觉（脑髓地狱——作中作中作加该死的手记）🌱这个作品不好多说 因为我看书评都没看懂:）🌱惊了! 作品中还没给出传说中和尚死因和花代死因 连雪代的都漏洞百出🌱以前看评论说阿折是为了叙诡而叙诡 悔不听老人言啊🌱山本安雄可真是盗作的天才啊 在 轮舞 里也盗 在这里还到月代小姐的（胖月代、瘦月代 傻傻分不清楚）🌎第一场事件 雪代为家族驱邪 在浮身堂中被箭刺死 身边酒鬼被敲晕 疑点：敲酒鬼的正是所谓的雪代（其实是花代 为了刺杀成功 将其击晕）雪代的袜子在地上 真相（不合理啊 要是旁观者动作快点怎么办 就没有换妆时间 而且 如果第一个进去的不是雪代怎么办） 在堂内的是花代伪装成雪代（雪代胆小 不敢在堂内） 花代假装出事大叫 雪代听到后第一的赶到 进门后被花代刺死 花代抓紧换装 袜子麻烦故散落在地（这里的叙诡还行 可行性大打折扣）🌎第二场事件 警察想重现第一次的现场（这不应该是侦探做的吗）花代和酒鬼又一次同处堂内 酒鬼溺死花代后 服毒自尽（溺死花代的竟然是酒鬼瓶中的海水 溺死后又灌入瓶中 该死的家政妇把真的酒和海水混了 你可真是个捣蛋鬼:） 故花代死法令人诧异 ）🌱话说 秀子说 三姐妹同时看上神经病山本 （上吊之岛上没有男的吗 我看分家之子武彦就比山本强） 倒错的轮舞🌱出场人物： 山本安雄 精神病作家 小强体质 盗作后被盗 其母又盗回 永岛一郎 利益驱使 盗作后又盗作 杀山本友人 白鸟翔 幻影女郎 作者 被盗后盗山本作 广美 身材娇小丰盈 没脑子 🌱看完归结后 立即看的 轮舞 对精神病山本甚表同情🌱在书店找本书 比划着抄 就想拿着去投奖 最可笑的是朋友还有后来捡到手稿的永岛一郎都不知道白鸟这个作家🌱话说 白鸟也很可怜啊 自己辛苦写的 幻影女郎 被盗作 反被山本成盗作 还被山本当做在站台推他的凶手 生活被山本搞得一团糟 小女友也被永岛qj后扼晕 白鸟后扼死女友（这点不同人的作品有顺序的差异 可能永岛扼死广美） 锒铛入狱 不过后面竟然盗取山本作 （你盗他的干嘛 不知道他是神经病吗）最终被山本之母盗回 over🌱永岛也是可怜虫、糊涂鬼 被小姐调侃后笔名叫做白鸟 竟然拿着拾来的（还是去年已经发表过的作品）投奖 还杀害山本之友、广美（杀不杀不确定）在白鸟公寓击晕山本（这该死的小强体质） 终被逮捕🌱最后我希望山本不要再盗作了 你看你写的 倒错的轮舞 除了名字借用的之外 不是很好吗 记得订报纸 不然应征第几届的奖都可能搞错:）]]></content>
+      <tags>
+        <tag>最爱推理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[免费SSR\各种hexo居中]]></title>
+    <url>%2F%2Fblog%2F%E5%85%8D%E8%B4%B9SSR.html</url>
+    <content type="text"><![CDATA[###免费SSR\各种hexo居中 更新不频繁更新频繁 居中 各种hexo居中 黑化saber图片小清新高清封面10张hexo美化合集包括人体时钟]]></content>
+      <tags>
+        <tag>折腾ing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[到校第三天/倒错的归结]]></title>
+    <url>%2F%2Fblog%2F%E5%88%B0%E6%A0%A1%E7%AC%AC%E4%B8%89%E5%A4%A9-%E5%80%92%E9%94%99%E7%9A%84%E5%BD%92%E7%BB%93.html</url>
+    <content type="text"><![CDATA[脱力一般 有点难受 控制不了自己的情绪一点不像成年人]]></content>
+      <tags>
+        <tag>手记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[圣母]]></title>
+    <url>%2F%2Fblog%2F%E5%9C%A3%E6%AF%8D.html</url>
+    <content type="text"><![CDATA[圣母(叙诡) 🌱我看书是真的快 一会就把秋季李向子的 圣母 看完了🌱阅读体验还不错 读到结局时就知道有叙诡了（事后诸葛亮 读到一半还以为一本普通社会派） 叙诡本是甲之蜜糖 乙之砒霜 🌱主要出场人物： 田中真琴 薰之生母 高二 剑道二段 杀人犯 保奈美 真琴之母、薰之养母（最后交代） 不孕者（很难怀上） 薰 可爱的小妮儿 蓼科秀树 曾为强奸犯 后被栽赃（最后交代曾经*真琴） 真琴男同学 （最后交代此人暗恋真琴） 谷崎 警察 知性、负责 🌱发现真的好多伏笔啊 记性不好的我都能列举一些如 保奈美知道身边有变态时 很胆小 但是最后宰了秀树 书中提到秀树有她女儿图片 我还以为是小薰 原来是 真琴 这样就说的通了 秀树有图片是因为拍过真琴果照 保奈美宰人是因为秀树狠狠地伤害过真琴 并未付出任何代价🌱还有 不知道写真琴高中同学是不是想让读者误以为是他帮忙善后 我当初就是这么想的（还沾沾自喜）亦有可能借他们之间的情愫说明 真琴不喜欢接触男生 与后文的悲惨经历呼应🌱还有 书中挂掉的小男生都是小坏蛋 这也正是真琴杀他们的原因 我原以为 杀他们是为了获得心里安宁 像吉良吉影 原来是 怕小薰受伤害🌱这本书我感觉 两个母亲的作为 我可以理解 也可以接受 一个 死过三个胎儿 另一个 经历过** 都是为了保护自己的女儿🌱 不知道第一具尸体后面性侵的痕迹是？ 哦哦 前文说有润滑液暗示套套（聪明的母亲总能有办法: ) ）🌱最后 书名取得好 恰是圣母 …我写这么认真也是为了我的新博客啊]]></content>
+      <tags>
+        <tag>最爱推理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[到校第二天]]></title>
+    <url>%2F%2Fblog%2F%E5%88%B0%E6%A0%A1%E7%AC%AC%E4%BA%8C%E5%A4%A9.html</url>
+    <content type="text"><![CDATA[今天是到校第二天 🌱到校后发现自己已经习惯学校的小床了 不晓得以后挣大钱了还能住惯酒店吗🌱今天看了《圣母》写的还可以 具体的写在别处吧 🌎自己在群里说的话越来越少 对他人事无兴趣🌱不晓得他们这么多话 得意时还会想起他人吗🌱哈哈 当初放手果然正确无比 麻木像一个冷血侦探🌱不知道 她当初问我夏令营干嘛 希望她可以实现自己愿望 迪士尼去了吗 豆芽开花了吗 🌎走时姐姐婆婆出了点毛病 不过我并不是很难受🌱还是希望早点好吧 姐就不用整天跑了 🌎昨天看了点 轮到你了 感觉公寓里没一个正常的人🌱小菜奈说的大象和长颈鹿是什么呢 很瘆人🌱感觉结局要崩]]></content>
+      <tags>
+        <tag>手记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[为你写诗 为你静止]]></title>
+    <url>%2F%2Fblog%2F%E4%B8%BA%E4%BD%A0%E5%86%99%E8%AF%97.html</url>
+    <content type="text"><![CDATA[为你失去理智 🌱现在看相亲节目 发现男女嘉宾越来越优秀了 吓人🌱网上在家里把fen给整了 累人儿🌱哎 一想到北斗就愁啊 不晓得朱老师咋给分🌱有点累 明天老姐生日 为了我把日期提前了真好]]></content>
+      <tags>
+        <tag>手记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[推理者]]></title>
+    <url>%2F%2Fblog%2F3.html</url>
+    <content type="text"><![CDATA[22]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[我好难啊]]></title>
+    <url>%2F%2Fblog%2F%E6%88%91%E5%A5%BD%E9%9A%BE%E5%95%8A%E2%80%94%E4%BD%86%E6%88%91%E7%9B%B8%E4%BF%A1%E7%88%B6%E6%AF%8D%E4%B8%8D%E4%BC%9A%E5%AB%8C%E5%BC%83%E6%88%91.html</url>
+    <content type="text"><![CDATA[各单位注意：负面情绪即将决堤！ 🌱我好难啊 要被郁闷淹没 damn北斗死活看不懂🌱好久没受到这种委屈了 没办法 自找的（哈哈）🌱不过 给我爸说他花费多的原因 他们也不管啊🌱感觉被孤立了 还是小孩子好啊 犯什么错都可以被人原谅🌱像我这种辣鸡 作甚都没成功过啊（尤其是北斗）🌱老妈说她的指甲出问题了 又不想去医院 那一刻我好难受啊🌱但是现在又不难受了 我是个畜生吧 明明瞬间还想拉着她去🌱下一秒忘却 不能爱自己 爱家人 我还有什么资格爱别人呢🌱以前觉得不爱别人就无法爱自己 现在觉得爱家人、爱自己更加重要🌱可是现在是不是晚了呢 父母已经五十多了 父母在不远游🌱可我现在四处流荡 前途未卜🌱现在已经不知道什么是真的什么是假的了🌱 刚才为父母难受 是我真的难受吗 还是为了安慰自己 给自己找借口 说自己曾经努力过🌱我对父母的关心是虚假的吗 坠入对自我深深的厌恶中 谁能告诉我什么是真的什么是假的 我该怎么做呢🌱亦或是 我把这些记下来 证明自己对她上心 来描绘我虚假的好孩子面具 好让自己不惭愧吗 让后来自己读到这里也被自己感动？（强烈的自我厌恶）🌱都说人无法互相理解 我连自己父母的心情都无法理解 别的家庭也是这样的吗🌱哈哈 都怪我不是富二代 否则与父母反目成仇 也不会有这样淤泥般丑陋的爱了（说的是 我对父母的爱 父母对我真的很好 恐怕像哪吒削骨还父、断发还母也无法报答了 我真没用 若是大一大二在努力一点 会不会现在不用上研究生 而供养父母呢）🌱虽说成绩不差 也曾以为自己花费大量时间自习感到骄傲 可我还是用空闲时间打游戏 虽说大学生打游戏是常态 但是每个人的家境不同 像我这一般偏下的家境 我已经没有娱乐的权力了吧 我看推理小说、诗和远方时 父母还在苟且🌱哈哈 有时想自己好累 忽觉无人劝慰 心头一紧 郁结于胸 因此在博客中记下 我陷入了自我怀疑、否定 未来难讲🌱这些真的是我想说的吗 还是为了写博客强说愁 哎 分不清了 不过这句是真的：我会努力让父母过上好日子 不在风吹日晒 最好不为生计发愁 嗯 下辈子我做您们父母 为您们呕心沥血 鞠躬尽瘁 九死不悔！]]></content>
+      <tags>
+        <tag>手记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[00]]></title>
+    <url>%2F%2Fblog%2F00.html</url>
+    <content type="text"><![CDATA[放过这个试图调用Googleapi地图 asghai [另一个主题](https://github.com/Mrcxt/gridea-theme-lemon) 又一个天气插件 (function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js")) tpwidget("init", { "flavor": "slim", "location": "WW0V9QP93VS8", "geolocation": "enabled", "language": "zh-chs", "unit": "c", "theme": "chameleon", "container": "tp-weather-widget", "bubble": "enabled", "alarmType": "badge", "color": "#00AFDB", "uid": "U2425E6098", "hash": "53ae1c1f0c18b4fa03958642dbe88ffe" }); tpwidget("show"); 通过rgb值设置背景颜色 来自网站的图片 音乐插件]]></content>
+      <tags>
+        <tag>折腾ing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[遍身罗绮者，不是养蚕人]]></title>
+    <url>%2F%2Fblog%2F%E7%9A%86%E8%8B%A5%E8%9C%89%E8%9D%A3%E6%97%A0%E6%89%80%E4%BE%9D.html</url>
+    <content type="text"><![CDATA[无用之事 重要之事 🌱真的难受啊 现在感觉在事业单位工作真好🌱难道我还要度过可有可无的研究生阶段 再在工作中糟蹋青春🌱 我读研究生只是为了工作要个更高的价钱🌱现在想想 公务员还挺轻松 哈哈 本来就想过吉良吉影植物般的生活🌱果然长大不是说的玩的 我从不认为工作能实现我的价值🌱只有在爱好中 得到内心的片刻安宁🌱不知道那些富二代还会考虑考试、工作这些琐事啊🌱长大就是被无用的事消耗殆尽 最重要的东西都会不见🌱只留下一小撮钱和可笑的地位🌱不晓得什么时候可以实现财务自由 在家的这几天也因琐事一本推理没读完🌱现在正为GPS项目实习焦头烂额🌱对现在的我来说 只有读小说才感觉有意义🌱哈哈 我家要是世世代代经营书店就好了🌱福楼拜和契科夫的小说还没读过多少 岛田的也没时间读🌱难以想象我以后工作还会有时间读吗 还是被柴米油盐磨光棱角 天气插件 WIDGET = {FID: 'KbzQ7JDMhF'} 又一个天气插件 (function(T,h,i,n,k,P,a,g,e){g=function(){P=h.createElement(i);a=h.getElementsByTagName(i)[0];P.src=k;P.charset="utf-8";P.async=1;a.parentNode.insertBefore(P,a)};T["ThinkPageWeatherWidgetObject"]=n;T[n]||(T[n]=function(){(T[n].q=T[n].q||[]).push(arguments)});T[n].l=+new Date();if(T.attachEvent){T.attachEvent("onload",g)}else{T.addEventListener("load",g,false)}}(window,document,"script","tpwidget","//widget.seniverse.com/widget/chameleon.js")) tpwidget("init", { "flavor": "slim", "location": "WW0V9QP93VS8", "geolocation": "enabled", "language": "zh-chs", "unit": "c", "theme": "chameleon", "container": "tp-weather-widget", "bubble": "enabled", "alarmType": "badge", "color": "#00AFDB", "uid": "U2425E6098", "hash": "53ae1c1f0c18b4fa03958642dbe88ffe" }); tpwidget("show");]]></content>
+      <tags>
+        <tag>手记</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[北斗]]></title>
+    <url>%2F%2Fblog%2F%E5%8C%97%E6%96%97%E5%AE%9E%E4%B9%A0ing.html</url>
+    <content type="text"><![CDATA[RIENX格式（上）：2.10版本内容解析和说明 RIENX格式（上）：2.10版本内容解析和说明MATLAB算法VIP可见：MATLAB算法VIP可见：VIP载波相位 单差法 双查发 三叉发载波毕设记得领完积分下东西 搜载波相位 （看过1—4）matlab载波相位符号定时联合估计GPS载波相位平滑伪距纯下载无介绍 不靠谱Google 载波相位 测距 程序Google 载波相位观测值的组成部分貌似同一个毕设武汉大学老师讲解武汉大学老师继续讲解GPS测距码测量合集]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[坏人们]]></title>
+    <url>%2F%2Fblog%2F%E5%9D%8F%E4%BA%BA%E4%BB%AC.html</url>
+    <content type="text"><![CDATA[工部老师 前几天看了 宫部美雪的坏人们 发现自己的直觉还行 一眼瞧出夏建池是一个坏律师了 哪有整天把优质资源无偿奉献给朋友 事后还替他擦屁股的 话说他在医生杀人之前就已经和慎村有一腿了吧 果然慎村是个有脑汁的女人 不过没具体交代他们什么时候狼狈为奸的 可恶啊 医生不是说没人喜欢呆板的律师吗 直到自己医院的地皮没了 再加上2000万存款变为200万 才发觉上了套 或许我潜意识里就喜欢强势的女人吧 哈哈 是喜欢被摆布吗 被玩弄于鼓掌之中 虽然四岛丰很强势 但就是她把医生引诱到犯罪路上的 食髓知味 话说医生再次返回现场是真的不明智 （就怪医生太坏了 把牛骨头穿上袜子 还漏半截在土的外面 当警官说道 ：你不是去散心吗 为何到偏远的树林来回三次 ） 今日诗词 jinrishici.load(function(result) { var sentence = document.querySelector("#poem_sentence") var info = document.querySelector("#poem_info") sentence.innerHTML = result.data.content info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》' });]]></content>
+      <tags>
+        <tag>最爱推理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[为了N]]></title>
+    <url>%2F%2Fblog%2F%E4%B8%BA%E4%BA%86N.html</url>
+    <content type="text"><![CDATA[今天上午看完了为了N 实在喜欢 守护这一类的作品是凑佳苗写的 估计我以后也不会去读原著毕竟改编已经无可挑剔了 拙见： 我觉得成濑和西美是恋人 因为感觉两人心意相通哈哈 一件误会还让西美以为共有犯罪 （她说是极致的爱）而天空花园 成濑也相当于报恩吧而安藤和她应该是朋友安藤是她的光 向上看的光不能有杂质所以她从一开始就没有告诉他在最后还是保护他 感觉到了纯爱哈哈 好像主题曲 中的： it is so silly 还记得西美对成濑说：你做什么都没关系的 今日诗词 jinrishici.load(function(result) { var sentence = document.querySelector("#poem_sentence") var info = document.querySelector("#poem_info") sentence.innerHTML = result.data.content info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》' }); 来一张masa与荣仓奈奈的背影]]></content>
+      <tags>
+        <tag>最爱推理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[回家第二天]]></title>
+    <url>%2F%2Fblog%2Fhui-jia-di-er-tian.html</url>
+    <content type="text"><![CDATA[上午多云 下午阵雨 🌱近来十分胆小，怎么可以给她安全感呢🌱老爸在我回家之前去工地了 好想见他🌱在父母面前自己依旧是孩子🌱看了基本关于阿兹海默的推理🌱不知道如果这个船长驾驶我周围的人我会如何做🌱今天尝试用gridea搭建了自己的第一个博客 如果有时间试试WordPress🌱不知道我的高中同学过得怎么样 寻找的东西找到了吗🌱哈哈 想到小王子里关于人们坐火车的评论大意是small king（也是little prince）问为何人们做这么快的交通工具，他们很急吗 他们怎么这么快就回来了 小王子认为大人们急急忙忙 却毫无所获 “你好。”小王子说。“你好。”扳道工说。“你在这儿做什么？”小王子问。“我在分送旅客，一千人一拨。”扳道工说，“我发送运载旅客的列车，一会儿往右，一会儿往左。”说着，一列灯火通明的快车，像打雷似的轰鸣着驶过，震得扳道房直打颤。“他们好匆忙，”小王子说，“他们去找什么呢？” “开火车的人自己也不知道。”扳道工说。 说话间，又一列灯火通明的快车，朝相反的方向轰鸣而去。“他们已经回来了？”小王子问。“不是刚才的那列，”扳道工说，“这是对开列车。” “他们对原来的地方不满意吗？” “人们对自己的地方从来不会满意。”扳道工说。 第三列灯火通明的快车轰鸣着驶过。“他们是去追赶第一批旅客吗？”小王子问。“他们没追赶谁，”扳道工说，“他们在里面睡觉，或者打哈欠。 只有孩子把鼻子贴在窗上看外面。” “只有孩子知道自己在找什么，”小王子说，“他们在一个布娃娃身上花了好些时间，她对他们来说就成了很重要的东西。要是有人夺走他们的布娃娃，他们会哭的……” “他们真幸运。”扳道工说。 是啊孩子真幸运 🌱故乡虽没有江南的富庶风光🌱也没有海边城市的波粼闪闪🌱但是我的记忆扎根于此🌱既是无所有之乡🌱绿意盎然亦是埋骨之地 jinrishici.load(function(result) { var sentence = document.querySelector("#poem_sentence") var info = document.querySelector("#poem_info") sentence.innerHTML = result.data.content info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》' }); 今日份配图：我的白公主]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[先试试啊]]></title>
+    <url>%2F%2Fblog%2F%E6%97%A0%E4%BB%96.html</url>
+    <content type="text"><![CDATA[Markdown 语法简单教程 北村熏的空中飞马这是哔哩哔哩矮个人如何 嘎嘎如图尝试调用今日诗词api（图形）尝试调用今日诗词api（文字）正在加载今日诗词…. 今日诗词api高级用法 jinrishici.load(function(result) { var sentence = document.querySelector("#poem_sentence") var info = document.querySelector("#poem_info") sentence.innerHTML = result.data.content info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》' });]]></content>
+      <tags>
+        <tag>折腾ing</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[关于]]></title>
+    <url>%2F%2Fblog%2Fabout.html</url>
+    <content type="text"><![CDATA[这是关于的页面，可以在这里向世界介绍你！]]></content>
+  </entry>
 </search>
