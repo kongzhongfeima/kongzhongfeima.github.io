@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2019-09-15T07:46:46.323Z</updated>
+  <updated>2019-09-16T10:30:51.983Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>百度域名+阿里服务器</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E7%99%BE%E5%BA%A6%E5%9F%9F%E5%90%8D-%E9%98%BF%E9%87%8C%E6%9C%8D%E5%8A%A1%E5%99%A8.html"/>
+    <id>http://kongzhongfeima.github.io//blog/百度域名-阿里服务器.html</id>
+    <published>2019-09-16T18:30:28.000Z</published>
+    <updated>2019-09-16T10:30:51.983Z</updated>
+    
+    <content type="html"><![CDATA[<p>检验域名解析是否成功（国内解析较慢 几个小时）ping <a href="http://www.xuewangzhan.net" target="_blank" rel="noopener">www.xuewangzhan.net</a> -t<br>域名可以申请到免费的，常见的是.tk域名，申请地址：<a href="http://www.dot.tk/" target="_blank" rel="noopener">http://www.dot.tk/</a><br>最后一步，把你刚申请的域名映射到你的网站。举例：在我的github上，新建一个CNAME文件，其中填写我的域名。<br><a href="https://console.bce.baidu.com/dns/#/dns/domain/list~zoneName=kongzhongfeima.top" target="_blank" rel="noopener">百度云控制台</a><br><a href="https://swas.console.aliyun.com/?spm=5176.12901015.0.i12901015.42e6525cLoxHCZ#/servers" target="_blank" rel="noopener">阿里云控制台</a><br>   <a href="https://www.jianshu.com/p/408aaf2c121e" target="_blank" rel="noopener">通过 freenom 申请免费域名</a></p><hr><p>尝试调用今日诗词api（图形）<br><img src="https://v2.jinrishici.com/one.svg?font-size=20&spacing=2&color=brown" alt="今日诗词"><br>尝试调用今日诗词api（文字）<br><span id="jinrishici-sentence">正在加载今日诗词….</span></p><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><p>今日诗词api高级用法</p><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><div id="poem_sentence"></div><div id="poem_info"></div><script type="text/javascript">  jinrishici.load(function(result) {    var sentence = document.querySelector("#poem_sentence")    var info = document.querySelector("#poem_info")    sentence.innerHTML = result.data.content    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'  });</script>​---​<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="450" src="https://music.163.com/outchain/player?type=0&id=2423545044&auto=1&height=430"></iframe><script type="text/javascript" src="https://api.xygeng.cn/dailywd/api/getjs.php"></script><h2 id="​"><a href="#​" class="headerlink" title="​"></a>​</h2><img src="https://api.xygeng.cn/bing/1920.php" alt="Bing每日图片超高清">]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;检验域名解析是否成功（国内解析较慢 几个小时）ping &lt;a href=&quot;http://www.xuewangzhan.net&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;www.xuewangzhan.net&lt;/a&gt; -t&lt;br&gt;域名可以申请到免费的，
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>贪半晌清欢 不过是大梦一场</title>
@@ -386,26 +407,6 @@
     <summary type="html">
     
       &lt;p&gt;工部老师&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="最爱推理" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%80%E7%88%B1%E6%8E%A8%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>为了N</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E4%B8%BA%E4%BA%86N.html"/>
-    <id>http://kongzhongfeima.github.io//blog/为了N.html</id>
-    <published>2019-08-10T12:49:59.000Z</published>
-    <updated>2019-08-13T07:07:23.072Z</updated>
-    
-    <content type="html"><![CDATA[<p>今天上午看完了为了N</p><a id="more"></a><p>实在喜欢 守护这一类的作品<br>是凑佳苗写的  估计我以后也不会去读原著<br>毕竟改编已经无可挑剔了</p><p>拙见： 我觉得成濑和西美是恋人  因为感觉两人心意相通<br>哈哈  一件误会还让西美以为共有犯罪  （她说是极致的爱）<br>而天空花园  成濑也相当于报恩吧<br>而安藤和她应该是朋友<br>安藤是她的光  向上看的光不能有杂质<br>所以她从一开始就没有告诉他<br>在最后还是保护他</p><p>感觉到了纯爱<br>哈哈 好像主题曲 中的：  it is so silly</p><p>还记得西美对成濑说：你做什么都没关系的</p><h2 id="今日诗词"><a href="#今日诗词" class="headerlink" title="今日诗词"></a>今日诗词</h2><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><div id="poem_sentence"></div><div id="poem_info"></div><script type="text/javascript">  jinrishici.load(function(result) {    var sentence = document.querySelector("#poem_sentence")    var info = document.querySelector("#poem_info")    sentence.innerHTML = result.data.content    info.innerHTML = '【' + result.data.origin.dynasty + '】' + result.data.origin.author + '《' + result.data.origin.title + '》'  });</script><h4 id="来一张masa与荣仓奈奈的背影"><a href="#来一张masa与荣仓奈奈的背影" class="headerlink" title="来一张masa与荣仓奈奈的背影"></a>来一张masa与荣仓奈奈的背影</h4><p><img src="https://kongzhongfeima.github.io/post-images/1565412880858.jpg" alt></p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;今天上午看完了为了N&lt;/p&gt;
     
     </summary>
     
