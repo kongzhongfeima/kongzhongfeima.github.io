@@ -1,0 +1,30 @@
+language: node_js
+node_js: stable
+branches:
+  only:
+  - blog-source
+cache:
+  directories:
+  - node_modules
+before_install:
+- openssl aes-256-cbc -K $encrypted_231b2fcba463_key -iv $encrypted_231b2fcba463_iv
+  -in id_rsa.enc -out ~\/.sshs/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_a0b7f0848317_key -iv $encrypted_a0b7f0848317_iv
+  -in ./.travis/id_rsa.enc -out ~/.ssh/id_rsa -d
+- chmod 600 ~/.ssh/id_rsa
+- eval $(ssh-agent)
+- ssh-add ~/.ssh/id_rsa
+- cp .travis/ssh_config ~/.ssh/config
+- npm install -g hexo-cli
+#- git clone -b mod https://github.com/quentin-chen/hexo-theme-even.git themes/even
+- git clone -b mod https://github.com/kongzhongfeima/material_correct.git themes/material-x
+
+install:
+- npm install
+script:
+- hexo generate
+after_success:
+- git config --user.name "kongzhongfeima"
+- git config --user.email "2929121301@qq.com"
+- sed -i'' "/^ *repo/s~github\.com~${githubToken}@github.com~" _config.yml
+- hexo deploy
