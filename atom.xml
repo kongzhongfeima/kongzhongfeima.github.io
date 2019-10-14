@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2019-10-13T10:56:31.698Z</updated>
+  <updated>2019-10-14T12:12:54.037Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>加入又拍云联盟</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E5%8A%A0%E5%85%A5%E5%8F%88%E6%8B%8D%E4%BA%91%E8%81%94%E7%9B%9F.html"/>
+    <id>http://kongzhongfeima.github.io//blog/加入又拍云联盟.html</id>
+    <published>2019-10-14T19:52:49.000Z</published>
+    <updated>2019-10-14T12:12:54.037Z</updated>
+    
+    <content type="html"><![CDATA[<p>🌱  看到Z4A的备案好像是14-17年的 果断将图片传到又拍云里</p><a id="more"></a><br><fancybox><img src="https://www.z4a.net/images/2019/10/14/youpaiyununion.png"></fancybox><br><p>🌱  每月免费15GB的cdn和10GB的存储空间(它不香吗)<br>🌱  说来也巧 这几天 Github+PicGo 图片老是传不上去<br>🌱  不知道怎么回事 在Github分支FigureBed上看 最新传的图片是14天前的<br>🌱  至此 我图片主要存在 <strong><em>又拍云、QQ邮箱中转站、Z4A</em></strong>（不知稳不稳）<br>🌱  刚才在折腾把 <strong><em>hosted by 又拍云</em></strong> 和图标显示在footer<br>🌱  在网上搜的主要是 <strong><em>nest</em></strong> 主题 （果然是最广为流传的主题） 修改 <strong><em>footer.swig</em></strong><br>🌱  但是我的主题是 <strong><em>material-x</em></strong> 我修改的是 <strong><em>footer.ejs</em></strong><br>🌱  折腾了十几分钟 主要是不知道ejs代码如何写<br>🌱  最后索性用html 竟然解决了</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--以下为又拍云图标及链接的插入--&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">  &lt;p&gt;Hosted by</span><br><span class="line">  &lt;a href=&quot;https://www.upyun.com/?utm_source=lianmeng&amp;amp;utm_medium=referral&quot; style=&quot;border:0&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;https://www.z4a.net/images/2019/10/14/_logo2.png&quot; style=&quot;width: 60px; display: inline; vertical-align: middle;&quot;&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;!--以上为又拍云图标及链接的插入--&gt;</span><br></pre></td></tr></table></figure><p>🌱  刚才看到网易云存储有50G的免费存储空间 有时间了解一下</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;🌱  看到Z4A的备案好像是14-17年的 果断将图片传到又拍云里&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Station" scheme="http://kongzhongfeima.github.io/categories/Station/"/>
+    
+      <category term="hexo" scheme="http://kongzhongfeima.github.io/categories/Station/hexo/"/>
+    
+    
+      <category term="折腾ing" scheme="http://kongzhongfeima.github.io/tags/%E6%8A%98%E8%85%BEing/"/>
+    
+  </entry>
   
   <entry>
     <title>“好邻居”</title>
@@ -403,26 +427,6 @@
     <summary type="html">
     
       &lt;center&gt;&lt;blockquote&gt;能梦到你 是我的过人之处&lt;/blockquote&gt;&lt;/center&gt;
-    
-    </summary>
-    
-    
-      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>满目破碎</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E6%BB%A1%E7%9B%AE%E7%A0%B4%E7%A2%8E.html"/>
-    <id>http://kongzhongfeima.github.io//blog/满目破碎.html</id>
-    <published>2019-09-02T22:28:31.000Z</published>
-    <updated>2019-09-02T15:11:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>十万蝼蚁不敌一巨人</p><a id="more"></a><p>🌱人因为误解而相识、因了解而分开<br>🌱</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;十万蝼蚁不敌一巨人&lt;/p&gt;
     
     </summary>
     
