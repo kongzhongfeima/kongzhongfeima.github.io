@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2019-10-11T02:42:11.645Z</updated>
+  <updated>2019-10-13T10:56:31.698Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>“好邻居”</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E2%80%9C%E5%A5%BD%E9%82%BB%E5%B1%85%E2%80%9D.html"/>
+    <id>http://kongzhongfeima.github.io//blog/“好邻居”.html</id>
+    <published>2019-10-13T16:41:08.000Z</published>
+    <updated>2019-10-13T10:56:31.698Z</updated>
+    
+    <content type="html"><![CDATA[<p>今天看了电影</p><a id="more"></a><p>这个电影是在垃圾新闻聚集处：ZAKER里看到了<br>电影开头弹幕说很烧脑<br>最后主角将车开进FBI简直是点睛之笔<br>伏笔一：主角追“炸弹车” 坏蛋故意让孩子露头<br>使主角爸爸奋不顾身地追逐“炸弹车”<br>伏笔二：主角将“好邻居”击倒后 匆匆开车又去撵“炸弹车”<br>“好邻居”<br>伏笔三：<br>细思极恐：结尾处 “好邻居”中的妻子问我们的新地方</p><hr><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;今天看了电影&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="Movie" scheme="http://kongzhongfeima.github.io/tags/Movie/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试fancybox</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E6%B5%8B%E8%AF%95fancybox.html"/>
+    <id>http://kongzhongfeima.github.io//blog/测试fancybox.html</id>
+    <published>2019-10-13T16:41:06.000Z</published>
+    <updated>2019-10-13T08:41:06.648Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>六艾司好帅</title>
@@ -59,9 +93,9 @@
     <link href="http://kongzhongfeima.github.io//blog/%E7%B3%9F%E5%BF%83%E7%9A%84%E8%A2%AB%E5%8A%AB%E6%8C%81.html"/>
     <id>http://kongzhongfeima.github.io//blog/糟心的被劫持.html</id>
     <published>2019-10-10T09:48:22.000Z</published>
-    <updated>2019-10-10T01:59:14.431Z</updated>
+    <updated>2019-10-12T07:13:06.047Z</updated>
     
-    <content type="html"><![CDATA[<p>🌱 这两天开始 网站被莫名其妙的劫持了</p><a id="more"></a><p>🌱 分析了一下原因：应该是我数据库权限给的太多 、 域名DNS解析太不安全<br>🌱 刚刚把写权限全关了 DNS解析也删了<br>🌱 不知道过几天可不可以好<br>🌱 网站劫持真的是像强奸犯一样 一时的爽快 给被害人留下无尽的阴影和一生的痛苦<br>🌱 主要是百度的方法太繁琐了 不想搞了<br>🌱 我还是继续玩我的hexo吧<br>🌱 没有虚拟主机真是方便<br>🌱 不知道三丰云服务器安全吗<br>🌱 typecho 数据库一次没保存过 丢了就丢了吧</p>]]></content>
+    <content type="html"><![CDATA[<p>🌱 这两天开始 网站被莫名其妙的劫持了</p><a id="more"></a><p>🌱 分析了一下原因：应该是我数据库权限给的太多 、 域名DNS解析太不安全<br>🌱 刚刚把写权限全关了 DNS解析也删了<br>🌱 不知道过几天可不可以好<br>🌱 网站劫持真的是像强奸犯一样 一时的爽快 给被害人留下无尽的阴影和一生的痛苦<br>🌱 主要是百度的方法太繁琐了 不想搞了<br>🌱 我还是继续玩我的hexo吧<br>🌱 没有虚拟主机真是方便<br>🌱 不知道三丰云服务器安全吗<br>🌱 typecho 数据库一次没保存过 丢了就丢了吧<br>🌱 前天晚上给cloudflare客服发消息说自己被劫持了<br>🌱 没想到一个中国区的负责人还给我发邮件希望改天细聊<br>🌱 我回复不用费心 他跟我解释 DNS受到污染<br>🌱 我觉得DNS被污染也是你们的过吧 可能是动态刷新不及时？<br>🌱 （咱啥也不知道  也不敢问）<br>🌱 虽然感觉DNS解析服务不咋样（因为我用的是免费的）<br>🌱 但是处理得很及时<br>🌱 （免费域名真的坑  不仅注册耗费大量时间 后期管理也十分闹心）<br>🌱 万万想不到的是 freenom控制台还明明白白写着 <strong><em>fraud</em></strong>  我真是 &amp;&amp;￥&amp;&amp;￥&amp;￥&amp;￥&amp;<br><br></p><div align="center"><img alt=" 像梦一场 " src="https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/000.png"></div><br><p>🌱 不要脸也该有个底线吧 我辛苦一下午5搞得小站  DNS就这么被拐跑了<br>🌱 呜呜呜   被拐跑了 😭 还是被不良网站拐跑了<br>🌱 我的域名 既不优秀 访问量基本为零  还要这么针对我  丧心病狂！<br>🌱 我在百度注册的一块钱的域名解析的挺好 记录改之后立马生效<br>🌱 改天买个5年100的  <strong><em>.fun</em></strong> 后缀的域名（人民币玩家的骄傲！😎）<br><br></p><div align="center"><img class="emoji aru" src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/img/aru/151.png"></div><br>🌱 免费的就是最贵的！]]></content>
     
     <summary type="html">
     
@@ -81,9 +115,9 @@
     <link href="http://kongzhongfeima.github.io//blog/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90.html"/>
     <id>http://kongzhongfeima.github.io//blog/生日快乐.html</id>
     <published>2019-10-08T21:50:09.000Z</published>
-    <updated>2019-10-10T02:25:07.354Z</updated>
+    <updated>2019-10-12T07:07:58.810Z</updated>
     
-    <content type="html"><![CDATA[<p><b><center><font color="#FF7256">ありがとう</font></center></b><br></p><a id="more"></a><center><blockquote>You can be Alice     <br>I will be mad hatter</blockquote></center><br><div align="center"><img src="https://www.z4a.net/images/2019/10/08/Alice.png"></div><br><br><p>🌱  哼 你就这么喜欢二哈吗 QQ头像和表情包都是二哈<br>🌱  哈哈 感觉自己好无情 对待旧人的生日  只是QQ礼物敷衍一下<br>🌱  我发现我好惨啊 把小号的头像换成你的 整天用小号给自己点赞<br>🌱  看到和你一样的头像 尽管自欺欺人 心还会颤一下<br>🌱  像我这种开口闭口主语都是自己的 没救了 没有人会对你真正感兴趣的<br>🌱  各扫门前雪 人们只听他们喜欢听的<br>🌱  净是他人事<br></p><br><div align="center"><img alt=" 像梦一场 " src="https://www.z4a.net/images/2019/10/08/00.jpg" width="30%"></div><br><hr><p>🌱  就在几分钟前 看到你朋友圈的截图<br>🌱  看到520的红包 差点哇的哭出来 定睛一看 是老妈的<br>🌱  可是你在最后提到的袁某是谁呢（可恶）<br>🌱  让我死心也罢<br>🌱  可不可以删掉最后一句话啊<br>🌱  为什么不把我屏蔽掉呢（可恶！）<br>🌱  计划就这样被无征兆的打断</p><center><blockquote>我们之间留了太多空白格分开或许是选择但它也可能是我们的缘分</blockquote></center>🌱  <center><blockquote>眼看他起高楼 眼看他宴宾客</blockquote></center>]]></content>
+    <content type="html"><![CDATA[<p><b><center><font color="#FF7256">ありがとう</font></center></b><br></p><a id="more"></a><center><blockquote>You can be Alice     <br>I will be mad hatter</blockquote></center><br><div align="center"><img src="https://www.z4a.net/images/2019/10/08/Alice.png"></div><br><br><p>🌱  哼 你就这么喜欢二哈吗 QQ头像和表情包都是二哈<br>🌱  哈哈 感觉自己好无情 对待旧人的生日  只是QQ礼物敷衍一下<br>🌱  我发现我好惨啊 把小号的头像换成你的 整天用小号给自己点赞<br>🌱  看到和你一样的头像 尽管自欺欺人 心还会颤一下<br>🌱  像我这种开口闭口主语都是自己的 没救了 没有人会对你真正感兴趣的<br>🌱  各扫门前雪 人们只听他们喜欢听的<br>🌱  净是他人事<br></p><br><div align="center"><img alt=" 像梦一场 " src="https://www.z4a.net/images/2019/10/08/00.jpg" width="30%"></div><br><hr><p>🌱  就在几分钟前 看到你朋友圈的截图<br>🌱  看到520的红包 差点哇的哭出来 定睛一看 是老妈的<br>🌱  可是你在最后提到的袁某是谁呢（可恶）<br>🌱  让我死心也罢<br>🌱  可不可以删掉最后一句话啊<br>🌱  为什么不把我屏蔽掉呢（可恶！）<br>🌱  计划就这样被无征兆的打断</p><center><blockquote>我们之间留了太多空白格分开或许是选择但它也可能是我们的缘分</blockquote></center>🌱  <center><blockquote>眼看他起高楼 眼看他宴宾客</blockquote></center>记得摘抄村上的句子https://www.qzread.com/a/html/20180214/1808.html<br><br><center> <blockquote>我想说的另外一件事，就是会尽我所能来保护你。如果有必须打到的对手，不管他是谁，我都会上前把他打倒。这和输赢无关，我不会弃你于不顾--村上春树《1Q84》</blockquote><center></center></center>]]></content>
     
     <summary type="html">
     
@@ -389,46 +423,6 @@
     <summary type="html">
     
       &lt;p&gt;十万蝼蚁不敌一巨人&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>紫丁香庄园/黑桃A的诅咒</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E7%B4%AB%E4%B8%81%E9%A6%99%E5%BA%84%E5%9B%AD-%E9%BB%91%E6%A1%83A%E7%9A%84%E8%AF%85%E5%92%92.html"/>
-    <id>http://kongzhongfeima.github.io//blog/紫丁香庄园-黑桃A的诅咒.html</id>
-    <published>2019-09-02T15:20:30.000Z</published>
-    <updated>2019-09-06T07:47:41.283Z</updated>
-    
-    <content type="html"><![CDATA[<p>🌱刚刚读完了 <strong><em>黑色皮箱、黑色天鹅、紫丁香庄园</em></strong> 三部代表作之一</p><a id="more"></a><p>🌱跨时一个暑假读完这本书，不是因为不够推理精彩<br>🌱而是句子太直白了，整本书就题目 <strong><em>紫丁香庄园</em></strong> 有文采<br>🌱不知道鲇川哲也老师遇见 <strong><em>连城三纪彦</em></strong> 会不会自惭形秽呢</p><hr><h4 id="🌱出场人物："><a href="#🌱出场人物：" class="headerlink" title="🌱出场人物："></a>🌱出场人物：</h4><ul><li>烧炭男 第一具尸体 悬崖下 身披 尼 的雨衣</li><li>尼黎莉丝 小胖子 恶毒 不贞 自恋 又怕不贞被 牧 发现</li><li>牧数人 绅士 最终活下的两个人之一 尼 的未婚夫</li><li>松平沙缕女 恶毒 知 尼 不贞</li><li>橘 细心 目睹 尼 不贞  宣布为 松平 未婚夫</li><li>日高铁子 中途退场到东京买涂料 实则买相同扑克牌 喜欢 橘 自讨没趣 后期喜欢安孙子 为其杀人</li><li>行武 自负、爱吵架  酗酒导致色盲 被 尼、松平 嘲笑（蓝色夕阳）</li><li>安孙子 要强、爱吵架 小矮子 前期因 松平 喜欢 橘 难受 意外遭到同病相怜之人：日高 喜欢</li><li>花子 仆人 问 尼 一串数字后 最终被杀害</li><li>两个无能警察 整天又焦急又气愤又惭愧 除了记一些杂碎 没什么用 毕竟第一起案件时他俩就在场 可比 <strong><em>草zhi、津川</em></strong> 差远了</li><li>三条 傲慢 有推理才能 公布案件前被 尼 吹箭毒死（我就说这么不成熟的人怎么可能解决案件）</li><li>星影龙三 虽然作者想把他打造为冷面侦探 由于文字功底匮乏 一点不酷就是了 倒数几十页才出场 一群学生中死得就剩两个了（莫名想笑）真的蠢 学生们非要在当地举办哀悼 沦为鱼肉</li></ul><h4 id="🌱扑克牌不是用来打的-是这样用的"><a href="#🌱扑克牌不是用来打的-是这样用的" class="headerlink" title="🌱扑克牌不是用来打的 是这样用的"></a>🌱扑克牌不是用来打的 是这样用的</h4><ol><li>最终侦探告知 烧炭男 意外死亡 雨衣是 尼 之后披的 身边有第一张牌 尼 利用路人甲的死亡 加入扑克牌的元素 使众人意识到可能是连环杀人案 披上雨衣又可以嫁祸给 橘 或 松平 此招妙极</li><li>橘 钓鱼时先被击晕 后铅笔深入脑髓 死时 已钓十三条鱼 万平分析新手起码三个小时 但是十条鱼腐烂严重 动机 ：知 尼 不贞</li><li>松平 被下砒霜 受 尼 照顾 同时除了 尼 之外的同学找钓鱼的 橘 此时 尼 有牢不可破的不在场证明 动机 ：知 尼 不贞<br>这里巧妙之处是颠倒二人死亡时间顺序 橘 在 松平 中毒之前已死 故 尼 借砒霜杀 松平 同时为自己制造不在场证明（① 橘身旁黑桃2 松平身旁黑桃A；② 橘只钓了三条鱼 另外十条是尼 去除冰箱的鱼放入的 故极易腐烂 ③ 松平 中毒时 尼 故意掉出与杀害 橘 尺寸相同的笔 室内同时只有色盲行武 但此时另一只笔已经插入橘脑壳 行武在 橘被杀之后以为中毒时地上的笔是凶器，其实只是大小相同罢了 ），此三点 逻辑极为缜密 至此 接触过松平可可杯子的安孙子 被警察极度怀疑</li><li>行武 被火钳敲毙 动机：你是色盲的事可不能让别人知道</li><li>花子 被毛巾勒毙</li><li>三条 被吹箭毒死 动机：我是凶手的事可不能让别人知道 尼 挖乌头被 日高 目睹</li></ol><hr><p>🌱至此 凶手为 尼 她只想杀知道自己 不贞 的 橘和松平 为圆一个谎撒下成千上万的谎</p><ol start="7"><li>尼被溺死 挂在阁楼 身旁有张黑桃7动机：我看见你毒死三条 还想嫁祸给我喜欢的安孙子 没门！死因：在阁楼用脸盆溺死 尼 然后在浴室伪装成事发现场 女生无法将140的 尼 抬上阁楼 可嫁祸给其未婚夫牧<br>🌱至此 幸存者：嫌疑人安孙子、日高、绅士牧<br>🌱当当当 侦探来了 模仿日高又买一张牌 由于目前还有两副牌，一副是 尼 的7-K；一副是日高在东京买的 没有黑桃7 但是 尼 已死 牌无法找到 日高将自己的牌让警察发现<br>🌱如果 尼 的牌被发现就糟了 会被认为顺风车杀人 侦探将信寄给 尼 写道壁炉 信后附着黑桃7 日高以为这是 尼 的牌 因自己的7已经用掉 故在壁炉寻找 尼 的牌时坠入陷阱 over！<br>🌱其实 日高挺拼的 如果把 尼 布置为自杀 身旁不放牌 警察搜房子只会找到 尼的牌（话说尼偷自己的牌 意料之外） 可得出 尼 杀人怕败露自杀的结论<br>🌱放牌后可嫁祸给这一连串案件的凶手 不过幸存者中嫌疑犯只有两个啊（安孙子在警察监视范围内） 二选一 这种把自己置于风险之中也要把对方未婚夫拉下水 值得我们学习！</li></ol>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;🌱刚刚读完了 &lt;strong&gt;&lt;em&gt;黑色皮箱、黑色天鹅、紫丁香庄园&lt;/em&gt;&lt;/strong&gt; 三部代表作之一&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="最爱推理" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%80%E7%88%B1%E6%8E%A8%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>死结\倒错</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E6%AD%BB%E7%BB%93%E3%80%81%E5%80%92%E9%94%99.html"/>
-    <id>http://kongzhongfeima.github.io//blog/死结、倒错.html</id>
-    <published>2019-08-31T15:54:36.000Z</published>
-    <updated>2019-09-06T07:47:34.887Z</updated>
-    
-    <content type="html"><![CDATA[<p>🌱昨天去项目实习答辩有感</p><a id="more"></a><p>🌱</p><hr><p>🌱对软软的女生声音没有抵抗能力，酥麻的感觉<br>🌱上次听到 <strong><em>我咬你啊</em></strong> 就感觉回到高中时代<br>🌱现在没有人会经常这句话吧 不能说好怀念<br>🌱因为我现在还年轻，怎么能怀念呢，岂不让人耻笑！<br>🌱</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;🌱昨天去项目实习答辩有感&lt;/p&gt;
     
     </summary>
     
