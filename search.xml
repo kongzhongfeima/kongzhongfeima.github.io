@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>京东双11疯抢一亿活动全民养红包脚本</title>
+    <url>//blog/%E4%BA%AC%E4%B8%9C%E8%84%9A%E6%9C%AC%E7%BE%8A%E7%BA%A2%E5%8C%85.html</url>
+    <content><![CDATA[<p>京东双11疯抢一亿活动全民养红包脚本<br><br><br><br><fancybox><img src="http://image-cos.test.upcdn.net/%E4%BA%AC%E4%B8%9C.png"></fancybox><br><br><br>首次参加，先打开京东APP，首页右侧浮标“疯抢一亿”开启活动。</p>
+<p>接下来说正文：</p>
+<p>打开这个活动地址：<a href="http://t.cn/Ai3m3t47" target="_blank" rel="noopener">http://t.cn/Ai3m3t47</a></p>
+<p>chrome浏览器=&gt;打开活动地址=&gt;按F12=&gt;console=&gt;黏贴脚本，回车运行。</p>
+<p>【确认自己已经登录了京东账号，电脑版运行脚本无视页面显示的内容】<br>【确认自己已经登录了京东账号，电脑版运行脚本无视页面显示的内容】<br>【确认自己已经登录了京东账号，电脑版运行脚本无视页面显示的内容】<br>下面是脚本：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">let productList = [], shopList = [], url = &quot;https://api.m.jd.com/client.action&quot;;</span><br><span class="line">function autoPost(id,type)&#123;</span><br><span class="line">        fetch(`$&#123;url&#125;?timestamp=$&#123;new Date().getTime()&#125;`,&#123;method: &quot;POST&quot;,mode: &quot;cors&quot;,credentials: &quot;include&quot;,headers:&#123;&quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;&#125;,body:`functionId=raisepacket_collectScore&amp;body=&#123;&quot;type&quot;:$&#123;type&#125;,&quot;ext&quot;:&quot;$&#123;id&#125;&quot;,&quot;appsign&quot;:1,&quot;msgsign&quot;:2&#125;&amp;client=wh5`&#125;)</span><br><span class="line">                .then(function(response)&#123;return response.json()&#125;)</span><br><span class="line">                .then(function(res)&#123;</span><br><span class="line">                        console.log(res.data.biz_msg);</span><br><span class="line">                &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function start()&#123;</span><br><span class="line">        fetch(`$&#123;url&#125;?$&#123;new Date().getTime()&#125;`,&#123;method: &quot;POST&quot;,mode: &quot;cors&quot;,credentials: &quot;include&quot;,headers:&#123;&quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;&#125;,body:&apos;functionId=raisepacket_getShopAndProductList&amp;body=&amp;client=wh5&apos;&#125;)</span><br><span class="line">                .then(function(response)&#123;return response.json()&#125;)</span><br><span class="line">                .then(function(res)&#123;</span><br><span class="line">                        productList = res.data.result.productList;</span><br><span class="line">                        shopList  = res.data.result.shopList;</span><br><span class="line">                        console.log(`获取到任务,商品：$&#123;productList.length&#125; 商品：$&#123;shopList.length&#125;`);</span><br><span class="line">                        autoProductTask();</span><br><span class="line">                &#125;);</span><br><span class="line">&#125;</span><br><span class="line">//逛商品</span><br><span class="line">function autoProductTask()&#123;</span><br><span class="line">        for(let i = 0,leng = productList.length;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                let item = productList[index];</span><br><span class="line">                                autoPost(item[&apos;id&apos;],4);</span><br><span class="line">                                console.log(`商品总任务数：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                if( leng-1 == index)&#123;</span><br><span class="line">                                        autoShopTask();</span><br><span class="line">                                &#125;</span><br><span class="line">                        &#125;,index*1500)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">//逛店铺</span><br><span class="line">function autoShopTask()&#123;</span><br><span class="line">        for(let i = 0,leng = shopList.length;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                let item = shopList[index];</span><br><span class="line">                                autoPost(item[&apos;id&apos;],2);</span><br><span class="line">                                console.log(`商铺总任务数：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                if( leng-1 == index)&#123;</span><br><span class="line">                                        autoPlay();</span><br><span class="line">                                &#125;</span><br><span class="line">                        &#125;,index*1500)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">//好玩互动</span><br><span class="line">function autoPlay()&#123;</span><br><span class="line">        for(let i = 0,leng = 4;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                autoPost(0,5);</span><br><span class="line">                                console.log(`好玩互动：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                if( leng-1 == index)&#123;</span><br><span class="line">                                        autoInteract();</span><br><span class="line">                                &#125;</span><br><span class="line">                        &#125;,index*1000)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">//视频直播</span><br><span class="line">function autoInteract()&#123;</span><br><span class="line">        for(let i = 0,leng = 4;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                autoPost(0,10);</span><br><span class="line">                                console.log(`视频直播：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                if( leng-1 == index)&#123;</span><br><span class="line">                                        autoShopping();</span><br><span class="line">                                &#125;</span><br><span class="line">                        &#125;,index*1000)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">//精彩会场</span><br><span class="line">function autoShopping()&#123;</span><br><span class="line">        for(let i = 0,leng = 3;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                autoPost(0,3);</span><br><span class="line">                                console.log(`精彩会场：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                &#125;,</span><br><span class="line">                        index*1000)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">start();</span><br></pre></td></tr></table></figure>
+
+<br>
+<br>
+
+<p> <font size="4.5"> <strong>推荐文章：</strong></font><br><font size="6"><center><a href>淘宝双十一领金币</a> </center></font></p>
+]]></content>
+      <tags>
+        <tag>薅羊毛</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>淘宝双十一领金币</title>
+    <url>//blog/%E6%B7%98%E5%AE%9D%E5%8F%8C%E5%8D%81%E4%B8%80%E9%A2%86%E9%87%91%E5%B8%81.html</url>
+    <content><![CDATA[<p>淘宝店铺领喵币，手动一两分钟完事。<br><br><br><fancybox><img src="https://ae01.alicdn.com/kf/H51a8da3e2bf749bda7a925ba6773ec780.gif"></fancybox><br>我也是从别的地方看到的，但是自己已经实测，完全OK，手动也就一两分钟的事情</p>
+<p>1、确保你的淘宝是登录状态！自行打开淘宝网登陆</p>
+<p>2、打开：<a href="https://www.jianshu.com/p/3951bdfff219" target="_blank" rel="noopener">https://www.jianshu.com/p/3951bdfff219</a></p>
+<p>3、然后把浏览器窗口的宽度调整到最小，如下图演示，1号为正常大小的浏览器窗口，2号是把宽度调整到最小的窗口。<br><br><br><fancybox><img src="https://ae01.alicdn.com/kf/H2657df699d844ea5b5174f989c6d25d2f.jpg"></fancybox><br><br><br>4、然后按住ctrl再把每个店铺逐一点一遍让他打开。全部打开之后按Ctrl+Tab快捷键切换标签页，鼠标就停在签到的地方点点点，根本不用移动。</p>
+<p>全部签到完之后右上角关掉收工<br><br><br><br><br> <font size="4.5"> <strong>推荐文章：</strong></font><br><font size="6"><center><a href="https://ae01.alicdn.com/" target="_blank" rel="noopener">京东脚本养红包</a> </center></font></p>
+]]></content>
+      <tags>
+        <tag>薅羊毛</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>少一点天分</title>
     <url>//blog/%E5%B0%91%E4%B8%80%E7%82%B9%E5%A4%A9%E5%88%86.html</url>
     <content><![CDATA[<p>🌱  有些东西 看一眼就知道</p>
@@ -1254,15 +1286,6 @@ tpwidget("show");</script>
       </tags>
   </entry>
   <entry>
-    <title>凛冬之棺</title>
-    <url>//blog/%E5%87%9B%E5%86%AC%E4%B9%8B%E6%A3%BA.html</url>
-    <content><![CDATA[<p>🌱今天要读的是什么呢<br>🌱别人说的：  国产年度最佳<br>🌱嗯   我觉得前面还行<br>🌱小谜题还挺有趣<br>🌱不过感觉密室构造是否太简单<br>🌱想知道最后作者给的谜底是什么<br>🌱说来惭愧<br>🌱读的推理进本没猜中谜底的<br>🌱感觉今年的最佳短篇就给赤色博物馆里的一篇吧<br>🌱感觉每篇都挺精彩<br>🌱那篇为已死之人洗白的太惊艳了<br>🌱虽然通过笔记的方式让公众误以为自己是犯人有点普通<br>🌱但是后面的反转不落俗套<br>🌱现在一想  莫非主角女朋友的妈妈知道女儿是犯人<br>🌱所以默许主角为她洗白 而主角或许从妈妈的眼神中得到了赞同<br>🌱这样就有点可怕了</p>
-]]></content>
-      <tags>
-        <tag>最爱推理</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>有翼之暗</title>
     <url>//blog/%E6%9C%89%E7%BF%BC%E4%B9%8B%E6%9A%97.html</url>
     <content><![CDATA[<p>🌱话说好多人都说这本是神作<br>🌱等到了寒假我在看吧<br>🌱两天没看自控了<br>🌱有点慌<br>🌱一会去看</p>
@@ -1289,6 +1312,15 @@ tpwidget("show");</script>
 <hr>
 <p>🌱看完之后  果然不能释怀啊     可以与 向日葵不开的夏天媲美了<br>🌱唉  碰见  推理就心潮澎湃  不能自已 小爽给我人生中 第一本推理小说时  是不是也是觉得我是一个冷血  没有感情  的人呢  我当初还真他妈的 不知好歹  竟然把小爽给我的礼物扔了（呜呜 这可是小爽给我的唯二的礼物啊  嗯  还是谢谢小爽当初说让我考完试再看 要不然虽然我当初那么冷酷无情  也可能激起一小点点涟漪）  嗯  还是谢谢小爽 给我的第一本推理小说  我现在可是对这方面很了解哦</p>
 <p>🌱怎么感觉  自己一本正经的有点傻<br>🌱好想像小爽一样傻乎乎的  （你不会骂我吧 这可是褒义词好吧）<br>🌱哈哈  你可比奇奇好多了  不对  没有可比性<br>🌱嗯  像你一样不想那么多   心里不装杂质  对别人毫不设防（怎么有点吃醋的感觉  受不了我自己了 过了三四年  怎么还是不坦率 怎么占有欲这么强  迟早要坏事  🌱又说开丧气话了  果然骨子里是无可救药的 悲观主义者啊）</p>
+]]></content>
+      <tags>
+        <tag>最爱推理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>凛冬之棺</title>
+    <url>//blog/%E5%87%9B%E5%86%AC%E4%B9%8B%E6%A3%BA.html</url>
+    <content><![CDATA[<p>🌱今天要读的是什么呢<br>🌱别人说的：  国产年度最佳<br>🌱嗯   我觉得前面还行<br>🌱小谜题还挺有趣<br>🌱不过感觉密室构造是否太简单<br>🌱想知道最后作者给的谜底是什么<br>🌱说来惭愧<br>🌱读的推理进本没猜中谜底的<br>🌱感觉今年的最佳短篇就给赤色博物馆里的一篇吧<br>🌱感觉每篇都挺精彩<br>🌱那篇为已死之人洗白的太惊艳了<br>🌱虽然通过笔记的方式让公众误以为自己是犯人有点普通<br>🌱但是后面的反转不落俗套<br>🌱现在一想  莫非主角女朋友的妈妈知道女儿是犯人<br>🌱所以默许主角为她洗白 而主角或许从妈妈的眼神中得到了赞同<br>🌱这样就有点可怕了</p>
 ]]></content>
       <tags>
         <tag>最爱推理</tag>

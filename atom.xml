@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2019-10-16T11:29:16.364Z</updated>
+  <updated>2019-10-25T09:45:31.016Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>京东双11疯抢一亿活动全民养红包脚本</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E4%BA%AC%E4%B8%9C%E8%84%9A%E6%9C%AC%E7%BE%8A%E7%BA%A2%E5%8C%85.html"/>
+    <id>http://kongzhongfeima.github.io//blog/京东脚本羊红包.html</id>
+    <published>2019-10-25T17:29:34.000Z</published>
+    <updated>2019-10-25T09:45:31.016Z</updated>
+    
+    <content type="html"><![CDATA[<p>京东双11疯抢一亿活动全民养红包脚本<br><br><br><br><fancybox><img src="http://image-cos.test.upcdn.net/%E4%BA%AC%E4%B8%9C.png"></fancybox><br><br><br>首次参加，先打开京东APP，首页右侧浮标“疯抢一亿”开启活动。</p><p>接下来说正文：</p><p>打开这个活动地址：<a href="http://t.cn/Ai3m3t47" target="_blank" rel="noopener">http://t.cn/Ai3m3t47</a></p><p>chrome浏览器=&gt;打开活动地址=&gt;按F12=&gt;console=&gt;黏贴脚本，回车运行。</p><p>【确认自己已经登录了京东账号，电脑版运行脚本无视页面显示的内容】<br>【确认自己已经登录了京东账号，电脑版运行脚本无视页面显示的内容】<br>【确认自己已经登录了京东账号，电脑版运行脚本无视页面显示的内容】<br>下面是脚本：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br></pre></td><td class="code"><pre><span class="line">let productList = [], shopList = [], url = &quot;https://api.m.jd.com/client.action&quot;;</span><br><span class="line">function autoPost(id,type)&#123;</span><br><span class="line">        fetch(`$&#123;url&#125;?timestamp=$&#123;new Date().getTime()&#125;`,&#123;method: &quot;POST&quot;,mode: &quot;cors&quot;,credentials: &quot;include&quot;,headers:&#123;&quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;&#125;,body:`functionId=raisepacket_collectScore&amp;body=&#123;&quot;type&quot;:$&#123;type&#125;,&quot;ext&quot;:&quot;$&#123;id&#125;&quot;,&quot;appsign&quot;:1,&quot;msgsign&quot;:2&#125;&amp;client=wh5`&#125;)</span><br><span class="line">                .then(function(response)&#123;return response.json()&#125;)</span><br><span class="line">                .then(function(res)&#123;</span><br><span class="line">                        console.log(res.data.biz_msg);</span><br><span class="line">                &#125;);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">function start()&#123;</span><br><span class="line">        fetch(`$&#123;url&#125;?$&#123;new Date().getTime()&#125;`,&#123;method: &quot;POST&quot;,mode: &quot;cors&quot;,credentials: &quot;include&quot;,headers:&#123;&quot;Content-Type&quot;: &quot;application/x-www-form-urlencoded&quot;&#125;,body:&apos;functionId=raisepacket_getShopAndProductList&amp;body=&amp;client=wh5&apos;&#125;)</span><br><span class="line">                .then(function(response)&#123;return response.json()&#125;)</span><br><span class="line">                .then(function(res)&#123;</span><br><span class="line">                        productList = res.data.result.productList;</span><br><span class="line">                        shopList  = res.data.result.shopList;</span><br><span class="line">                        console.log(`获取到任务,商品：$&#123;productList.length&#125; 商品：$&#123;shopList.length&#125;`);</span><br><span class="line">                        autoProductTask();</span><br><span class="line">                &#125;);</span><br><span class="line">&#125;</span><br><span class="line">//逛商品</span><br><span class="line">function autoProductTask()&#123;</span><br><span class="line">        for(let i = 0,leng = productList.length;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                let item = productList[index];</span><br><span class="line">                                autoPost(item[&apos;id&apos;],4);</span><br><span class="line">                                console.log(`商品总任务数：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                if( leng-1 == index)&#123;</span><br><span class="line">                                        autoShopTask();</span><br><span class="line">                                &#125;</span><br><span class="line">                        &#125;,index*1500)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">//逛店铺</span><br><span class="line">function autoShopTask()&#123;</span><br><span class="line">        for(let i = 0,leng = shopList.length;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                let item = shopList[index];</span><br><span class="line">                                autoPost(item[&apos;id&apos;],2);</span><br><span class="line">                                console.log(`商铺总任务数：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                if( leng-1 == index)&#123;</span><br><span class="line">                                        autoPlay();</span><br><span class="line">                                &#125;</span><br><span class="line">                        &#125;,index*1500)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">//好玩互动</span><br><span class="line">function autoPlay()&#123;</span><br><span class="line">        for(let i = 0,leng = 4;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                autoPost(0,5);</span><br><span class="line">                                console.log(`好玩互动：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                if( leng-1 == index)&#123;</span><br><span class="line">                                        autoInteract();</span><br><span class="line">                                &#125;</span><br><span class="line">                        &#125;,index*1000)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">//视频直播</span><br><span class="line">function autoInteract()&#123;</span><br><span class="line">        for(let i = 0,leng = 4;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                autoPost(0,10);</span><br><span class="line">                                console.log(`视频直播：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                if( leng-1 == index)&#123;</span><br><span class="line">                                        autoShopping();</span><br><span class="line">                                &#125;</span><br><span class="line">                        &#125;,index*1000)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">//精彩会场</span><br><span class="line">function autoShopping()&#123;</span><br><span class="line">        for(let i = 0,leng = 3;i&lt;leng;i++)&#123;</span><br><span class="line">                (function(index)&#123;</span><br><span class="line">                        setTimeout(()=&gt;&#123;</span><br><span class="line">                                autoPost(0,3);</span><br><span class="line">                                console.log(`精彩会场：$&#123;leng&#125; 当前任务数：$&#123;index + 1&#125;`);</span><br><span class="line">                                &#125;,</span><br><span class="line">                        index*1000)</span><br><span class="line">                &#125;)(i)       </span><br><span class="line">        &#125;</span><br><span class="line">&#125;</span><br><span class="line">start();</span><br></pre></td></tr></table></figure><br><br><p> <font size="4.5"> <strong>推荐文章：</strong></font><br><font size="6"><center><a href>淘宝双十一领金币</a> </center></font></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;京东双11疯抢一亿活动全民养红包脚本&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;fancybox&gt;&lt;img src=&quot;http://image-cos.test.upcdn.net/%E4%BA%AC%E4%B8%9C.png&quot;&gt;&lt;/fancybox&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;首次参加
+      
+    
+    </summary>
+    
+    
+      <category term="薅羊毛" scheme="http://kongzhongfeima.github.io/tags/%E8%96%85%E7%BE%8A%E6%AF%9B/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>淘宝双十一领金币</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E6%B7%98%E5%AE%9D%E5%8F%8C%E5%8D%81%E4%B8%80%E9%A2%86%E9%87%91%E5%B8%81.html"/>
+    <id>http://kongzhongfeima.github.io//blog/淘宝双十一领金币.html</id>
+    <published>2019-10-25T17:29:05.000Z</published>
+    <updated>2019-10-25T09:45:33.906Z</updated>
+    
+    <content type="html"><![CDATA[<p>淘宝店铺领喵币，手动一两分钟完事。<br><br><br><fancybox><img src="https://ae01.alicdn.com/kf/H51a8da3e2bf749bda7a925ba6773ec780.gif"></fancybox><br>我也是从别的地方看到的，但是自己已经实测，完全OK，手动也就一两分钟的事情</p><p>1、确保你的淘宝是登录状态！自行打开淘宝网登陆</p><p>2、打开：<a href="https://www.jianshu.com/p/3951bdfff219" target="_blank" rel="noopener">https://www.jianshu.com/p/3951bdfff219</a></p><p>3、然后把浏览器窗口的宽度调整到最小，如下图演示，1号为正常大小的浏览器窗口，2号是把宽度调整到最小的窗口。<br><br><br><fancybox><img src="https://ae01.alicdn.com/kf/H2657df699d844ea5b5174f989c6d25d2f.jpg"></fancybox><br><br><br>4、然后按住ctrl再把每个店铺逐一点一遍让他打开。全部打开之后按Ctrl+Tab快捷键切换标签页，鼠标就停在签到的地方点点点，根本不用移动。</p><p>全部签到完之后右上角关掉收工<br><br><br><br><br> <font size="4.5"> <strong>推荐文章：</strong></font><br><font size="6"><center><a href="https://ae01.alicdn.com/" target="_blank" rel="noopener">京东脚本养红包</a> </center></font></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;淘宝店铺领喵币，手动一两分钟完事。&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;fancybox&gt;&lt;img src=&quot;https://ae01.alicdn.com/kf/H51a8da3e2bf749bda7a925ba6773ec780.gif&quot;&gt;&lt;/fancybox&gt;&lt;br&gt;我也是从别的
+      
+    
+    </summary>
+    
+    
+      <category term="薅羊毛" scheme="http://kongzhongfeima.github.io/tags/%E8%96%85%E7%BE%8A%E6%AF%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>少一点天分</title>
@@ -399,50 +445,6 @@
     
     
       <category term="有用功" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%89%E7%94%A8%E5%8A%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>markdown语法</title>
-    <link href="http://kongzhongfeima.github.io//blog/markdown%E8%AF%AD%E6%B3%95.html"/>
-    <id>http://kongzhongfeima.github.io//blog/markdown语法.html</id>
-    <published>2019-09-23T22:58:01.000Z</published>
-    <updated>2019-09-30T15:10:26.001Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="http://www.alltoall.net/webp_jpg/" target="_blank" rel="noopener">图片格式转换工具</a></p><p><a href="http://tool.oschina.net/commons?type=3" target="_blank" rel="noopener">RGB颜色对照表</a></p><ol><li><font color="#8e0b68"> 为文字添加背景色 </font><table><tr><td bgcolor="yellow">背景色yellow</td></tr></table></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;font color=#8e0b68&gt; 为文字添加背景色 &lt;/font&gt;</span><br><span class="line">&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=yellow&gt;背景色yellow&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</span><br></pre></td></tr></table></figure><ol start="2"><li><font color="#8e0b68"> 设置图片居中 </font><div align="center"><img src="https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/20190906151215.png" width="50%" height="50%"></div></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;font color=#8e0b68&gt; 设置图片居中 &lt;/font&gt;</span><br><span class="line">&lt;div align=center&gt;&lt;img src=&quot;https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/20190906151215.png&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;&lt;/div&gt;</span><br></pre></td></tr></table></figure><ol start="3"><li>设置设置图片百分比</li></ol><img src="https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/20190906151215.png" width="50%" height="50%"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/20190906151215.png&quot; width=&quot;50%&quot; height=&quot;50%&quot;&gt;</span><br></pre></td></tr></table></figure><ol start="4"><li>设置图片大小</li></ol><img src="https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/20190906151215.png" width="251" height="350"><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;img src=&quot;https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/20190906151215.png&quot; width=&quot;251&quot; height=&quot;350&quot; &gt;</span><br></pre></td></tr></table></figure><ol start="5"><li>字体大小</li></ol><p><font face="黑体" color="green" size="4.5">我是黑体，绿色，尺寸为4.5</font></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;font face=&quot;黑体&quot; color=green size=4.5&gt;我是黑体，绿色，尺寸为4.5&lt;/font&gt;</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;http://www.alltoall.net/webp_jpg/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;图片格式转换工具&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;http://tool.oschina.net/commons?t
-      
-    
-    </summary>
-    
-    
-      <category term="折腾ing" scheme="http://kongzhongfeima.github.io/tags/%E6%8A%98%E8%85%BEing/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>小林泰三</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E5%B0%8F%E6%9E%97%E6%B3%B0%E4%B8%89.html"/>
-    <id>http://kongzhongfeima.github.io//blog/小林泰三.html</id>
-    <published>2019-09-23T17:16:53.000Z</published>
-    <updated>2019-09-23T15:08:46.273Z</updated>
-    
-    <content type="html"><![CDATA[<p>🌱醉步男   科幻推理太硬核了   绝望<br>🌱       <font color="#8e0b68"> 喂你是谁啊？ </font><br>🌱       <font color="#458e0b"> 我是手儿奈 </font><br>🌱       <font color="#8e0b68"> 看来我真是醉得不轻 </font><br>🌱       <font color="#458e0b"> 或许相反，你很清醒 </font></p><a id="more"></a><p>🌱现在的你存在吗   时间真的是流动而不是跳跃的吗<br>🌱近两年来  最让我惊喜的科幻推理之一了  就像我读的乌托邦类的未来小说未来是灰色的<br>🌱人类不可避免的醉入深渊  因为只要回到从前 波函数就会发散 是否意味着努力是无用的 因为你无法到达未来相同的你。<br>🌱JOJO：  你无法到达未来的真实   《黄金镇魂曲》<br>🌱另两本是 <strong><em>来自新世界</em></strong> <strong><em>克莱因壶</em></strong></p><hr><p>🌱努力了这门多年 还是成为资本的奴隶   只不过更高级了    嗯  我已经是高级的化鼠了  嗯   已经把我养肥了<br>🌱不过人类没有愧死机制 踩同阶层的人不会自取灭亡<br>🌱熟的人一直输   赢得人一直赢<br>🌱不用羡慕别人    都在生活的泥沼中挣扎   不过是有的人还在奋力往上跃<br>🌱若不是生活给我了美好的一面   我有怎会因现在的处境自怨自艾</p><hr><p>🌱现实中有这样的原型吗  <strong><em>手儿奈、千反田 、高千、小兔、小友</em></strong>      </p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;🌱醉步男   科幻推理太硬核了   绝望&lt;br&gt;🌱       &lt;font color=&quot;#8e0b68&quot;&gt; 喂你是谁啊？ &lt;/font&gt;&lt;br&gt;🌱       &lt;font color=&quot;#458e0b&quot;&gt; 我是手儿奈 &lt;/font&gt;&lt;br&gt;🌱       &lt;font color=&quot;#8e0b68&quot;&gt; 看来我真是醉得不轻 &lt;/font&gt;&lt;br&gt;🌱       &lt;font color=&quot;#458e0b&quot;&gt; 或许相反，你很清醒 &lt;/font&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="最爱推理" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%80%E7%88%B1%E6%8E%A8%E7%90%86/"/>
     
   </entry>
   
