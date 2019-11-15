@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2019-11-10T05:17:14.644Z</updated>
+  <updated>2019-11-15T04:29:57.984Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>UPX</title>
+    <link href="http://kongzhongfeima.github.io//blog/UPX.html"/>
+    <id>http://kongzhongfeima.github.io//blog/UPX.html</id>
+    <published>2019-11-15T12:29:57.000Z</published>
+    <updated>2019-11-15T04:29:57.984Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>向你狂奔</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E5%90%91%E4%BD%A0%E7%8B%82%E5%A5%94.html"/>
+    <id>http://kongzhongfeima.github.io//blog/向你狂奔.html</id>
+    <published>2019-11-14T23:07:36.000Z</published>
+    <updated>2019-11-15T04:27:08.131Z</updated>
+    
+    <content type="html"><![CDATA[<p>希望你可以接受我的99% 我可以调整1%<br>你若想我走来 我会向你狂奔<br>为什非要扭曲自己来迎合他人呢</p><a id="more"></a><p>这就是真实的我 以前的环境、人际关系 培养出来的 肮脏的我<br>我把本性展示出来 怎么你就无法接受了<br>哈哈 你还说你会把他当做最重要的人 可现在的你回顾去年的感情 会觉得自己的真心可笑 还是庆幸自己有所保留<br>不是我不愿意相信别人<br>只是人对爱和永远 应该有幻觉<br><br></p><center><fancybox><img src="http://image-cos.test.upcdn.net/%E8%B7%AF%E8%BF%87%E4%BA%BA%E9%97%B4.jpg" width="50%" height="50%"></fancybox></center><br><p>忽然想到你的舍友是研究生 会帮你出主意<br>他们是怎么说我呢 是不是让你放弃我算了（不得不承认你当初的选择十分正确）<br>啊 感觉好不公平 同年纪的女生比男生心智成熟太多了<br>当时 我还是一窍不通的小男孩</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;希望你可以接受我的99% 我可以调整1%&lt;br&gt;你若想我走来 我会向你狂奔&lt;br&gt;为什非要扭曲自己来迎合他人呢&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
+    
+  </entry>
   
   <entry>
     <title>清空所有微博</title>
@@ -408,48 +442,6 @@
     
     
       <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>糟心的被劫持</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E7%B3%9F%E5%BF%83%E7%9A%84%E8%A2%AB%E5%8A%AB%E6%8C%81.html"/>
-    <id>http://kongzhongfeima.github.io//blog/糟心的被劫持.html</id>
-    <published>2019-10-10T09:48:22.000Z</published>
-    <updated>2019-10-12T07:13:06.047Z</updated>
-    
-    <content type="html"><![CDATA[<p>🌱 这两天开始 网站被莫名其妙的劫持了</p><a id="more"></a><p>🌱 分析了一下原因：应该是我数据库权限给的太多 、 域名DNS解析太不安全<br>🌱 刚刚把写权限全关了 DNS解析也删了<br>🌱 不知道过几天可不可以好<br>🌱 网站劫持真的是像强奸犯一样 一时的爽快 给被害人留下无尽的阴影和一生的痛苦<br>🌱 主要是百度的方法太繁琐了 不想搞了<br>🌱 我还是继续玩我的hexo吧<br>🌱 没有虚拟主机真是方便<br>🌱 不知道三丰云服务器安全吗<br>🌱 typecho 数据库一次没保存过 丢了就丢了吧<br>🌱 前天晚上给cloudflare客服发消息说自己被劫持了<br>🌱 没想到一个中国区的负责人还给我发邮件希望改天细聊<br>🌱 我回复不用费心 他跟我解释 DNS受到污染<br>🌱 我觉得DNS被污染也是你们的过吧 可能是动态刷新不及时？<br>🌱 （咱啥也不知道  也不敢问）<br>🌱 虽然感觉DNS解析服务不咋样（因为我用的是免费的）<br>🌱 但是处理得很及时<br>🌱 （免费域名真的坑  不仅注册耗费大量时间 后期管理也十分闹心）<br>🌱 万万想不到的是 freenom控制台还明明白白写着 <strong><em>fraud</em></strong>  我真是 &amp;&amp;￥&amp;&amp;￥&amp;￥&amp;￥&amp;<br><br></p><div align="center"><img alt=" 像梦一场 " src="https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/000.png"></div><br><p>🌱 不要脸也该有个底线吧 我辛苦一下午5搞得小站  DNS就这么被拐跑了<br>🌱 呜呜呜   被拐跑了 😭 还是被不良网站拐跑了<br>🌱 我的域名 既不优秀 访问量基本为零  还要这么针对我  丧心病狂！<br>🌱 我在百度注册的一块钱的域名解析的挺好 记录改之后立马生效<br>🌱 改天买个5年100的  <strong><em>.fun</em></strong> 后缀的域名（人民币玩家的骄傲！😎）<br><br></p><div align="center"><img class="emoji aru" src="https://cdn.jsdelivr.net/gh/xaoxuu/volantis@1.0/img/aru/151.png"></div><br>🌱 免费的就是最贵的！]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;🌱 这两天开始 网站被莫名其妙的劫持了&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Station" scheme="http://kongzhongfeima.github.io/categories/Station/"/>
-    
-      <category term="typecho" scheme="http://kongzhongfeima.github.io/categories/Station/typecho/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>生日快乐</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E7%94%9F%E6%97%A5%E5%BF%AB%E4%B9%90.html"/>
-    <id>http://kongzhongfeima.github.io//blog/生日快乐.html</id>
-    <published>2019-10-08T21:50:09.000Z</published>
-    <updated>2019-10-25T10:50:51.441Z</updated>
-    
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="input password" />    <label for="hbePass">input password</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="914b00f15a75cb0385eb198015117cd29d4cfe4c9314a9e2635bb3c76ee0c583">f1fb1da44a2f80c2a2e4c99e2afab53a461ab475146014f8353368babee868c2fbb50bc4b4fc5778a0b6c100ef19de42a17829bf25d9fc4279951fe152e22a60dfd04af4f31f03b2f287e9e238dfa4b63503645afbd3ab4b5530b1f4f60b92b00d1b144e2b591b20c889ff407e64b337d414dd7380568b2975d11f0b1a2078d12f532ec2c3aa5275266a24b26c2e5a77f5c59b09e6b300dbedb140b25197ac76c51a28ea1b9394aba4cca3abf485e16f3061495106674fcea6b6b6d99ca83405df4131888b3c4de7e8d2b4a0d16d322c5b0a5c9d2daf299ceb7d4834ab2e794ef94121d5f75ebc5c8c8d077bb0a77d4bbe7070de66d029a6e978b2b3acf54e215e2408416fc81ae7dda42396abbcf386847bc3687d0aa631978dd2550a95a8d6710de108a90afac210563fbbda94911ea84eb135f0ccc8bc2a1b3a63577f3dc3daeaaa4fbc94de192ec943d5d3230c9430f38acd025e20ca097885ef07f39fd65b2119893975589e286784bf00ce68aecf6e95ce87e7c9bcf2a3e5eca26bfa0131fb1cee7d46b107d4265507d5d7638945030be90f8ab6a7f26ea11b97657142d794f5e4306c18629caf48701241c9471d1311919c1c3800d1844ff36bdbffc43bb9281d8e01209e6be2b37a090c2ff5f5f743861fff8412c703457fc0fd123dcea0e442dbfcc0ebad5e2de4c21d5e668c1060e2a7546c7fa3e0aaaa9d39d3cf4de6b350f367667eb4262cc03ddd37b81ddd3fb82845cae9739c747febfc07d2c67fdb558fe29cd2c31d6a2415b45429cc309e85beb07d70346cd70b92b6e43bb9df78601c88ae3781d5013ba49efb6fe52a288086378548ef75d3ef2265b9640646603ef21d5d60983e2001b4a9ec2293eedd3031df8a9e940d3e5311958545957cf2f922017e86453fee58297c1a55bae56e88158ca43f68cb273af75192a6725784e126a4830f8c84ecfb896bd70901c3ff192d455278689b952f27f986b5368dc041252750a9507ac82aaa14d23d68a52f969a5d4a7f79f86b0e19869f30b16d94ad78f74c4aca5fe6e038e38a248aca768f78881fb6c7c51042e01b57711d1ece6e503d91b1f27ae276432ff5dee9b23490df35ea8508a66a4dfda1f65710740f86e5de7ccfcf4873b1464ad80cbe8b37420c0b91b12b9dafc8449c3d01cb5a1ce1cd74d859b66894b11e19e444231f8468900f4793d0690964c23253a0e0feb473735d75ad9ef4459da8417d01fc4b8a91ac11099c36ace78de2faafafa4d1c1636d80db1a72525819107db0f0feed9413744afb0361018751b44a04a0a1e68a334da12fda34b7034fbf0b5735be0379297c879685f07d006d59bdea0f8d897af9c839b228072bd0c9b6aa9223c0312c0023ffd1703f08fbca0fce8c1cd4faff938fb51e932dd6d2288f578bb0f482fb0bc5c30b307ea023843dbc94b316263cfacd1e90bca11f02ecbcf02143231b61efd9cf02d6001bd41685bfc6dfbe8a56440ff20a4af2796e8f778332588e77281f3568b2321a3e5c67800a5411e4381878cbff7f219990ad3dccb7018e497f87ee7c0fa5d4762422e605783394f0794bae2d4f678c11e50a53a84b2cca350f58380a0f4afe247b8fe867f801caefddfc6d672876d783a82e8145d9d2f3f791de31a79e5c73d6b664531302b08933c91b6142dce374035d960a3d41e158d82953a77d04dad22dea19b1b3a905a97adb241b4176da90a04a1266ab8be032e2338f79129ab936da1c620b80432964ed96a2028d1bc9b91589d3abd1f1ef7201c711357955c900911d6eddfdf9dbdf870fa1f4d61c20be39ed582e152bbd9a54a3530df36b1d1533ada7396abc61eb5825bcfd1ddc813dcb6273d0093ad55bce327ba5c7b5ca8092161203427ce241308d5b4d76e33cef1b2f50c06d91c65f2c7f8f9c73a1efb6294f1ff12b0f7bae5d667a1055ddf7129ac0d9351f5d979e89c969b0dd996da154cc5a345aff033c592bfd20229e0fbf47af93f1798845dc4eda15a2fe4300b806e906bc02491f461326295419f0b902ba453ee38c875ab7e51033c8968a4b3d1c23e2674d614dc43ac08d623868d8fd014c69c919b9152e2af477cedb39a27e2c8835d8482f660c80e4d22e87b0d17575a4a10d5a1f69c82541a7af3866329c5a59b73ea1e82a5aab6a5e755d8568247b5f5929b98cdee5cb984b3eed29aa9f5ec747a1e001013706fa2312d9c8f1401bc8f1fd1824c6ff4eedca1f954950acafd2c27fa846c0aba7c1ba2d2cfe1b28032257a77b57aef0d2e6c5d2b74cefc556a28c1c1a4376c7dc81668c614bc0b9b25c3619ea4bcd01bfeb0ca4645f72772c3f84f1388a5fee9b3acf9ddcab5394f85a0be75d05fb8cc4e0d8e0df411e5c6b7075d55ce641ec533d6a1bb8a1723832f1fb5a90292b55ef0680567a692fb0b31c06db56dd4fe1309f8a31f69d5456a7339c0fe367bcb1f27370dd69eafb360ca0630ef8462fc5f522ad4216bd784a86ba5c7525c63122402a846ebd55952b097dc2651c5ae33c4964aaa08187a77fadbcd31e37565b75882995e28204644edf6dc1abe90953b026b1eab779ad22c3675c882e6b8bc128f90ce7cf1331e4f482513aac63d0aacd26094afdd26b7fb8eb630e664b9160770458ef8b03d5fb542ab3f0bc4c8e1aee782b82d55cc1b0074a4b180eedabe967154d6963602b1c3406bd75567bcfac6a</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      这是一篇加密文章 内容可能是个人情感宣泄或是极其消极的文字 为了你的好心情 请移步至其他博文
-    
-    </summary>
-    
-      <category term="My_Alice" scheme="http://kongzhongfeima.github.io/categories/My-Alice/"/>
-    
     
   </entry>
   
