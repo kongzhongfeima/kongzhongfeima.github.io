@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-01-08T13:01:01.900Z</updated>
+  <updated>2020-01-09T03:52:58.286Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>百度云网页+IDM超速下载</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E7%99%BE%E5%BA%A6%E4%BA%91%E7%BD%91%E9%A1%B5+IDM%E8%B6%85%E9%80%9F%E4%B8%8B%E8%BD%BD.html"/>
+    <id>http://kongzhongfeima.github.io//blog/百度云网页+IDM超速下载.html</id>
+    <published>2020-01-09T11:10:30.000Z</published>
+    <updated>2020-01-09T03:52:58.286Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>下载神器 Internet Download Manager v6.36 Build 1 中文特别版</strong><br><br></p><h4 id="1-下载Internet-Download-Manager"><a href="#1-下载Internet-Download-Manager" class="headerlink" title="1. 下载Internet Download Manager"></a>1. 下载Internet Download Manager</h4><p>简称 IDM，是国外的一款优秀下载工具。目前凭借着下载计算的速度优势在外媒网站中均受好评，现在已被多数国人熟知。</p><a id="more"></a><br><fancybox><img src="http://image-cos.test.upcdn.net/blog/idm.jpg"></fancybox><br><fancybox><img src="http://image-cos.test.upcdn.net/blog/idm2.jpg"></fancybox><p><font color="#F08080" size="6"> IDM下载地址：</font><br>蓝奏云：<a href="https://www.lanzous.com/b126492" target="_blank" rel="noopener">https://www.lanzous.com/b126492</a> 密码:5arn<br><br><br></p><h4 id="2-蓝奏云中的文件下载后，包含一个破解说明的txt，按照txt操作即可破解（补丁目前是最新的）"><a href="#2-蓝奏云中的文件下载后，包含一个破解说明的txt，按照txt操作即可破解（补丁目前是最新的）" class="headerlink" title="2. 蓝奏云中的文件下载后，包含一个破解说明的txt，按照txt操作即可破解（补丁目前是最新的）"></a>2. 蓝奏云中的文件下载后，包含一个破解说明的txt，按照txt操作即可破解（补丁目前是最新的）</h4><br><h4 id="3-【百度网盘直链下载助手】是一款免客户端获取百度网盘文件真实下载地址的油猴插件，支持Windows，Mac，Linux，Android等多平台，可使用IDM，XDown等多线程加速工具加速下载，支持远程下载，告别下载限速问题。"><a href="#3-【百度网盘直链下载助手】是一款免客户端获取百度网盘文件真实下载地址的油猴插件，支持Windows，Mac，Linux，Android等多平台，可使用IDM，XDown等多线程加速工具加速下载，支持远程下载，告别下载限速问题。" class="headerlink" title="3. 【百度网盘直链下载助手】是一款免客户端获取百度网盘文件真实下载地址的油猴插件，支持Windows，Mac，Linux，Android等多平台，可使用IDM，XDown等多线程加速工具加速下载，支持远程下载，告别下载限速问题。"></a>3. 【百度网盘直链下载助手】是一款免客户端获取百度网盘文件真实下载地址的油猴插件，支持Windows，Mac，Linux，Android等多平台，可使用IDM，XDown等多线程加速工具加速下载，支持远程下载，告别下载限速问题。<br></h4><h5 id="①chrome懒人安装包（无chrome的用户）"><a href="#①chrome懒人安装包（无chrome的用户）" class="headerlink" title="①chrome懒人安装包（无chrome的用户）"></a>①chrome懒人安装包（无chrome的用户）</h5><p>   为了配合IDM高速下载，没有chrome的小白可直接下载chrome懒人安装包（已经包含了油猴插件和其中必须的脚本）下载地址：<a href="https://www.lanzous.com/b00t6bp9g" target="_blank" rel="noopener">chrome懒人安装包</a>  安装后运行chrome.exe<br>   可直接进行IDM批量下载<br><br>   IDM 批量下载演示：<br>   <fancybox><img src="http://image-cos.test.upcdn.net/blog/03.gif"></fancybox><br>   <br></p><h5 id="②百度网盘直链下载油猴脚本（有chrome的用户）"><a href="#②百度网盘直链下载油猴脚本（有chrome的用户）" class="headerlink" title="②百度网盘直链下载油猴脚本（有chrome的用户）"></a>②百度网盘直链下载油猴脚本（有chrome的用户）</h5><p>   【百度网盘直链下载助手】是一款免客户端获取百度网盘文件真实下载地址的油猴脚本，支持Windows，Mac，Linux，Android等多平台，可使用IDM，XDown等多线程加速工具加速下载，支持远程下载，告别下载限速问题。<br></p><ol><li><a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener">下载油猴插件（Tampermonkey）</a></li><li>在油猴插件中安装网盘直链下载助手脚本：<a href="https://www.baiduyun.wiki/baiduyun.user.js" target="_blank" rel="noopener">网盘直链下载助手脚本</a></li><li>脚本安装成功后会在资源的百度网盘网页中出现对应按钮<br><fancybox><img src="http://image-cos.test.upcdn.net/blog/00.webp"></fancybox><br>IDM 批量下载演示：<br><fancybox><img src="http://image-cos.test.upcdn.net/blog/03.gif"></fancybox></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;下载神器 Internet Download Manager v6.36 Build 1 中文特别版&lt;/strong&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
+&lt;h4 id=&quot;1-下载Internet-Download-Manager&quot;&gt;&lt;a href=&quot;#1-下载Internet-Download-Manager&quot; class=&quot;headerlink&quot; title=&quot;1. 下载Internet Download Manager&quot;&gt;&lt;/a&gt;1. 下载Internet Download Manager&lt;/h4&gt;&lt;p&gt;简称 IDM，是国外的一款优秀下载工具。目前凭借着下载计算的速度优势在外媒网站中均受好评，现在已被多数国人熟知。&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="有用功" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%89%E7%94%A8%E5%8A%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>想做的、没做的</title>
@@ -429,30 +450,6 @@
     
     
       <category term="最爱推理" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%80%E7%88%B1%E6%8E%A8%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>加入又拍云联盟</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E5%8A%A0%E5%85%A5%E5%8F%88%E6%8B%8D%E4%BA%91%E8%81%94%E7%9B%9F.html"/>
-    <id>http://kongzhongfeima.github.io//blog/加入又拍云联盟.html</id>
-    <published>2019-10-14T19:52:49.000Z</published>
-    <updated>2019-10-14T12:12:54.037Z</updated>
-    
-    <content type="html"><![CDATA[<p>🌱  看到Z4A的备案好像是14-17年的 果断将图片传到又拍云里</p><a id="more"></a><br><fancybox><img src="https://www.z4a.net/images/2019/10/14/youpaiyununion.png"></fancybox><br><p>🌱  每月免费15GB的cdn和10GB的存储空间(它不香吗)<br>🌱  说来也巧 这几天 Github+PicGo 图片老是传不上去<br>🌱  不知道怎么回事 在Github分支FigureBed上看 最新传的图片是14天前的<br>🌱  至此 我图片主要存在 <strong><em>又拍云、QQ邮箱中转站、Z4A</em></strong>（不知稳不稳）<br>🌱  刚才在折腾把 <strong><em>hosted by 又拍云</em></strong> 和图标显示在footer<br>🌱  在网上搜的主要是 <strong><em>nest</em></strong> 主题 （果然是最广为流传的主题） 修改 <strong><em>footer.swig</em></strong><br>🌱  但是我的主题是 <strong><em>material-x</em></strong> 我修改的是 <strong><em>footer.ejs</em></strong><br>🌱  折腾了十几分钟 主要是不知道ejs代码如何写<br>🌱  最后索性用html 竟然解决了</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--以下为又拍云图标及链接的插入--&gt;</span><br><span class="line">  &lt;div&gt;</span><br><span class="line">  &lt;p&gt;Hosted by</span><br><span class="line">  &lt;a href=&quot;https://www.upyun.com/?utm_source=lianmeng&amp;amp;utm_medium=referral&quot; style=&quot;border:0&quot;&gt;</span><br><span class="line">    &lt;img src=&quot;https://www.z4a.net/images/2019/10/14/_logo2.png&quot; style=&quot;width: 60px; display: inline; vertical-align: middle;&quot;&gt;</span><br><span class="line">  &lt;/a&gt;</span><br><span class="line">&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">  &lt;!--以上为又拍云图标及链接的插入--&gt;</span><br></pre></td></tr></table></figure><p>🌱  刚才看到网易云存储有50G的免费存储空间 有时间了解一下</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;🌱  看到Z4A的备案好像是14-17年的 果断将图片传到又拍云里&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Station" scheme="http://kongzhongfeima.github.io/categories/Station/"/>
-    
-      <category term="hexo" scheme="http://kongzhongfeima.github.io/categories/Station/hexo/"/>
-    
-    
-      <category term="折腾ing" scheme="http://kongzhongfeima.github.io/tags/%E6%8A%98%E8%85%BEing/"/>
     
   </entry>
   
