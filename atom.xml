@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-01-28T13:11:04.858Z</updated>
+  <updated>2020-02-16T13:26:10.188Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>匆匆</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E5%8C%86%E5%8C%86.html"/>
+    <id>http://kongzhongfeima.github.io//blog/匆匆.html</id>
+    <published>2020-02-16T21:12:29.000Z</published>
+    <updated>2020-02-16T13:26:10.188Z</updated>
+    
+    <content type="html"><![CDATA[<p>人生匆匆几十载<br>抬头凝望星空也不过百次<br>时间都去哪了</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;人生匆匆几十载&lt;br&gt;抬头凝望星空也不过百次&lt;br&gt;时间都去哪了&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>恼人的毕设</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E6%81%BC%E4%BA%BA%E7%9A%84%E6%AF%95%E8%AE%BE.html"/>
+    <id>http://kongzhongfeima.github.io//blog/恼人的毕设.html</id>
+    <published>2020-02-16T20:27:25.000Z</published>
+    <updated>2020-02-16T12:27:25.671Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>打卡day1</title>
@@ -394,48 +432,6 @@
     
     
       <category term="有用功" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%89%E7%94%A8%E5%8A%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>猥琐男子视奸记</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E7%8C%A5%E7%90%90%E7%94%B7%E5%AD%90%E8%A7%86%E5%A5%B8%E8%AE%B0.html"/>
-    <id>http://kongzhongfeima.github.io//blog/猥琐男子视奸记.html</id>
-    <published>2019-10-27T11:06:39.000Z</published>
-    <updated>2019-10-30T10:15:34.899Z</updated>
-    
-    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="input password" />    <label for="hbePass">input password</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="f1fed968b73fbb7552d03c9b2ea2e618e609c5742a93d764a8b3dab8a827f1fd">ad25da03549942ce3039d3459baf97e533b780900959bd8fcd146ab0d832a75d63ad65efa65e23fb8d24ac14e12476e3e57ef2831c167d835f30c38d37516459bd8f59fd4215a09ef161a03200ce28ad9b568d771cc9eb5283ded07c730bb123607bb9a460f7c5e2a17240c73cb5de22aeb2ff53cd7881d760c3ff98e6a10f8d3f88cad3f566073f988a0e0089355ba77c81e2150a913bed93f4c0a873b8ffd46d4a6217660b03cc4a7a938770322f7fef29f0a69f127ee10b46673f2bfcd19acbadf31ba617168debf1bb99ff5d945e037d4e45e2c5033e1d9dfba1318a65b8417b45c53f8f344c89c8feebd204f4c42cf6c3e1637ab34ca25bdd4da4371321b8f9925d9cb834fc64ea355b61b2108e5f62aeaf38084d540f1f945d1fae03d5530193f8f64499a3520c1a3f1f312bf876555baf0521153181723e355c8ff59eaf19babc811769ce70db02f9fbb4c4a65c0bd25b444a890bb9c79406baea5489b3c08b5c491660b4eb0dd29d5979e7e70408abb9c794800ba6a81848a695b8ba01138a9b3f933fe974b40997aa8610a87826538ae74d2d356e340127e490e7d5eb6314cd27b2f9df454a3ccefee515a24b20cda3ebef53a2f32aa6d3a35ed2a1371daf67eb9f65498b73fc3bf55f7ac614fb005843db098943c0ecf9394d09b36d3269b7b9a57dbf3e9027bdebb72fc636fd91996cf763fb3a668b5dff268247b0851f2d98813913e5c3a1d2dc53bb5778a56342189000651df025e10a5b94fd83a1cee05f80ca9c6aadd03ea8185cde218665bd537be665f64bb93e7d4d9505e7539dea28e9a81875788db0d471a54189638345fd4044a74c8ab94a7be7e277b7cf14e5caf87ca311e9c64d6770b0a219bd9a9bf65185ed23feab0f7f51ac85801bfb646dd2466105048b0335150f1c9d35359e6f9ce2d09fa4f7cc60f85571fddca05fa7b53b265c4d89bd93a369659325eed70318043dc95fba9ae3d09c9dc657977fb956c450fa55079100cbd7dfe80a6ef72edd3c2bdb149a4a90d2d40557bad3b2237c0d1898d0b4e8f24b43d177c689d8bf66a3fde6193ad80a33bb425cfa1a3f2548de2126ea711692040945475c13ab2c3c71c99dc77a6697bb269484c67a5b3f5cae2f8961169670000bee5602134f571082632de247019fa52816cfd277294e2917cf394a256ffe4db5a9848e137ff985ca9920b56b6f54aa748ec3e2f6e9cb2f459d437427209b97148a4fbdb21dfee6d6ee7a418ca82e182653ccb00687d47fc9de1551682c6a754874e26ae284f32651cefb39c2be4e0cca0ee3144aa536ecffd4a368a4edc7e3a926368d2e4ccae068ca2d0e8060f913b24b9e1ce30b6ac7e0673a13e2c8934180f0</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-    
-    <summary type="html">
-    
-      这是一篇加密文章 内容可能是个人情感宣泄或是极其消极的文字 为了你的好心情 请移步至其他博文
-    
-    </summary>
-    
-      <category term="Reality" scheme="http://kongzhongfeima.github.io/categories/Reality/"/>
-    
-    
-      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我要飞</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E6%88%91%E8%A6%81%E9%A3%9E.html"/>
-    <id>http://kongzhongfeima.github.io//blog/我要飞.html</id>
-    <published>2019-10-27T11:06:12.000Z</published>
-    <updated>2019-11-16T11:08:37.506Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://fanqiangdang.com/thread-1486-1-1.html" target="_blank" rel="noopener">FQ党可直接访问</a><br><a href="https://tokyo-hot.stchks.com/user" target="_blank" rel="noopener">可直接访问不可签到剩余：1024MB</a><br><a href="https://sockboom.cn/user/" target="_blank" rel="noopener">辣鸡酸酸乳好像只有一天</a><br><a href="https://ji-t.pw/user/trafficlog" target="_blank" rel="noopener">几鸡 剩余流量： 14.86GB</a></p><a id="more"></a><p><a href="https://wzfou.com/mf-kongjian/" target="_blank" rel="noopener">挖站否薅美国1GB免费PHP空间</a><br><a href="https://manage.qyfou.com/clientarea.php?action=productdetails&id=632" target="_blank" rel="noopener">其云否美国1GB免费PHP空间6个月</a></p><!--more--><p><a href="https://www.textnow.com/messaging" target="_blank" rel="noopener">短暂美国号码</a><br><a href="https://www.textnow.com/messaging" target="_blank" rel="noopener">应该长期美国号码</a></p><!--more--><h4 id="telegram解除限制："><a href="#telegram解除限制：" class="headerlink" title="telegram解除限制："></a>telegram解除限制：</h4><p>iOS设备，ID更换地区登录后，在 App Store 搜索 “Nicegram”<br>解除iOS<strong>群组限制：安装完成APP后，登陆账号，此时仍无法查看</strong>群组。请连续点击右下角”设置(Setting)”10次，进入Debug界面，开启”Nicegram Debug”选项，返回即可，现在就能访问**群组了<br>iOS版的电报群telegram客户端，使用过的小朋友都知道，老司机群你们是没办法去幼儿园的，怎么样想安卓版的客户端一样没限制呢？</p><p>手机中安装有官方版本的Telegram客户端以及Nicegram客户端（如果没有，请等待，估计5.11版很快就能在美区商店下载到）</p><ol><li>登录官方客户端或者页面版Telegram</li><li>添加此机器人账号并与其聊天@Nicegram_bot</li><li>聊天界面点击Nicegram Website或者信息底部的Nicegram login按钮</li><li>打开链接</li><li>依次将“I‘m 18+ Years Old”等复选框选中</li><li>打开nicegram客户端，应该就可以访问限制群组了。</li></ol><p>tips: 没想到nicegram还有中文包（相当nice）</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;&lt;a href=&quot;https://fanqiangdang.com/thread-1486-1-1.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;FQ党可直接访问&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://tokyo-hot.stchks.com/user&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;可直接访问不可签到剩余：1024MB&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://sockboom.cn/user/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;辣鸡酸酸乳好像只有一天&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://ji-t.pw/user/trafficlog&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;几鸡 剩余流量： 14.86GB&lt;/a&gt;&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="薅羊毛" scheme="http://kongzhongfeima.github.io/tags/%E8%96%85%E7%BE%8A%E6%AF%9B/"/>
     
   </entry>
   
