@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-02-16T13:26:10.188Z</updated>
+  <updated>2020-02-19T14:00:53.141Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -17,11 +17,31 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>最幸福</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E6%9C%80%E5%B9%B8%E7%A6%8F.html"/>
+    <id>http://kongzhongfeima.github.io//blog/最幸福.html</id>
+    <published>2020-02-19T21:52:59.000Z</published>
+    <updated>2020-02-19T14:00:53.141Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨天冒险在陡坡上滑滑板 向后摔的很痛 幸好没人看到<br>不过胳膊肘流血了 今天才发觉脖子好像也受伤了 贼难受</p><a id="more"></a><p>今天下午在床上小睡了一会儿 我妈一直问身体受伤严不严重<br>真好 感觉自己真的超级幸福 有对我最好的爸爸妈妈<br>有大方的姐姐 有伶俐活泼的外甥、外甥女<br>故乡的星空依旧迷人、深邃<br>唯一不足之处是父母年纪已大 我却尚未成家立业（心痛）</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;昨天冒险在陡坡上滑滑板 向后摔的很痛 幸好没人看到&lt;br&gt;不过胳膊肘流血了 今天才发觉脖子好像也受伤了 贼难受&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>匆匆</title>
     <link href="http://kongzhongfeima.github.io//blog/%E5%8C%86%E5%8C%86.html"/>
     <id>http://kongzhongfeima.github.io//blog/匆匆.html</id>
     <published>2020-02-16T21:12:29.000Z</published>
-    <updated>2020-02-16T13:26:10.188Z</updated>
+    <updated>2020-02-19T13:52:11.045Z</updated>
     
     <content type="html"><![CDATA[<p>人生匆匆几十载<br>抬头凝望星空也不过百次<br>时间都去哪了</p>]]></content>
     
@@ -407,31 +427,6 @@
     
     
       <category term="最爱推理" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%80%E7%88%B1%E6%8E%A8%E7%90%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MSDN</title>
-    <link href="http://kongzhongfeima.github.io//blog/MSDN.html"/>
-    <id>http://kongzhongfeima.github.io//blog/MSDN.html</id>
-    <published>2019-10-27T11:06:52.000Z</published>
-    <updated>2019-10-27T03:12:21.767Z</updated>
-    
-    <content type="html"><![CDATA[<p>在开发的时候我们需要查看microsoft的帮助文档，但是网页版的毕竟不是很方便，所以安装离线MSDN就很有必要啦，MSDN的下载地址：链接：<a href="https://pan.baidu.com/s/1KOj3Q88FY_bgPmKoQCEWQQ密码：qow3" target="_blank" rel="noopener">https://pan.baidu.com/s/1KOj3Q88FY_bgPmKoQCEWQQ密码：qow3</a></p><p><a href="https://jingyan.baidu.com/article/ac6a9a5e2a5a812b653eacff.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/ac6a9a5e2a5a812b653eacff.html</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;在开发的时候我们需要查看microsoft的帮助文档，但是网页版的毕竟不是很方便，所以安装离线MSDN就很有必要啦，MSDN的下载地址：链接：&lt;a href=&quot;https://pan.baidu.com/s/1KOj3Q88FY_bgPmKoQCEWQQ密码：qow3&quot; t
-      
-    
-    </summary>
-    
-      <category term="study" scheme="http://kongzhongfeima.github.io/categories/study/"/>
-    
-    
-      <category term="有用功" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%89%E7%94%A8%E5%8A%9F/"/>
     
   </entry>
   
