@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-04-17T03:49:10.049Z</updated>
+  <updated>2020-04-17T14:57:09.176Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -17,13 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>人类的天敌</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E4%BA%BA%E7%B1%BB%E7%9A%84%E5%A4%A9%E6%95%8C.html"/>
+    <id>http://kongzhongfeima.github.io//blog/人类的天敌.html</id>
+    <published>2020-04-17T16:33:32.000Z</published>
+    <updated>2020-04-17T14:57:09.176Z</updated>
+    
+    <content type="html"><![CDATA[<p>人类到底哪点进化了<br>绝望的深渊依然横亘在我们眼前</p><a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;人类到底哪点进化了&lt;br&gt;绝望的深渊依然横亘在我们眼前&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>毕设giao</title>
     <link href="http://kongzhongfeima.github.io//blog/%E6%AF%95%E8%AE%BEgiao.html"/>
     <id>http://kongzhongfeima.github.io//blog/毕设giao.html</id>
     <published>2020-04-16T09:56:14.000Z</published>
-    <updated>2020-04-17T03:49:10.049Z</updated>
+    <updated>2020-04-17T15:29:38.111Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><h3 id="数据选取："><a href="#数据选取：" class="headerlink" title="数据选取："></a>数据选取：</h3><h4 id="不同工况："><a href="#不同工况：" class="headerlink" title="不同工况："></a>不同工况：</h4><p>×  转速 600 负载 0.00N<br>  转速 600 负载 0.02N<br>  转速 600 负载 0.04N</p><p>×  转速 1200 负载 0.00N<br>  转速 1200 负载 0.02N<br>  转速 1200 负载 0.04N</p><h3 id="特征选取"><a href="#特征选取" class="headerlink" title="特征选取:"></a>特征选取:</h3><p>均方根、绝对均值、方根幅值<br>W06、W08</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><h3 id="数据选取："><a href="#数据选取：" class="headerlink" title="数据选取："></a>数据选取：</h3><h4 id="不同工况："><a href="#不同工况：" class="headerlink" title="不同工况："></a>不同工况：</h4><p>×  转速 600 负载 0.00N<br>  转速 600 负载 0.02N<br>  转速 600 负载 0.04N</p><p>×  转速 1200 负载 0.00N<br>  转速 1200 负载 0.02N<br>  转速 1200 负载 0.04N</p><h3 id="特征选取"><a href="#特征选取" class="headerlink" title="特征选取:"></a>特征选取:</h3><p>均方根、绝对均值、方根幅值<br>W06、W08</p><h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>cmd：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F:</span><br><span class="line">cd 毕设\libsvm-324\libsvm-324\tools</span><br><span class="line">C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python grid.py giao.txt</span><br></pre></td></tr></table></figure><p>结果32.0 0.5 99.0<br>其意义表示：C = 32.0；γ=0.5<br>交叉验证精度CV Rate = 99%，这就是最优结果</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
     
     <summary type="html">
     
@@ -410,29 +430,6 @@
     
     
       <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>手机验证码在线接收</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E6%89%8B%E6%9C%BA%E9%AA%8C%E8%AF%81%E7%A0%81%E5%9C%A8%E7%BA%BF%E6%8E%A5%E6%94%B6.html"/>
-    <id>http://kongzhongfeima.github.io//blog/手机验证码在线接收.html</id>
-    <published>2019-11-16T10:12:52.000Z</published>
-    <updated>2019-11-16T02:20:00.912Z</updated>
-    
-    <content type="html"><![CDATA[<p><a href="https://us-phone-number.com/" target="_blank" rel="noopener">US China手机验证码在线接收 </a><br>亲测可用 不过接收信息有点慢<br>（想用这个再白剽个sanfengyun VPS 可是忘记了国内手机号实名认证过了 和你的身份证绑在一起了 不过最近真的有点想要免费VPS 可是到处都是试用几个月的 谷歌云好像可以用一年 白剽党绝不会输！）<br><a href="https://jiemahao.com/" target="_blank" rel="noopener">接号码</a><br>这个倒是没试过   号码比较少</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;&lt;a href=&quot;https://us-phone-number.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;US China手机验证码在线接收 &lt;/a&gt;&lt;br&gt;亲测可用 不过接收信息有点慢&lt;br&gt;（想用这个再白剽个sanfengyun VPS
-      
-    
-    </summary>
-    
-    
-      <category term="薅羊毛" scheme="http://kongzhongfeima.github.io/tags/%E8%96%85%E7%BE%8A%E6%AF%9B/"/>
     
   </entry>
   
