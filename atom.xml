@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-04-16T03:05:21.531Z</updated>
+  <updated>2020-04-17T03:49:10.049Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -21,9 +21,9 @@
     <link href="http://kongzhongfeima.github.io//blog/%E6%AF%95%E8%AE%BEgiao.html"/>
     <id>http://kongzhongfeima.github.io//blog/毕设giao.html</id>
     <published>2020-04-16T09:56:14.000Z</published>
-    <updated>2020-04-16T03:05:21.531Z</updated>
+    <updated>2020-04-17T03:49:10.049Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><h3 id="数据选取："><a href="#数据选取：" class="headerlink" title="数据选取："></a>数据选取：</h3><h4 id="不同工况："><a href="#不同工况：" class="headerlink" title="不同工况："></a>不同工况：</h4><p>×  转速 600 负载 0.00N<br>  转速 600 负载 0.02N<br>  转速 600 负载 0.04N</p><p>×  转速 1200 负载 0.00N<br>  转速 1200 负载 0.02N<br>  转速 1200 负载 0.04N</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><h3 id="数据选取："><a href="#数据选取：" class="headerlink" title="数据选取："></a>数据选取：</h3><h4 id="不同工况："><a href="#不同工况：" class="headerlink" title="不同工况："></a>不同工况：</h4><p>×  转速 600 负载 0.00N<br>  转速 600 负载 0.02N<br>  转速 600 负载 0.04N</p><p>×  转速 1200 负载 0.00N<br>  转速 1200 负载 0.02N<br>  转速 1200 负载 0.04N</p><h3 id="特征选取"><a href="#特征选取" class="headerlink" title="特征选取:"></a>特征选取:</h3><p>均方根、绝对均值、方根幅值<br>W06、W08</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
     
     <summary type="html">
     
