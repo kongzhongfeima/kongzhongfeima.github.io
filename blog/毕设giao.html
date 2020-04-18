@@ -349,6 +349,9 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F:</span><br><span class="line">cd 毕设\libsvm-324\libsvm-324\tools</span><br><span class="line">C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python grid.py giao.txt</span><br></pre></td></tr></table></figure>
 
 <p>结果32.0 0.5 99.0<br>其意义表示：C = 32.0；γ=0.5<br>交叉验证精度CV Rate = 99%，这就是最优结果</p>
+<h3 id="训练模型"><a href="#训练模型" class="headerlink" title="训练模型"></a>训练模型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label, instance] = libsvmread(&apos;giao.txt&apos;);</span><br><span class="line">model=svmtrain(label,instance,&apos;-t 2 -g 0.5 -c 32.0 &apos;);</span><br></pre></td></tr></table></figure>
+
+<p>model:<br>optimization finished, #iter = 55<br>nu = 0.288143<br>obj = -544.312386, rho = -0.125256<br>nSV = 30, nBSV = 28<br>Total nSV = 68</p>
 <div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>
 
         </div>
@@ -361,10 +364,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-17T23:29:38+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-18T10:32:43+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2020年4月17日</p>
+    <p>最后更新于 2020年4月18日</p>
   </a>
 </div>
 
@@ -571,7 +574,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取："><span class="toc-text">数据选取：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不同工况："><span class="toc-text">不同工况：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选取"><span class="toc-text">特征选取:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理"><span class="toc-text">数据处理</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取："><span class="toc-text">数据选取：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不同工况："><span class="toc-text">不同工况：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选取"><span class="toc-text">特征选取:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型"><span class="toc-text">训练模型</span></a></li></ol>
     </div>
   </section>
 
