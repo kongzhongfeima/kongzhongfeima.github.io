@@ -352,6 +352,8 @@
 <h3 id="训练模型"><a href="#训练模型" class="headerlink" title="训练模型"></a>训练模型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label, instance] = libsvmread(&apos;giao.txt&apos;);</span><br><span class="line">model=svmtrain(label,instance,&apos;-t 2 -g 0.5 -c 32.0 &apos;);</span><br></pre></td></tr></table></figure>
 
 <p>model:<br>optimization finished, #iter = 55<br>nu = 0.288143<br>obj = -544.312386, rho = -0.125256<br>nSV = 30, nBSV = 28<br>Total nSV = 68</p>
+<h3 id="进行预测"><a href="#进行预测" class="headerlink" title="进行预测"></a>进行预测</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[predictlabel]=svmpredict(label_test, instance_test,model);</span><br><span class="line">plotResult(predictlabel,label_test)</span><br></pre></td></tr></table></figure>
+
 <div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>
 
         </div>
@@ -364,7 +366,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-18T10:32:43+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-18T11:11:40+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>最后更新于 2020年4月18日</p>
@@ -574,7 +576,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取："><span class="toc-text">数据选取：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不同工况："><span class="toc-text">不同工况：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选取"><span class="toc-text">特征选取:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型"><span class="toc-text">训练模型</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取："><span class="toc-text">数据选取：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不同工况："><span class="toc-text">不同工况：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选取"><span class="toc-text">特征选取:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型"><span class="toc-text">训练模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进行预测"><span class="toc-text">进行预测</span></a></li></ol>
     </div>
   </section>
 
