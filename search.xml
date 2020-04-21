@@ -162,8 +162,13 @@
 <p>小王建议：<br>首先，阅读毕设任务书，搞清楚本人毕业设计课题的研究工作内容！到学校图书馆检索下载相关的参考文献（例如，中文硕士/博士学位论文，中文重要核心期刊文章–机械工程学报、中国机械工程、航空动力学报、航空学报、振动工程学报 等）。认真阅读分析参考文献，归纳总结与本人课题相似的这些文章都研究什么、针对什么问题、采用什么方法或算法、如何做实验的、结果如何及评价指标？另外，撰写开题报告要自己撰写，不能拷贝识别现有的文档！（将来学院要论文查重）培养锻炼自己的科研素质与能力，熟悉掌握基本的科研技能（如文献查阅分析总结、撰写设计报告、毕业设计论文、算法软件编程或电路开发、、、等）！</p>
 <p>电子电气类期刊，例如，电工技术学报、中国电机工程学报、电子学报、自动化学报等<br>今天不错 还找到了一个每天可以下载十次英语论文的网站 界面是俄语的<br><a href="https://ru.booksc.org/" target="_blank" rel="noopener">https://ru.booksc.org/</a></p>
 <p>阿giao，跟研究生李加兴联系沟通，主要是旋转机械健康评估（含振动信号特征提取、健康评估计算）。自己要搞清楚毕设任务，明白课题的研究工作内容。<br>再给你以下一些资料，看学位论文的第一章 就能了解毕设课题研究背景意义。<br>旋转机械，例如轴承、齿轮箱等，健康评估=健康状态评估=退化程度<br>你的毕设课题不做剩余寿命预测，只做“健康评估”</p>
+<hr>
+<p>要搞清楚毕业设计任务书课题研究工作！“健康评估”不是“故障预测”！“齿轮”不是“轴承”！<br>1.1 课题研究内容<br>（1）分析基于振动信号检测的机械传动装置健康评估技术研究现状；<br>（2）分析典型直升机减速器组成、故障类型与振动激励信号特点；<br>（3）研究减速器振动信号故障特征参数提取方法；<br>（4）研究不同工况下减速器健康评估方法；<br>（5）减速器振动信号故障特征参数提取和健康评估方法的试验验证。<br>1.2 课题要求<br>（1）分析基于振动信号检测的机械传动装置健康评估实现过程；<br>（2）给出至少5种减速器振动信号故障特征参数；<br>（3）设计至少一种减速器健康评估方法；<br>（4）编写减速器故障特征提取和健康评估算法程序，提供仿真实验结果分析；<br>（5）撰写毕业设计论文。<br>主要技术指标：<br>（1）在分析直升机减速器组成与振动信号特点基础上，通过减速器故障动力学仿真或实验平台数据，在MATLAB环境下编写减速器故障特征提取和健康评估算法程序，验证算法的有效性；<br>（2）给出至少5种减速器振动信号故障特征参数；<br>（3）给出不同工况下1~2个减速器健康评估参数，反映不同退化阶段的健康状态。</p>
 <div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>
 ]]></content>
+      <categories>
+        <category>Project</category>
+      </categories>
       <tags>
         <tag>有用功</tag>
       </tags>
@@ -1273,6 +1278,9 @@ K独自躺在台阶，手接着雪花，此时K的内心活动我无法揣摩，
 <h4 id="LAMDA2"><a href="#LAMDA2" class="headerlink" title="LAMDA2"></a>LAMDA2</h4><p>This is the other one of the main routines. Compared to routine lambda1.m, this routine is simplified. It is not<br>possible to generate intermediate output, and it is not possible to select the number of candidates to be computed<br>(the routine will return 2 candidates).<br>Usage: [afixed,sqnorm,Qahat,Z] = lambda2 (afloat,Qahat);</p>
 <p>afloat  Input  Original float ambiguities<br>Qahat   Input  Corresponding variance-covariance matrix<br>afixed   Output Array with estimated integer candidates, sorted according<br>to the corresponding squared norms, best candidate first<br>sqnorm  Output Corresponding squared norms<br>Qzhat   Output Decorrelated variance-covariance matrix<br>Z      Output Z-transformation matrix</p>
 ]]></content>
+      <categories>
+        <category>Project</category>
+      </categories>
       <tags>
         <tag>折腾ing</tag>
       </tags>
@@ -1568,7 +1576,7 @@ tpwidget("show");</script>
 <p><a href="https://blog.csdn.net/yuan22900/article/details/50435499" target="_blank" rel="noopener">RIENX格式（上）：2.10版本内容解析和说明</a><br>MATLAB算法VIP可见：<br><a href="https://blog.csdn.net/iamlsj/article/details/38061929" target="_blank" rel="noopener">MATLAB算法VIP可见：</a><br><a href="https://blog.csdn.net/weixin_41498178/article/details/79304849" target="_blank" rel="noopener">VIP</a><br><a href="https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default" target="_blank" rel="noopener">载波相位 单差法 双查发 三叉发</a><br><a href="https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html" target="_blank" rel="noopener">载波毕设</a><br><a href="https://www.dssz.com/user/down.php" target="_blank" rel="noopener">记得领完积分下东西 搜载波相位 （看过1—4）</a><br><a href="http://www.doc88.com/p-536463024180.html" target="_blank" rel="noopener">matlab载波相位符号定时联合估计</a><br><a href="https://download.csdn.net/download/songliang12/9563542" target="_blank" rel="noopener">GPS载波相位平滑伪距</a><br><a href="http://www.pudn.com/Download/item/id/1774260.html" target="_blank" rel="noopener">纯下载无介绍 不靠谱</a><br>Google  载波相位 测距 程序<br>Google 载波相位观测值的组成部分<br><a href="https://www.docin.com/p-2126879971.html" target="_blank" rel="noopener">貌似同一个毕设</a><br><a href="https://www.bilibili.com/video/av39735562/" target="_blank" rel="noopener">武汉大学老师讲解</a><br><a href="https://www.bilibili.com/video/av39840214/?p=2" target="_blank" rel="noopener">武汉大学老师继续讲解</a><br><a href="https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3" target="_blank" rel="noopener">GPS测距码测量合集</a></p>
 ]]></content>
       <categories>
-        <category>study</category>
+        <category>Project</category>
       </categories>
       <tags>
         <tag>有用功</tag>
@@ -1814,6 +1822,15 @@ tpwidget("show");</script>
       </tags>
   </entry>
   <entry>
+    <title>凛冬之棺</title>
+    <url>//blog/%E5%87%9B%E5%86%AC%E4%B9%8B%E6%A3%BA.html</url>
+    <content><![CDATA[<p>🌱今天要读的是什么呢<br>🌱别人说的：  国产年度最佳<br>🌱嗯   我觉得前面还行<br>🌱小谜题还挺有趣<br>🌱不过感觉密室构造是否太简单<br>🌱想知道最后作者给的谜底是什么<br>🌱说来惭愧<br>🌱读的推理进本没猜中谜底的<br>🌱感觉今年的最佳短篇就给赤色博物馆里的一篇吧<br>🌱感觉每篇都挺精彩<br>🌱那篇为已死之人洗白的太惊艳了<br>🌱虽然通过笔记的方式让公众误以为自己是犯人有点普通<br>🌱但是后面的反转不落俗套<br>🌱现在一想  莫非主角女朋友的妈妈知道女儿是犯人<br>🌱所以默许主角为她洗白 而主角或许从妈妈的眼神中得到了赞同<br>🌱这样就有点可怕了</p>
+]]></content>
+      <tags>
+        <tag>最爱推理</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>有翼之暗</title>
     <url>//blog/%E6%9C%89%E7%BF%BC%E4%B9%8B%E6%9A%97.html</url>
     <content><![CDATA[<p>🌱话说好多人都说这本是神作<br>🌱等到了寒假我在看吧<br>🌱两天没看自控了<br>🌱有点慌<br>🌱一会去看</p>
@@ -1840,15 +1857,6 @@ tpwidget("show");</script>
 <hr>
 <p>🌱看完之后  果然不能释怀啊     可以与 向日葵不开的夏天媲美了<br>🌱唉  碰见  推理就心潮澎湃  不能自已 小爽给我人生中 第一本推理小说时  是不是也是觉得我是一个冷血  没有感情  的人呢  我当初还真他妈的 不知好歹  竟然把小爽给我的礼物扔了（呜呜 这可是小爽给我的唯二的礼物啊  嗯  还是谢谢小爽当初说让我考完试再看 要不然虽然我当初那么冷酷无情  也可能激起一小点点涟漪）  嗯  还是谢谢小爽 给我的第一本推理小说  我现在可是对这方面很了解哦</p>
 <p>🌱怎么感觉  自己一本正经的有点傻<br>🌱好想像小爽一样傻乎乎的  （你不会骂我吧 这可是褒义词好吧）<br>🌱哈哈  你可比奇奇好多了  不对  没有可比性<br>🌱嗯  像你一样不想那么多   心里不装杂质  对别人毫不设防（怎么有点吃醋的感觉  受不了我自己了 过了三四年  怎么还是不坦率 怎么占有欲这么强  迟早要坏事  🌱又说开丧气话了  果然骨子里是无可救药的 悲观主义者啊）</p>
-]]></content>
-      <tags>
-        <tag>最爱推理</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>凛冬之棺</title>
-    <url>//blog/%E5%87%9B%E5%86%AC%E4%B9%8B%E6%A3%BA.html</url>
-    <content><![CDATA[<p>🌱今天要读的是什么呢<br>🌱别人说的：  国产年度最佳<br>🌱嗯   我觉得前面还行<br>🌱小谜题还挺有趣<br>🌱不过感觉密室构造是否太简单<br>🌱想知道最后作者给的谜底是什么<br>🌱说来惭愧<br>🌱读的推理进本没猜中谜底的<br>🌱感觉今年的最佳短篇就给赤色博物馆里的一篇吧<br>🌱感觉每篇都挺精彩<br>🌱那篇为已死之人洗白的太惊艳了<br>🌱虽然通过笔记的方式让公众误以为自己是犯人有点普通<br>🌱但是后面的反转不落俗套<br>🌱现在一想  莫非主角女朋友的妈妈知道女儿是犯人<br>🌱所以默许主角为她洗白 而主角或许从妈妈的眼神中得到了赞同<br>🌱这样就有点可怕了</p>
 ]]></content>
       <tags>
         <tag>最爱推理</tag>
