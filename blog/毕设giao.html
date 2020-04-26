@@ -342,6 +342,7 @@
 
 <center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center>
 
+<p>##Try1：</p>
 <h3 id="数据选取："><a href="#数据选取：" class="headerlink" title="数据选取："></a>数据选取：</h3><h4 id="不同工况："><a href="#不同工况：" class="headerlink" title="不同工况："></a>不同工况：</h4><p>×  转速 600 负载 0.00N<br>  转速 600 负载 0.02N<br>  转速 600 负载 0.04N</p>
 <p>×  转速 1200 负载 0.00N<br>  转速 1200 负载 0.02N<br>  转速 1200 负载 0.04N</p>
 <h3 id="特征选取"><a href="#特征选取" class="headerlink" title="特征选取:"></a>特征选取:</h3><p>均方根、绝对均值、方根幅值<br>W06、W08</p>
@@ -354,6 +355,15 @@
 <p>model:<br>optimization finished, #iter = 55<br>nu = 0.288143<br>obj = -544.312386, rho = -0.125256<br>nSV = 30, nBSV = 28<br>Total nSV = 68</p>
 <h3 id="进行预测"><a href="#进行预测" class="headerlink" title="进行预测"></a>进行预测</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[predictlabel]=svmpredict(label_test, instance_test,model);</span><br><span class="line">plotResult(predictlabel,label_test)</span><br></pre></td></tr></table></figure>
 
+<center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center>
+
+<h2 id="Try2："><a href="#Try2：" class="headerlink" title="Try2："></a>Try2：</h2><h3 id="数据选取：-1"><a href="#数据选取：-1" class="headerlink" title="数据选取："></a>数据选取：</h3><p>每个工况下四种健康程度 每种健康程度1048576个数据<br>1048576<em>3/4=786432   训练数据 786432/64=<br>1048576</em>1/4=262144   测试数据</p>
+<h3 id="数据处理-1"><a href="#数据处理-1" class="headerlink" title="数据处理"></a>数据处理</h3><p>cmd：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F:</span><br><span class="line">cd 毕设\libsvm-324\libsvm-324\tools</span><br><span class="line">C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python grid.py 64zu_test_featuresLink.txt</span><br></pre></td></tr></table></figure>
+
+<p>0.03125 0.0078125 100.0<br>其意义表示：C = 0.03125；γ=0.0078125<br>交叉验证精度CV Rate = 100.0%，这就是最优结果</p>
+<h3 id="训练模型-1"><a href="#训练模型-1" class="headerlink" title="训练模型"></a>训练模型</h3><p><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/model.png"></fancybox></p>
+<p>optimization finished, #iter = 4<br>nu = 0.003880<br>obj = -7.946015, rho = -0.000000<br>nSV = 2, nBSV = 0<br>Total nSV = 105</p>
 <div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>
 
         </div>
@@ -366,10 +376,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-21T08:49:17+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-26T20:48:44+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2020年4月21日</p>
+    <p>最后更新于 2020年4月26日</p>
   </a>
 </div>
 
@@ -576,7 +586,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取："><span class="toc-text">数据选取：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不同工况："><span class="toc-text">不同工况：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选取"><span class="toc-text">特征选取:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型"><span class="toc-text">训练模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进行预测"><span class="toc-text">进行预测</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取："><span class="toc-text">数据选取：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不同工况："><span class="toc-text">不同工况：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选取"><span class="toc-text">特征选取:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型"><span class="toc-text">训练模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进行预测"><span class="toc-text">进行预测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Try2："><span class="toc-text">Try2：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取：-1"><span class="toc-text">数据选取：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理-1"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型-1"><span class="toc-text">训练模型</span></a></li></ol>
     </div>
   </section>
 
@@ -742,7 +752,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/我日/" style="font-size: 14px; color: #999">我日</a> <a href="/tags/手记/" style="font-size: 24px; color: #555">手记</a> <a href="/tags/折腾ing/" style="font-size: 19px; color: #777">折腾ing</a> <a href="/tags/文学类小说/" style="font-size: 14px; color: #999">文学类小说</a> <a href="/tags/最爱推理/" style="font-size: 21.5px; color: #666">最爱推理</a> <a href="/tags/有用功/" style="font-size: 19px; color: #777">有用功</a> <a href="/tags/薅羊毛/" style="font-size: 16.5px; color: #888">薅羊毛</a>
+      <a href="/tags/我日/" style="font-size: 14px; color: #999">我日</a> <a href="/tags/手记/" style="font-size: 24px; color: #555">手记</a> <a href="/tags/折腾ing/" style="font-size: 20px; color: #707070">折腾ing</a> <a href="/tags/文学类小说/" style="font-size: 14px; color: #999">文学类小说</a> <a href="/tags/最爱推理/" style="font-size: 22px; color: #636363">最爱推理</a> <a href="/tags/有用功/" style="font-size: 18px; color: #7e7e7e">有用功</a> <a href="/tags/薅羊毛/" style="font-size: 16px; color: #8b8b8b">薅羊毛</a>
     </div>
   </section>
 

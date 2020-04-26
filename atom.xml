@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-04-22T14:39:57.758Z</updated>
+  <updated>2020-04-23T06:20:25.352Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>FlashFXP_FTP</title>
+    <link href="http://kongzhongfeima.github.io//blog/FlashFXP-FTP.html"/>
+    <id>http://kongzhongfeima.github.io//blog/FlashFXP-FTP.html</id>
+    <published>2020-04-23T14:14:41.000Z</published>
+    <updated>2020-04-23T06:20:25.352Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><p>三丰云FTP<br><fancybox><br><img src="http://image-cos.test.upcdn.net/blog/ftp.png"></fancybox></p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;center&gt;&lt;img src=&quot;http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png&quot;&gt; &lt;/center&gt;
+
+&lt;p&gt;三丰云FTP&lt;br&gt;&lt;fancybox&gt;&lt;br&gt;&lt;img src=
+      
+    
+    </summary>
+    
+    
+      <category term="折腾ing" scheme="http://kongzhongfeima.github.io/tags/%E6%8A%98%E8%85%BEing/"/>
+    
+  </entry>
   
   <entry>
     <title>我们全是仰仗他人的善意才得以存活到现在</title>
@@ -68,9 +94,9 @@
     <link href="http://kongzhongfeima.github.io//blog/%E6%AF%95%E8%AE%BEgiao.html"/>
     <id>http://kongzhongfeima.github.io//blog/毕设giao.html</id>
     <published>2020-04-16T09:56:14.000Z</published>
-    <updated>2020-04-21T00:49:17.322Z</updated>
+    <updated>2020-04-26T12:48:44.111Z</updated>
     
-    <content type="html"><![CDATA[<a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><h3 id="数据选取："><a href="#数据选取：" class="headerlink" title="数据选取："></a>数据选取：</h3><h4 id="不同工况："><a href="#不同工况：" class="headerlink" title="不同工况："></a>不同工况：</h4><p>×  转速 600 负载 0.00N<br>  转速 600 负载 0.02N<br>  转速 600 负载 0.04N</p><p>×  转速 1200 负载 0.00N<br>  转速 1200 负载 0.02N<br>  转速 1200 负载 0.04N</p><h3 id="特征选取"><a href="#特征选取" class="headerlink" title="特征选取:"></a>特征选取:</h3><p>均方根、绝对均值、方根幅值<br>W06、W08</p><h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>cmd：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F:</span><br><span class="line">cd 毕设\libsvm-324\libsvm-324\tools</span><br><span class="line">C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python grid.py giao.txt</span><br></pre></td></tr></table></figure><p>结果32.0 0.5 99.0<br>其意义表示：C = 32.0；γ=0.5<br>交叉验证精度CV Rate = 99%，这就是最优结果</p><h3 id="训练模型"><a href="#训练模型" class="headerlink" title="训练模型"></a>训练模型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label, instance] = libsvmread(&apos;giao.txt&apos;);</span><br><span class="line">model=svmtrain(label,instance,&apos;-t 2 -g 0.5 -c 32.0 &apos;);</span><br></pre></td></tr></table></figure><p>model:<br>optimization finished, #iter = 55<br>nu = 0.288143<br>obj = -544.312386, rho = -0.125256<br>nSV = 30, nBSV = 28<br>Total nSV = 68</p><h3 id="进行预测"><a href="#进行预测" class="headerlink" title="进行预测"></a>进行预测</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[predictlabel]=svmpredict(label_test, instance_test,model);</span><br><span class="line">plotResult(predictlabel,label_test)</span><br></pre></td></tr></table></figure><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><p>##Try1：</p><h3 id="数据选取："><a href="#数据选取：" class="headerlink" title="数据选取："></a>数据选取：</h3><h4 id="不同工况："><a href="#不同工况：" class="headerlink" title="不同工况："></a>不同工况：</h4><p>×  转速 600 负载 0.00N<br>  转速 600 负载 0.02N<br>  转速 600 负载 0.04N</p><p>×  转速 1200 负载 0.00N<br>  转速 1200 负载 0.02N<br>  转速 1200 负载 0.04N</p><h3 id="特征选取"><a href="#特征选取" class="headerlink" title="特征选取:"></a>特征选取:</h3><p>均方根、绝对均值、方根幅值<br>W06、W08</p><h3 id="数据处理"><a href="#数据处理" class="headerlink" title="数据处理"></a>数据处理</h3><p>cmd：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F:</span><br><span class="line">cd 毕设\libsvm-324\libsvm-324\tools</span><br><span class="line">C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python grid.py giao.txt</span><br></pre></td></tr></table></figure><p>结果32.0 0.5 99.0<br>其意义表示：C = 32.0；γ=0.5<br>交叉验证精度CV Rate = 99%，这就是最优结果</p><h3 id="训练模型"><a href="#训练模型" class="headerlink" title="训练模型"></a>训练模型</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label, instance] = libsvmread(&apos;giao.txt&apos;);</span><br><span class="line">model=svmtrain(label,instance,&apos;-t 2 -g 0.5 -c 32.0 &apos;);</span><br></pre></td></tr></table></figure><p>model:<br>optimization finished, #iter = 55<br>nu = 0.288143<br>obj = -544.312386, rho = -0.125256<br>nSV = 30, nBSV = 28<br>Total nSV = 68</p><h3 id="进行预测"><a href="#进行预测" class="headerlink" title="进行预测"></a>进行预测</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[predictlabel]=svmpredict(label_test, instance_test,model);</span><br><span class="line">plotResult(predictlabel,label_test)</span><br></pre></td></tr></table></figure><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><h2 id="Try2："><a href="#Try2：" class="headerlink" title="Try2："></a>Try2：</h2><h3 id="数据选取：-1"><a href="#数据选取：-1" class="headerlink" title="数据选取："></a>数据选取：</h3><p>每个工况下四种健康程度 每种健康程度1048576个数据<br>1048576<em>3/4=786432   训练数据 786432/64=<br>1048576</em>1/4=262144   测试数据</p><h3 id="数据处理-1"><a href="#数据处理-1" class="headerlink" title="数据处理"></a>数据处理</h3><p>cmd：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F:</span><br><span class="line">cd 毕设\libsvm-324\libsvm-324\tools</span><br><span class="line">C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python grid.py 64zu_test_featuresLink.txt</span><br></pre></td></tr></table></figure><p>0.03125 0.0078125 100.0<br>其意义表示：C = 0.03125；γ=0.0078125<br>交叉验证精度CV Rate = 100.0%，这就是最优结果</p><h3 id="训练模型-1"><a href="#训练模型-1" class="headerlink" title="训练模型"></a>训练模型</h3><p><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/model.png"></fancybox></p><p>optimization finished, #iter = 4<br>nu = 0.003880<br>obj = -7.946015, rho = -0.000000<br>nSV = 2, nBSV = 0<br>Total nSV = 105</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
     
     <summary type="html">
     
@@ -80,7 +106,8 @@
 
 &lt;center&gt;&lt;img src=&quot;http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png&quot;&gt; &lt;/center&gt;
 
-&lt;h3 id=&quot;数据选取：&quot;&gt;&lt;a href=&quot;#数据选取：&quot; cla
+&lt;p&gt;##Try1：&lt;/p&gt;
+&lt;h3 id=&quot;数据选取：&quot;&gt;&lt;a hr
       
     
     </summary>
@@ -219,7 +246,7 @@
     <link href="http://kongzhongfeima.github.io//blog/%E6%81%BC%E4%BA%BA%E7%9A%84%E6%AF%95%E8%AE%BE.html"/>
     <id>http://kongzhongfeima.github.io//blog/恼人的毕设.html</id>
     <published>2020-02-16T20:27:25.000Z</published>
-    <updated>2020-04-23T02:02:14.801Z</updated>
+    <updated>2020-04-23T03:27:00.878Z</updated>
     
     <content type="html"><![CDATA[<p>所有的都要重写</p><a id="more"></a><p><fancybox><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"></fancybox></p><p>小王建议：<br>首先，阅读毕设任务书，搞清楚本人毕业设计课题的研究工作内容！到学校图书馆检索下载相关的参考文献（例如，中文硕士/博士学位论文，中文重要核心期刊文章–机械工程学报、中国机械工程、航空动力学报、航空学报、振动工程学报 等）。认真阅读分析参考文献，归纳总结与本人课题相似的这些文章都研究什么、针对什么问题、采用什么方法或算法、如何做实验的、结果如何及评价指标？另外，撰写开题报告要自己撰写，不能拷贝识别现有的文档！（将来学院要论文查重）培养锻炼自己的科研素质与能力，熟悉掌握基本的科研技能（如文献查阅分析总结、撰写设计报告、毕业设计论文、算法软件编程或电路开发、、、等）！</p><p>电子电气类期刊，例如，电工技术学报、中国电机工程学报、电子学报、自动化学报等<br>今天不错 还找到了一个每天可以下载十次英语论文的网站 界面是俄语的<br><a href="https://ru.booksc.org/" target="_blank" rel="noopener">https://ru.booksc.org/</a></p><p>阿giao，跟研究生李加兴联系沟通，主要是旋转机械健康评估（含振动信号特征提取、健康评估计算）。自己要搞清楚毕设任务，明白课题的研究工作内容。<br>再给你以下一些资料，看学位论文的第一章 就能了解毕设课题研究背景意义。<br>旋转机械，例如轴承、齿轮箱等，健康评估=健康状态评估=退化程度<br>你的毕设课题不做剩余寿命预测，只做“健康评估”</p><hr><p>要搞清楚毕业设计任务书课题研究工作！“健康评估”不是“故障预测”！“齿轮”不是“轴承”！<br>1.1 课题研究内容<br>（1）分析基于振动信号检测的机械传动装置健康评估技术研究现状；<br>（2）分析典型直升机减速器组成、故障类型与振动激励信号特点；<br>（3）研究减速器振动信号故障特征参数提取方法；<br>（4）研究不同工况下减速器健康评估方法；<br>（5）减速器振动信号故障特征参数提取和健康评估方法的试验验证。<br>1.2 课题要求<br>（1）分析基于振动信号检测的机械传动装置健康评估实现过程；<br>（2）给出至少5种减速器振动信号故障特征参数；<br>（3）设计至少一种减速器健康评估方法；<br>（4）编写减速器故障特征提取和健康评估算法程序，提供仿真实验结果分析；<br>（5）撰写毕业设计论文。<br>主要技术指标：<br>（1）在分析直升机减速器组成与振动信号特点基础上，通过减速器故障动力学仿真或实验平台数据，在MATLAB环境下编写减速器故障特征提取和健康评估算法程序，验证算法的有效性；<br>（2）给出至少5种减速器振动信号故障特征参数；<br>（3）给出不同工况下1~2个减速器健康评估参数，反映不同退化阶段的健康状态。</p><hr><p>火冒金经圣山:<br>你们把已经做的工作成绩（例如，读书笔记、课题研究分析报告、算法设计分析与程序、仿真结果、翻译文章等）整理成一个文档（每一章都是一个内容，章节、图、表、公式等格式规范化），发给我！文档名称：张山–毕业设计课题中期进展成绩汇总20200411-V1.0</p><p>火冒金经圣山:<br>发给我了？</p><p>火冒金经圣山:<br>另外，每个人的毕设工作每周记录呢？</p><p>火冒金经圣山:<br>为了本人能够体面顺利毕业拿到学士学位，必须抓紧时间做毕设课题了！！！</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
     
@@ -412,28 +439,6 @@
       &lt;p&gt;记下今天得知的2019超具性价比的几款鞋子&lt;br&gt;🌱  &lt;strong&gt;&lt;a href=&quot;https://getmyte.com/?from=mocun.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;font color=&quot;#458e0b&quot;&gt; 李宁全城7 &lt;/font&gt;&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;🌱  &lt;strong&gt;&lt;a href=&quot;https://getmyte.com/?from=mocun.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;font color=&quot;#00C5CD&quot;&gt; 匹克闪现 &lt;/font&gt;&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;🌱  &lt;strong&gt;&lt;a href=&quot;https://getmyte.com/?from=mocun.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;font color=&quot;#CDBE70&quot;&gt; 匹克态极 &lt;/font&gt;&lt;/a&gt;&lt;/strong&gt; （超级软）&lt;br&gt;🌱  &lt;strong&gt;&lt;a href=&quot;https://getmyte.com/?from=mocun.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;font color=&quot;#F08080&quot;&gt; 安踏kd4 &lt;/font&gt;&lt;/a&gt;&lt;/strong&gt;（汤普森——我来了）&lt;/p&gt;
     
     </summary>
-    
-    
-      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>暧昧之茧</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E6%9A%A7%E6%98%A7%E4%B9%8B%E8%8C%A7.html"/>
-    <id>http://kongzhongfeima.github.io//blog/暧昧之茧.html</id>
-    <published>2019-11-16T19:11:36.000Z</published>
-    <updated>2019-11-16T11:23:52.964Z</updated>
-    
-    <content type="html"><![CDATA[<p>那犹如深渊般莫测、诱人的暧昧蚕食着我</p><a id="more"></a><p>你还真是无聊啊 和我这个直男聊这么长时间 真是难为你了  为何要用糖衣炮弹攻击我<br>还说只想和我一起打游戏 哎  还好 我及时终止了这种危险 几近不可控的肮脏关系<br>人只要有机会 就有沦陷<br>真他妈的可笑啊 前几天还你侬我侬 冷酷起来比陌生人还陌生冷淡<br>文爱、聊骚 谁不会 只要是不付出真心 不损害自己利益 谁又不想尝试<br>我称之为 无益的放纵  只是解决了一时的寂寞<br>手机上一套一套的 （哈哈 谁不会啊）<br>最烦别人说 只想暴富 不想恋爱 当丘比特降临在你头上时 你会发现你当初的flag 多么可笑 多么荒谬<br>你以为你心灵干涸 可总有人不经意间拨动你的心弦<br>没有人是座孤岛 （人非孤岛 无人能自全）</p><hr><p>不过最近做了另一件正确无比的事 就是没给我讨厌的人讲考试题<br>毕竟你没给我课设 我不欠你什么 反倒是让我看清楚了你的丑恶嘴脸 自然不会以怨报德<br>涂磊老师在节目中说到：追求在大多数人心目中的价值 本事就是没有价值的事情<br>说得太对了 我也是对那些人缘特别好的人敬而远之<br>说不定他就会为了大多数人的利益 把你给献祭了</p><hr><blockquote><p>你很好 她也不坏</p></blockquote><p>异地恋的话 只有你才可以哦</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;那犹如深渊般莫测、诱人的暧昧蚕食着我&lt;/p&gt;
-    
-    </summary>
-    
-      <category term="Reality" scheme="http://kongzhongfeima.github.io/categories/Reality/"/>
     
     
       <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
