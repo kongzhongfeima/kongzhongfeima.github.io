@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-04-23T06:20:25.352Z</updated>
+  <updated>2020-04-27T04:01:04.814Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>libsvm特征选取</title>
+    <link href="http://kongzhongfeima.github.io//blog/libsvm%E7%89%B9%E5%BE%81%E9%80%89%E5%8F%96.html"/>
+    <id>http://kongzhongfeima.github.io//blog/libsvm特征选取.html</id>
+    <published>2020-04-27T11:31:51.000Z</published>
+    <updated>2020-04-27T04:01:04.814Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><h4 id="转载自：http-blog-sina-com-cn-s-blog-821b37de0102xgh5-html"><a href="#转载自：http-blog-sina-com-cn-s-blog-821b37de0102xgh5-html" class="headerlink" title="转载自：http://blog.sina.com.cn/s/blog_821b37de0102xgh5.html"></a>转载自：<a href="http://blog.sina.com.cn/s/blog_821b37de0102xgh5.html" target="_blank" rel="noopener">http://blog.sina.com.cn/s/blog_821b37de0102xgh5.html</a></h4><p>Matlab feature selection总结 (2018-03-07 11:24:56)转载▼<br>分类： 科研经验<br>常用的feature selection方法有ReliefF, Fisher, 以及prevent lunch attack中的mutual information，代码总结如下<br>1.ReliefF 在matlab中有现成代码，可以直接调用。</p><ol start="2"><li>Fisher，在网上有toolbox，<a href="https://au.mathworks.com/matlabcentral/fileexchange/56937-feature-selection-library" target="_blank" rel="noopener">https://au.mathworks.com/matlabcentral/fileexchange/56937-feature-selection-library</a> ，里面包含了很多方法（包括ReliefF），但是其中的fisher方法并不能直接返回fisher score（在lib中的fisher.m能返回，但是需要自己改一些程序得到这个返回object）。这个网上的代码可以直接返回fisher score: <a href="https://au.mathworks.com/matlabcentral/fileexchange/54906-feature-rank-input-labels-numindices-method-?focused=5868668&amp;tab=function" target="_blank" rel="noopener">https://au.mathworks.com/matlabcentral/fileexchange/54906-feature-rank-input-labels-numindices-method-?focused=5868668&amp;tab=function</a> ，但是里面的代码有一点错误（在comments里可以看到），修改后的代码如下<br>%   Function to compute Fisher-Score or Discriminating Coefficient<br>%  Inputs:           Input:        input data matrix where each row is a<br>%                                 feature and each column corresponds to an instance or example<br>%                   labels:        grouping variable that contains class<br>%                                 labels. It can be cell array of strings,<br>%                                 numerical array or logical array<br>%                   numIndices:    (optional)<br>%                                 Number of significant features to be returned<br>%                   mehod:        (optional)<br>%                                 Method for feature-ranking<br>%                                 ‘Fisher_Score’(default) or<br>%                                ‘Discriminating_Coefficient’<br>%<br>%  Outputs:          featureScore:  score of each feature according to<br>%                                 ranking criteria used<br>%                   index:         indices of features according to<br>%                                 the feature score<br>%<br>%  References:                     Y. W. Chen and C. J. Lin,<br>%                                 “Combining SVMs with various feature selection strategies”, Feature Extraction, Foundations and<br>%                                 Applications. New York, Springer-Verlag, 2006<br>%                                 T. Markiewicz  and S. Osowski1<br>%                                 “Data mining techniques for feature selection in blood cell recognition”,<br>%                                 Proceedings of European Symposium on Artifical Neaural Networks, April 2006<br>%<br>%  Author:                        Vishnu Muralidharan<br>%                                 Department of Electrical and<br>%                                 Computer Engineering<br>%                                 University of Alabama in Huntsville</li></ol><p>function [index,featureScore] = feature_rank(Input,labels,numIndices,method)</p><p>%% if the a specified number of significant features are needed<br>if nargin &lt;4<br>    numIndices = NaN;<br>end</p><p>%% if the discriminating co-efficient needs to be calculated<br>if nargin == 3<br>    criteria = method;<br>else<br>    criteria = ‘Fisher_Score’;<br>end</p><p>%% Check for number of instances being equal to number of labels</p><p>if size(Input,2) ~= size(labels,1)<br>    error(‘Input and labels must have the same number of rows’);<br>end</p><p>%% Inicdes for class labels<br>groupLabels = unique(labels);      % fidn the unique lables and hence number of classes<br>labelType = whos(‘labels’);</p><p>% finding indices of respective classes in data according grouping variable<br>% data type<br>switch labelType.class<br>    case ‘cell’<br>       idxA = find(strcmp(labels,groupLabels{1}));<br>       idxB = find(strcmp(labels,groupLabels{2}));<br>    case ‘double’<br>       idxA = find(labels==groupLabels(1));<br>       idxB = find(labels==groupLabels(2));<br>    case ‘logical’<br>       idxA = find(labels==groupLabels(1));<br>       idxB = find(labels==groupLabels(2));<br>    otherwise<br>       error(‘Grouping vector of undefined data type’);<br>end</p><p>numClassA = length(idxA);      % number of instances of class A<br>numClassB = length(idxB);      % number of insatnces of class B</p><p>numFeat = size(Input,1);       % number of features in dataset<br>numInst = size(Input,2);       % number of instances or examples in dataset</p><p>%% Compute Discriminating Co-efficient or Fisher Score<br>if strcmp(criteria,’Discriminating_Coefficient’)<br>    % compute value of discriminating coefficient between two classes for<br>    % each feature<br>    for i=1:1:numFeat<br>       vectorA = Input(i,idxA);<br>       vectorB = Input(i,idxB);<br>       muA = mean(vectorA);          % mean of given feature for class A<br>       muB = mean(vectorB);          % mean of given feature for class B<br>       sigmaA = std(vectorA);        % standard deviation of given feature for class A<br>       sigmaB = std(vectorB);        % standard deviation of given feature for class B<br>       scoreIndex(i,1) = (abs(muA - muB))/(sigmaA + sigmaB);   % compute Discriminating Coefficient<br>       scoreIndex(i,2) = i;                              % store index of feature<br>    end<br>else<br>    % compute Fisher Score between two classes for each feature<br>    for i=1:1:numFeat<br>       muFeat = mean(Input(i,:));     % extract mean of feature for both classes combined<br>       vectorA = Input(i,idxA);<br>       vectorB = Input(i,idxB);<br>       muA = mean(vectorA);          % mean of given feature for class A<br>       muB = mean(vectorB);          % mean of given feature for class B<br>       numer = ((muA - muFeat)^2) + ((muB - muFeat)^2);    % numerator of Fisher Score equation<br>       sumA = 0;<br>       sumB = 0;<br>       for k=1:1:numClassA<br>           sumA = sumA + (vectorA(k) - muA)^2;<br>       end<br>       term1 = sumA/(numClassA -1);<br>       for k=1:1:numClassB<br>           sumB = sumB + (vectorB(k) - muB)^2;<br>       end<br>       term2 = sumB/(numClassB -1);<br>       denom = term1 + term2;                         % denominator of Fisher Score equation<br>       scoreIndex(i,1) = numer/denom;                  % compute Fisher Score for the feature<br>       scoreIndex(i,2) = i;                           % store index of feature<br>    end<br>end<br>%% Rank features according to score<br>for i=1:1:numFeat - 1<br>    for j=1:1:numFeat - i<br>       % rank features and store their respective indices<br>       if scoreIndex(j,1) &lt; scoreIndex(j+1,1)<br>           tempScore = scoreIndex(j,1);<br>          scoreIndex(j,1) = scoreIndex(j+1,1);<br>          scoreIndex(j+1,1) = tempScore;<br>           tempIdx = scoreIndex(j,2);<br>          scoreIndex(j,2) = scoreIndex(j+1,2);<br>          scoreIndex(j+1,2) = tempIdx;<br>       end<br>    end<br>end</p><p>%% Outputs</p><p>% Output scores of features<br>if isnan(numIndices)<br>    featureScore = scoreIndex(:,1);<br>    index = scoreIndex(:,2);<br>else<br>    featureScore = scoreIndex(1:numIndices,1);<br>    index = scoreIndex(1:numIndices,2);<br>end</p><p>3.mutual information 在上面的toolbox里也有，但是在使用中发现上面的toolbox只能处理二分类，并不支持多分类，因而找到了新的toolbox 支持多分类。 <a href="http://users.spa.aalto.fi/jpohjala/featureselection/" target="_blank" rel="noopener">http://users.spa.aalto.fi/jpohjala/featureselection/</a><br>里面有mutual information的feature selection实现</p><h3 id="Relief-F-调用"><a href="#Relief-F-调用" class="headerlink" title="Relief-F 调用"></a>Relief-F 调用</h3><p>现成matlab函数调用</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h4 id=&quot;转载自：http-blog-sina-com-cn-s-blog-821b37de0102xgh5-html&quot;&gt;&lt;a href=&quot;#转载自：http-blog-sina-com-cn-s-blog-821b37de0102xgh
+      
+    
+    </summary>
+    
+      <category term="Project" scheme="http://kongzhongfeima.github.io/categories/Project/"/>
+    
+    
+      <category term="有用功" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%89%E7%94%A8%E5%8A%9F/"/>
+    
+  </entry>
   
   <entry>
     <title>FlashFXP_FTP</title>
@@ -421,26 +447,6 @@
     
     
       <category term="有用功" scheme="http://kongzhongfeima.github.io/tags/%E6%9C%89%E7%94%A8%E5%8A%9F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>想做的、没做的</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E6%83%B3%E5%81%9A%E7%9A%84%E3%80%81%E6%B2%A1%E5%81%9A%E7%9A%84.html"/>
-    <id>http://kongzhongfeima.github.io//blog/想做的、没做的.html</id>
-    <published>2020-01-08T20:43:00.000Z</published>
-    <updated>2020-01-08T13:01:01.900Z</updated>
-    
-    <content type="html"><![CDATA[<p>记下今天得知的2019超具性价比的几款鞋子<br>🌱  <strong><a href="https://getmyte.com/?from=mocun.me" target="_blank" rel="noopener"><font color="#458e0b"> 李宁全城7 </font></a></strong><br>🌱  <strong><a href="https://getmyte.com/?from=mocun.me" target="_blank" rel="noopener"><font color="#00C5CD"> 匹克闪现 </font></a></strong><br>🌱  <strong><a href="https://getmyte.com/?from=mocun.me" target="_blank" rel="noopener"><font color="#CDBE70"> 匹克态极 </font></a></strong> （超级软）<br>🌱  <strong><a href="https://getmyte.com/?from=mocun.me" target="_blank" rel="noopener"><font color="#F08080"> 安踏kd4 </font></a></strong>（汤普森——我来了）</p><a id="more"></a><p>真鸡儿麻烦 不想买的时候 给我优惠券<br>在拼duoduo上想买的时候 又没了<br>不过有一说一 匹克确实是性价比极高<br>中国李宁国潮不错 就是太贵<br>安踏已然踏入国际视野</p><p>他娘的 谁不想穿 耐克阿迪<br>老子有钱了 aj整个全套<br>哎 就想要一个kd4和态极 压马路</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;记下今天得知的2019超具性价比的几款鞋子&lt;br&gt;🌱  &lt;strong&gt;&lt;a href=&quot;https://getmyte.com/?from=mocun.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;font color=&quot;#458e0b&quot;&gt; 李宁全城7 &lt;/font&gt;&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;🌱  &lt;strong&gt;&lt;a href=&quot;https://getmyte.com/?from=mocun.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;font color=&quot;#00C5CD&quot;&gt; 匹克闪现 &lt;/font&gt;&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;🌱  &lt;strong&gt;&lt;a href=&quot;https://getmyte.com/?from=mocun.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;font color=&quot;#CDBE70&quot;&gt; 匹克态极 &lt;/font&gt;&lt;/a&gt;&lt;/strong&gt; （超级软）&lt;br&gt;🌱  &lt;strong&gt;&lt;a href=&quot;https://getmyte.com/?from=mocun.me&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;&lt;font color=&quot;#F08080&quot;&gt; 安踏kd4 &lt;/font&gt;&lt;/a&gt;&lt;/strong&gt;（汤普森——我来了）&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
     
   </entry>
   
