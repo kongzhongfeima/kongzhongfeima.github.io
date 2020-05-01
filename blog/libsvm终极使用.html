@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   
-  <title>贪半晌清欢 不过是大梦一场 | 空中飞马</title>
+  <title>libsvm终极使用 | 空中飞马</title>
   
   
 
@@ -48,7 +48,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover 贪半晌清欢 不过是大梦一场 half'>
+    <cover class='cover post half'>
       
         
   <h1 class='title'>空中飞马</h1>
@@ -244,28 +244,11 @@
   
 
   
-    <article id="贪半晌清欢 不过是大梦一场" class="post white-box article-type-贪半晌清欢 不过是大梦一场" itemscope itemprop="blogPost">
+    <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
       
 
 
   <section class='meta'>
-    
-      
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
-  <div class="aplayer"
-    data-theme=""
-    data-mini=true 
-    
-    data-mode="circulation"
-    data-server="netease"
-    data-type="song"
-    data-id="167916"
-    data-volume="0.7">
-  </div>
-  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
-
-
     
     
     <div class="meta" id="header-meta">
@@ -273,8 +256,8 @@
         
   
     <h1 class="title">
-      <a href="/blog/贪半晌清欢、不过是大梦一场.html">
-        贪半晌清欢 不过是大梦一场
+      <a href="/blog/libsvm终极使用.html">
+        libsvm终极使用
       </a>
     </h1>
   
@@ -303,7 +286,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-09-15</p>
+    <p>2020-05-01</p>
   </a>
 </div>
 
@@ -311,6 +294,14 @@
         
           
             
+  
+  <div class='new-meta-item category'>
+    <a href='/categories/Project/' rel="nofollow">
+      <i class="fas fa-folder-open" aria-hidden="true"></i>
+      <p>Project</p>
+    </a>
+  </div>
+
 
           
         
@@ -347,57 +338,135 @@
 
       <section class="article typo">
         <div class="article-entry" itemprop="articleBody">
-          <center><blockquote>能梦到你 是我的过人之处</blockquote></center>
-
+          <p>今天真的懂得了好多知识：</p>
 <a id="more"></a>
-<h3 id="梦"><a href="#梦" class="headerlink" title="  梦 "></a><center>  梦 </center></h3><p>🌱幸好这份温暖的、跃动着的像海平面上初升的朝阳陪伴着我<br>🌱我的梦境不至于空洞、发呆时偶尔也会露出笑容<br>🌱至今我仍旧享受这份伤痛<br>🌱记忆的碎屑席卷而来 每每梦到坐到你身旁<br>🌱你现在闲扯起来像我一般 本来就是我想象的投射嘛<br>🌱为何感觉上次聚会你没太大变化呢 我可是成长了很多<br>🌱不是我不想忘记 实在是记忆本身太清晰<br>🌱不过你身穿蓝色碎花短裙的样子记不得了<br>🌱哼 我不会原谅你坐他鞋子上的 我就是这么的小气 （更他妈是懦弱）幸好你及时醒悟<br>🌱哈哈 我还想看你一袭淡色裙、小黑裙（肯定性感的受不了）<br>🌱想给你买小裙子 (ˇˍˇ)    想闻你衣领的香甜气息<br>🌱没来得及说 喜欢你攥我尾指的感觉<br>🌱最近喜欢粉色的运动鞋<br>🌱想让你给我打领带 我想看你瞳孔中的自己<br>🌱以后还是一定要去你的婚礼 你是我的女儿  纵然再不舍 也想看你清澈瞳孔中未来的模样<br>🌱你和她要去的Disney去了吗<br>🌱我可是一定要去的 单身赴约</p>
-<p><a href="https://raw.githubusercontent.com/kongzhongfeima/Figurebed/master/img/20190906151215.png" target="_blank" rel="noopener"></a></p>
+
+<center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center>
+今天真的懂得了好多知识：
+
+<ol>
+<li>归一化（即数据缩放0不是必须的，有时反而起反作用需要说明的事并不是任何问题都必须事先把原始数据进行规范化,也就是数据规范化这一步并不是必须要做的,要具体问题具体看待,测试表明有时候规范化后的预测准确率比没有规范化的预测准确率低很多.就最大最小值法而言,当你用这种方式将原始数据规范化后,事实上意味着你承认了一个假设就是测试数据集的每一模式的所有特征分量的最大值(最小值)不会大于(小于)训练数据集的每一模式的所有特征分量的最大值(最小值),但这条假设显然过于强,实际情况并不一定会这样.使用平均数方差法也会有同样类似的问题.故数据规范化这一步并不是必须要做的,要具体问题具体看待.   [引自faruto ]</li>
+<li>交叉验证没那么简单，我自己实验时testdata并没有参与到交叉验证中，不知道对不对。</li>
+<li>训练集、测试集尽量按同样标准分类可能比较好，我训练集、测试集均是12288组提取7个特征</li>
+</ol>
 <hr>
-<h3 id="壁上观"><a href="#壁上观" class="headerlink" title=" 壁上观 "></a><center> 壁上观 </center></h3><p>🌱以后不能睡这么长时间了 我是不想有梦的<br>🌱因为想象力对我没太大用处  靠着记忆、雅静触碰到的世界<br>🌱不管真实与否 我身处在这个世界<br>🌱其他的都是他人事 我还真是冷酷<br>🌱实在讽刺 我当初不想要的礼物 竟然预见了我的阅读兴趣<br>🌱你一定也觉得我事事都作壁上观很可怕吧</p>
+<h3 id="特征选择"><a href="#特征选择" class="headerlink" title="特征选择"></a>特征选择</h3><p><a href="http://kongzhongfeima.top/blog/libsvm%E7%89%B9%E5%BE%81%E9%80%89%E5%8F%96.html" target="_blank" rel="noopener">http://kongzhongfeima.top/blog/libsvm%E7%89%B9%E5%BE%81%E9%80%89%E5%8F%96.html</a></p>
+<h3 id="交叉验证"><a href="#交叉验证" class="headerlink" title="交叉验证"></a>交叉验证</h3><p>把具有最小c的那组c和g认为是最佳的c和g,因为惩罚参数不能设置 太高,很高的惩罚参数能使得validation数据的准确率提高,但过高的惩罚参数c会造成过学习状态,往往都是惩罚参数c过高会导致最终测试集合的准确率并不是很理想。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label,instance]=libsvmread(&apos;7features_train_dataset.txt&apos;);</span><br><span class="line">[bestCVaccuracy,bestc,bestg]= SVMcgForClass(label,instance,-8,8,-8,8,10,1,1,4.5);</span><br></pre></td></tr></table></figure>
+
+<br>
+<fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/cg_3d.png"></fancybox>
+<br>
+<fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/cg_%E7%AD%89%E9%AB%98%E5%9B%BE.png"></fancybox>
+-g 1 -c 2
+
+<h3 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model=svmtrain(label,instance,&apos;-t 2 -g 1 -c 2 &apos;);</span><br></pre></td></tr></table></figure>
+
 <hr>
-<h3 id="Lemon"><a href="#Lemon" class="headerlink" title=" Lemon "></a><center> Lemon </center></h3><p>🌱我本人是无法给予她幸福的 所以希望你未来的丈夫正好是你喜欢的类型<br>🌱磨合的鲜血淋漓也没关系 正是这柠檬般的苦涩酿成汽水般的香甜<br>🌱婚礼上的你会穿什么样的衣服呢 新郎给你戴戒指时 你嘴角会如何的扬起呢<br>🌱你宣誓时目光会炽热的盯着他吗 你认真、坚定地面容又会在我梦中浮现<br>🌱不过你们偶尔吵架也没关系的 我不会趁虚而入的 君子成人之美</p>
+<h3 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label_test,instance_test]=libsvmread(&apos;7features_test_dataset.txt&apos;);</span><br><span class="line">[predictlabel]=svmpredict(label_test, instance_test,model);</span><br></pre></td></tr></table></figure>
+
+<p>Accuracy = 98.75% (79/80) (classification)<br><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/model.png"></fancybox><br><br></p>
 <hr>
-<h3 id="业果"><a href="#业果" class="headerlink" title=" 业果 "></a><center> 业果 </center></h3><p>🌱性格的缺陷、情感的贫瘠、责任感的缺乏 哈哈 正是所谓的教育在我身上种下的业果 哈哈 我连父母的痛苦都无法感受到 真是冷血啊<br>🌱学校生活告诉我 作壁上观是最安全的 做事是要图回报的 为了防止被打不制止施暴的的同学是合理的 校园的恋爱是不可靠的 老师会把你们全忘掉的 学校是不会留下你们的痕迹的（初三走的时候 我们班同学在后面黑板上 告别结束后班主任让我们擦了 说不要影响下一届上课 彼时我已经明白了分别的残酷） 说来走完这一生也不会留下痕迹的 你获得的成功除了亲人 没人会为你感到真正的开心的（比如保研之后 没有一个人祝福 只有一个好朋友说是我应得的 以后我这种消息只分享给亲人就好 否则只会引起毒气般的妒忌和不友好） 你生病后能陪在你身边的人是很少的 你谈论的话题除了与他人有关 不会有人真正的感兴趣的 随着你的漫不经心 越来越多的人也会敷衍你的 我感谢亲人不求回报 切身感受我的痛苦和喜悦（不求回报很重要 切身的为我着想也很重要）<br>🌱我时常在想 如果同学生病的话 我会去医院陪着他吗 大概率是不会 我既不能感受到他的痛苦 也没有去医院陪他的义务 除非是他本人或是家长请求我 我应该会去的 可能会彰显自己的伟大亦或是希望得到回报、希望保持人脉？（说来 现在教育带给学生了功利心 做事之前先考虑回报 就连朋友的选择也有相应的目的 在这样恶毒的土壤中怎么可能开出纯洁的友谊之花 当分离之后谁会记得谁呢 想当年我父亲千里送兄弟 现代人基本是做不到了 哈哈  因为没有回报啊！） 像我这样的小人 亦不会期待危难关头有人会不图回报的帮我<br>🌱有人说 第三次死亡是世上最后记得你的人死去</p>
+<div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>
 
         </div>
         
+          
+
+
+  <section class='meta' id="footer-meta">
+    <hr>
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-05-01T23:11:53+08:00">
+  <a class='notlink'>
+    <i class="fas fa-clock" aria-hidden="true"></i>
+    <p>最后更新于 2020年5月1日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/有用功/" rel="nofollow"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;<p>有用功</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="QQ好友" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://kongzhongfeima.github.io/blog/libsvm终极使用.html&title=libsvm终极使用 | 空中飞马&summary=今天真的懂得了好多知识："
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qq.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="QQ空间" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://kongzhongfeima.github.io/blog/libsvm终极使用.html&title=libsvm终极使用 | 空中飞马&summary=今天真的懂得了好多知识："
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/qzone.png">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="微博" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://kongzhongfeima.github.io/blog/libsvm终极使用.html&title=libsvm终极使用 | 空中飞马&summary=今天真的懂得了好多知识："
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@19.1.9/logo/128/weibo.png">
+          
+        </a>
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </section>
+
+
+        
         
             <div class="prev-next">
-                
-                    <section class="prev">
-                        <span class="art-item-left">
-                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
-                            <h4>
-                                <a href="/blog/百度域名-阿里服务器.html" rel="prev" title="百度域名+阿里服务器">
-                                  
-                                      百度域名+阿里服务器
-                                  
-                                </a>
-                            </h4>
-                            
-                                
-                                <h6 class="tags">
-                                    <a class="tag" href="/tags/折腾ing/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>折腾ing</a>
-                                </h6>
-                            
-                        </span>
-                    </section>
                 
                 
                     <section class="next">
                         <span class="art-item-right" aria-hidden="true">
                             <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
                             <h4>
-                                <a href="/blog/满目破碎.html" rel="prev" title="满目破碎">
+                                <a href="/blog/EDU邮箱申请.html" rel="prev" title="EDU邮箱申请">
                                     
-                                        满目破碎
+                                        EDU邮箱申请
                                     
                                 </a>
                             </h4>
                             
                                 
                                 <h6 class="tags">
-                                    <a class="tag" href="/tags/手记/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>手记</a>
+                                    <a class="tag" href="/tags/薅羊毛/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>薅羊毛</a>
                                 </h6>
                             
                         </span>
@@ -439,6 +508,13 @@
 <!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
 
 
+
+  <script>
+    window.subData = {
+      title: 'libsvm终极使用',
+      tools: true
+    }
+  </script>
 
 
 </div>
@@ -489,6 +565,20 @@
           
           
             
+  <section class='widget toc-wrapper'>
+    
+<header class='pure'>
+  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;本文目录</div>
+  
+    <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+  
+</header>
+
+    <div class='content pure'>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选择"><span class="toc-text">特征选择</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#交叉验证"><span class="toc-text">交叉验证</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模型训练"><span class="toc-text">模型训练</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#模型预测"><span class="toc-text">模型预测</span></a></li></ol>
+    </div>
+  </section>
+
 
           
         

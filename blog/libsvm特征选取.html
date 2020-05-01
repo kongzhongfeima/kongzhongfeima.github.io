@@ -350,7 +350,7 @@
 
 <h5 id="元胞数组转换-："><a href="#元胞数组转换-：" class="headerlink" title="元胞数组转换()："></a>元胞数组转换()：</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">a=cell(1);</span><br><span class="line">&gt;&gt; for i=1:64</span><br><span class="line">    a(i,1)=num2cell(1);</span><br><span class="line">end</span><br></pre></td></tr></table></figure>
 
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[idx,weights] = relieff(timestruct,species_2,10)</span><br><span class="line"></span><br><span class="line">idx =</span><br><span class="line"></span><br><span class="line">     3     9     4     1     2     7    11    10     6    12     8     5</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">weights =</span><br><span class="line"></span><br><span class="line">  1 至 9 列</span><br><span class="line"></span><br><span class="line">    0.6032    0.5959    0.6154    0.6047    0.0407    0.4787    0.5451    0.2928    0.6120</span><br><span class="line"></span><br><span class="line">  10 至 12 列</span><br><span class="line"></span><br><span class="line">    0.5219    0.5244    0.3802</span><br><span class="line"></span><br><span class="line">&gt;&gt;  bar(weights(idx))</span><br><span class="line">xlabel(&apos;Predictor rank&apos;)</span><br><span class="line">ylabel(&apos;Predictor importance weight&apos;)</span><br></pre></td></tr></table></figure>
+<h3 id="relieff函数运行成功！！"><a href="#relieff函数运行成功！！" class="headerlink" title="relieff函数运行成功！！"></a>relieff函数运行成功！！</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">[idx,weights] = relieff(timestruct,species_2,10)</span><br><span class="line"></span><br><span class="line">idx =</span><br><span class="line"></span><br><span class="line">     3     9     4     1     2     7    11    10     6    12     8     5</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">weights =</span><br><span class="line"></span><br><span class="line">  1 至 9 列</span><br><span class="line"></span><br><span class="line">    0.6032    0.5959    0.6154    0.6047    0.0407    0.4787    0.5451    0.2928    0.6120</span><br><span class="line"></span><br><span class="line">  10 至 12 列</span><br><span class="line"></span><br><span class="line">    0.5219    0.5244    0.3802</span><br><span class="line"></span><br><span class="line">&gt;&gt;  bar(weights(idx))</span><br><span class="line">xlabel(&apos;Predictor rank&apos;)</span><br><span class="line">ylabel(&apos;Predictor importance weight&apos;)</span><br></pre></td></tr></table></figure>
 
 <p><fancybox><img src="
 http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/features_choose.png"></fancybox><br><br><br><fancybox><img src="
@@ -367,7 +367,7 @@ http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/labels_index.png"></fancybox>
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-28T11:16:08+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-28T11:25:33+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
     <p>最后更新于 2020年4月28日</p>
@@ -582,7 +582,7 @@ http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/labels_index.png"></fancybox>
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#转载自：http-blog-sina-com-cn-s-blog-821b37de0102xgh5-html"><span class="toc-text">转载自：http://blog.sina.com.cn/s/blog_821b37de0102xgh5.html</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ReliefF"><span class="toc-text">ReliefF</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#现成matlab函数调用"><span class="toc-text">现成matlab函数调用:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Python"><span class="toc-text">Python:</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#元胞数组转换-："><span class="toc-text">元胞数组转换()：</span></a></li></ol></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#转载自：http-blog-sina-com-cn-s-blog-821b37de0102xgh5-html"><span class="toc-text">转载自：http://blog.sina.com.cn/s/blog_821b37de0102xgh5.html</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ReliefF"><span class="toc-text">ReliefF</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#现成matlab函数调用"><span class="toc-text">现成matlab函数调用:</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Python"><span class="toc-text">Python:</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#元胞数组转换-："><span class="toc-text">元胞数组转换()：</span></a></li></ol></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#relieff函数运行成功！！"><span class="toc-text">relieff函数运行成功！！</span></a>
     </div>
   </section>
 
@@ -707,7 +707,7 @@ http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/labels_index.png"></fancybox>
         
           <li><a class="flat-box" title="/categories/My-Alice/" href="/categories/My-Alice/"><div class='name'>My_Alice</div><div class='badge'>(3)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/Project/" href="/categories/Project/"><div class='name'>Project</div><div class='badge'>(5)</div></a></li>
+          <li><a class="flat-box" title="/categories/Project/" href="/categories/Project/"><div class='name'>Project</div><div class='badge'>(6)</div></a></li>
         
           <li><a class="flat-box" title="/categories/Reality/" href="/categories/Reality/"><div class='name'>Reality</div><div class='badge'>(6)</div></a></li>
         
@@ -748,7 +748,7 @@ http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/labels_index.png"></fancybox>
 </header>
 
     <div class='content pure'>
-      <a href="/tags/我日/" style="font-size: 14px; color: #999">我日</a> <a href="/tags/手记/" style="font-size: 24px; color: #555">手记</a> <a href="/tags/折腾ing/" style="font-size: 19px; color: #777">折腾ing</a> <a href="/tags/文学类小说/" style="font-size: 14px; color: #999">文学类小说</a> <a href="/tags/最爱推理/" style="font-size: 21.5px; color: #666">最爱推理</a> <a href="/tags/有用功/" style="font-size: 19px; color: #777">有用功</a> <a href="/tags/薅羊毛/" style="font-size: 16.5px; color: #888">薅羊毛</a>
+      <a href="/tags/我日/" style="font-size: 14px; color: #999">我日</a> <a href="/tags/手记/" style="font-size: 24px; color: #555">手记</a> <a href="/tags/折腾ing/" style="font-size: 18px; color: #7e7e7e">折腾ing</a> <a href="/tags/文学类小说/" style="font-size: 14px; color: #999">文学类小说</a> <a href="/tags/最爱推理/" style="font-size: 22px; color: #636363">最爱推理</a> <a href="/tags/有用功/" style="font-size: 20px; color: #707070">有用功</a> <a href="/tags/薅羊毛/" style="font-size: 16px; color: #8b8b8b">薅羊毛</a>
     </div>
   </section>
 

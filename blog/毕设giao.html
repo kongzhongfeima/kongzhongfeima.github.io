@@ -360,13 +360,14 @@
 
 <center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center>
 
-<h2 id="Try2："><a href="#Try2：" class="headerlink" title="Try2："></a>Try2：</h2><h3 id="数据选取：-1"><a href="#数据选取：-1" class="headerlink" title="数据选取："></a>数据选取：</h3><p>每个工况下四种健康程度 每种健康程度1048576个数据<br>1048576<em>3/4=786432   训练数据 786432/64=<br>1048576</em>1/4=262144   测试数据</p>
+<h2 id="Try2："><a href="#Try2：" class="headerlink" title="Try2："></a>Try2：</h2><h3 id="数据选取：-1"><a href="#数据选取：-1" class="headerlink" title="数据选取："></a>数据选取：</h3><p>每个工况下四种健康程度 每种健康程度1048576个数据<br>1048576<em>3/4=786432   训练数据 786432/64=12288<br>1048576</em>1/4=262144   测试数据 262144/32=8192</p>
 <h3 id="数据处理-1"><a href="#数据处理-1" class="headerlink" title="数据处理"></a>数据处理</h3><p>cmd：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">F:</span><br><span class="line">cd 毕设\libsvm-324\libsvm-324\tools</span><br><span class="line">C:\Users\Administrator\AppData\Local\Programs\Python\Python37-32\python grid.py 64zu_test_featuresLink.txt</span><br></pre></td></tr></table></figure>
 
 <p>0.03125 0.0078125 100.0<br>其意义表示：C = 0.03125；γ=0.0078125<br>交叉验证精度CV Rate = 100.0%，这就是最优结果</p>
 <h3 id="训练模型-1"><a href="#训练模型-1" class="headerlink" title="训练模型"></a>训练模型</h3><p><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/model.png"></fancybox></p>
 <p>*<br>optimization finished, #iter = 21<br>nu = 0.312500<br>obj = -785.948486, rho = 0.125350<br>nSV = 40, nBSV = 40<br>Total nSV = 52</p>
+<h2 id="Try3："><a href="#Try3：" class="headerlink" title="Try3："></a>Try3：</h2><p>0.03125 0.0078125 100.0<br>c=      g=       rate=           (为何交叉验证老是感觉结果不正确)</p>
 <div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>
 
         </div>
@@ -379,10 +380,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-26T22:16:21+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-28T16:11:04+08:00">
   <a class='notlink'>
     <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>最后更新于 2020年4月26日</p>
+    <p>最后更新于 2020年4月28日</p>
   </a>
 </div>
 
@@ -589,7 +590,7 @@
 </header>
 
     <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据缩放"><span class="toc-text">数据缩放</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Try1："><span class="toc-text">Try1：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取："><span class="toc-text">数据选取：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不同工况："><span class="toc-text">不同工况：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选取"><span class="toc-text">特征选取:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型"><span class="toc-text">训练模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进行预测"><span class="toc-text">进行预测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Try2："><span class="toc-text">Try2：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取：-1"><span class="toc-text">数据选取：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理-1"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型-1"><span class="toc-text">训练模型</span></a></li></ol>
+      <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据缩放"><span class="toc-text">数据缩放</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Try1："><span class="toc-text">Try1：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取："><span class="toc-text">数据选取：</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#不同工况："><span class="toc-text">不同工况：</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#特征选取"><span class="toc-text">特征选取:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型"><span class="toc-text">训练模型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#进行预测"><span class="toc-text">进行预测</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Try2："><span class="toc-text">Try2：</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#数据选取：-1"><span class="toc-text">数据选取：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数据处理-1"><span class="toc-text">数据处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#训练模型-1"><span class="toc-text">训练模型</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Try3："><span class="toc-text">Try3：</span></a>
     </div>
   </section>
 
@@ -714,7 +715,7 @@
         
           <li><a class="flat-box" title="/categories/My-Alice/" href="/categories/My-Alice/"><div class='name'>My_Alice</div><div class='badge'>(3)</div></a></li>
         
-          <li><a class="flat-box" title="/categories/Project/" href="/categories/Project/"><div class='name'>Project</div><div class='badge'>(5)</div></a></li>
+          <li><a class="flat-box" title="/categories/Project/" href="/categories/Project/"><div class='name'>Project</div><div class='badge'>(6)</div></a></li>
         
           <li><a class="flat-box" title="/categories/Reality/" href="/categories/Reality/"><div class='name'>Reality</div><div class='badge'>(6)</div></a></li>
         
@@ -755,7 +756,7 @@
 </header>
 
     <div class='content pure'>
-      <a href="/tags/我日/" style="font-size: 14px; color: #999">我日</a> <a href="/tags/手记/" style="font-size: 24px; color: #555">手记</a> <a href="/tags/折腾ing/" style="font-size: 19px; color: #777">折腾ing</a> <a href="/tags/文学类小说/" style="font-size: 14px; color: #999">文学类小说</a> <a href="/tags/最爱推理/" style="font-size: 21.5px; color: #666">最爱推理</a> <a href="/tags/有用功/" style="font-size: 19px; color: #777">有用功</a> <a href="/tags/薅羊毛/" style="font-size: 16.5px; color: #888">薅羊毛</a>
+      <a href="/tags/我日/" style="font-size: 14px; color: #999">我日</a> <a href="/tags/手记/" style="font-size: 24px; color: #555">手记</a> <a href="/tags/折腾ing/" style="font-size: 18px; color: #7e7e7e">折腾ing</a> <a href="/tags/文学类小说/" style="font-size: 14px; color: #999">文学类小说</a> <a href="/tags/最爱推理/" style="font-size: 22px; color: #636363">最爱推理</a> <a href="/tags/有用功/" style="font-size: 20px; color: #707070">有用功</a> <a href="/tags/薅羊毛/" style="font-size: 16px; color: #8b8b8b">薅羊毛</a>
     </div>
   </section>
 
