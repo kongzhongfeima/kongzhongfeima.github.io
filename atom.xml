@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-05-01T15:19:12.519Z</updated>
+  <updated>2020-05-07T12:05:33.289Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -17,13 +17,39 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>满目破碎、狗屁不通</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E6%BB%A1%E7%9B%AE%E7%A0%B4%E7%A2%8E%E7%8B%97%E5%B1%81%E4%B8%8D%E9%80%9A.html"/>
+    <id>http://kongzhongfeima.github.io//blog/满目破碎狗屁不通.html</id>
+    <published>2020-05-07T19:56:36.000Z</published>
+    <updated>2020-05-07T12:05:33.289Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><p><fancybox><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"></fancybox></p><p>🌱 写论文真的改的狗屁不通、支离破碎</p><hr><p>🌱 是多么恶毒的诅咒才会让我们经历如此残酷不堪的痛苦<br>🌱 配不上所经历的苦难<br>🌱 我想 这正是狩猎灵魂的海盗所需要的<br>🌱 所以啊 庆祝无意义</p><hr><p>🌱 可是我的制动器还没到 这可怎么办呢<br>🌱 她是在拯救谁吗 姗姗来迟<br>🌱 希望轮回时 我可以度过你的童年<br>🌱 你的名字如同你一样善良 清澈</p><hr><p>so what counts ？？？<br>who fucking cares ？？？</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;fancybox&gt;&lt;img src=&quot;http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png&quot;&gt;&lt;/fancybox&gt;&lt;/p&gt;
+&lt;p&gt;🌱 写论文真的改的狗屁不通、支离破碎&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>libsvm终极使用</title>
     <link href="http://kongzhongfeima.github.io//blog/libsvm%E7%BB%88%E6%9E%81%E4%BD%BF%E7%94%A8.html"/>
     <id>http://kongzhongfeima.github.io//blog/libsvm终极使用.html</id>
     <published>2020-05-01T22:47:05.000Z</published>
-    <updated>2020-05-01T15:19:12.519Z</updated>
+    <updated>2020-05-01T15:20:33.213Z</updated>
     
-    <content type="html"><![CDATA[<p>今天真的懂得了好多知识：</p><a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center>今天真的懂得了好多知识：<ol><li>归一化（即数据缩放0不是必须的，有时反而起反作用需要说明的事并不是任何问题都必须事先把原始数据进行规范化,也就是数据规范化这一步并不是必须要做的,要具体问题具体看待,测试表明有时候规范化后的预测准确率比没有规范化的预测准确率低很多.就最大最小值法而言,当你用这种方式将原始数据规范化后,事实上意味着你承认了一个假设就是测试数据集的每一模式的所有特征分量的最大值(最小值)不会大于(小于)训练数据集的每一模式的所有特征分量的最大值(最小值),但这条假设显然过于强,实际情况并不一定会这样.使用平均数方差法也会有同样类似的问题.故数据规范化这一步并不是必须要做的,要具体问题具体看待.   [引自faruto ]</li><li>交叉验证没那么简单，我自己实验时testdata并没有参与到交叉验证中，不知道对不对。</li><li>训练集、测试集尽量按同样标准分类可能比较好，我训练集、测试集均是12288组提取7个特征</li></ol><hr><h3 id="特征选择"><a href="#特征选择" class="headerlink" title="特征选择"></a>特征选择</h3><p><a href="http://kongzhongfeima.top/blog/libsvm%E7%89%B9%E5%BE%81%E9%80%89%E5%8F%96.html" target="_blank" rel="noopener">http://kongzhongfeima.top/blog/libsvm%E7%89%B9%E5%BE%81%E9%80%89%E5%8F%96.html</a></p><h3 id="交叉验证"><a href="#交叉验证" class="headerlink" title="交叉验证"></a>交叉验证</h3><p>把具有最小c的那组c和g认为是最佳的c和g,因为惩罚参数不能设置 太高,很高的惩罚参数能使得validation数据的准确率提高,但过高的惩罚参数c会造成过学习状态,往往都是惩罚参数c过高会导致最终测试集合的准确率并不是很理想。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label,instance]=libsvmread(&apos;7features_train_dataset.txt&apos;);</span><br><span class="line">[bestCVaccuracy,bestc,bestg]= SVMcgForClass(label,instance,-8,8,-8,8,10,1,1,4.5);</span><br></pre></td></tr></table></figure><br><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/cg_3d.png"></fancybox><br><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/cg_%E7%AD%89%E9%AB%98%E5%9B%BE.png"></fancybox><br>不行就用他的 感觉他的图更加对一些<fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/cg_%E5%88%AB%E4%BA%BA%E7%9A%84.png"></fancybox><br><br>-g 1 -c 2<h3 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model=svmtrain(label,instance,&apos;-t 2 -g 1 -c 2 &apos;);</span><br></pre></td></tr></table></figure><p>.<em>.</em><br>optimization finished, #iter = 282<br>nu = 0.001580<br>obj = -23.051163, rho = -0.169393<br>nSV = 88, nBSV = 0<br>Total nSV = 202<br>Cross Validation Accuracy = 67.1875%<br>Accuracy = 98.75% (79/80) (classification)<br><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/model.png"></fancybox><br><br></p><h3 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label_test,instance_test]=libsvmread(&apos;7features_test_dataset.txt&apos;);</span><br><span class="line">[predictlabel]=svmpredict(label_test, instance_test,model);</span><br></pre></td></tr></table></figure><hr><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
+    <content type="html"><![CDATA[<p>今天真的懂得了好多知识：</p><a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center>今天真的懂得了好多知识：<ol><li>归一化（即数据缩放0不是必须的，有时反而起反作用需要说明的事并不是任何问题都必须事先把原始数据进行规范化,也就是数据规范化这一步并不是必须要做的,要具体问题具体看待,测试表明有时候规范化后的预测准确率比没有规范化的预测准确率低很多.就最大最小值法而言,当你用这种方式将原始数据规范化后,事实上意味着你承认了一个假设就是测试数据集的每一模式的所有特征分量的最大值(最小值)不会大于(小于)训练数据集的每一模式的所有特征分量的最大值(最小值),但这条假设显然过于强,实际情况并不一定会这样.使用平均数方差法也会有同样类似的问题.故数据规范化这一步并不是必须要做的,要具体问题具体看待.   [引自faruto ]</li><li>交叉验证没那么简单，我自己实验时testdata并没有参与到交叉验证中，不知道对不对。</li><li>训练集、测试集尽量按同样标准分类可能比较好，我训练集、测试集均是12288组提取7个特征</li></ol><hr><h3 id="特征选择"><a href="#特征选择" class="headerlink" title="特征选择"></a>特征选择</h3><p><a href="http://kongzhongfeima.top/blog/libsvm%E7%89%B9%E5%BE%81%E9%80%89%E5%8F%96.html" target="_blank" rel="noopener">http://kongzhongfeima.top/blog/libsvm%E7%89%B9%E5%BE%81%E9%80%89%E5%8F%96.html</a></p><h3 id="交叉验证"><a href="#交叉验证" class="headerlink" title="交叉验证"></a>交叉验证</h3><p>把具有最小c的那组c和g认为是最佳的c和g,因为惩罚参数不能设置 太高,很高的惩罚参数能使得validation数据的准确率提高,但过高的惩罚参数c会造成过学习状态,往往都是惩罚参数c过高会导致最终测试集合的准确率并不是很理想。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label,instance]=libsvmread(&apos;7features_train_dataset.txt&apos;);</span><br><span class="line">[bestCVaccuracy,bestc,bestg]= SVMcgForClass(label,instance,-8,8,-8,8,10,1,1,4.5);</span><br></pre></td></tr></table></figure><br><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/cg_3d.png"></fancybox><br><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/cg_%E7%AD%89%E9%AB%98%E5%9B%BE.png"></fancybox><br><br>不行就用他的 感觉他的图更加对一些<br><br><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/cg_%E5%88%AB%E4%BA%BA%E7%9A%84.png"></fancybox><br><br>-g 1 -c 2<h3 id="模型训练"><a href="#模型训练" class="headerlink" title="模型训练"></a>模型训练</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">model=svmtrain(label,instance,&apos;-t 2 -g 1 -c 2 &apos;);</span><br></pre></td></tr></table></figure><p>.<em>.</em><br>optimization finished, #iter = 282<br>nu = 0.001580<br>obj = -23.051163, rho = -0.169393<br>nSV = 88, nBSV = 0<br>Total nSV = 202<br>Cross Validation Accuracy = 67.1875%<br>Accuracy = 98.75% (79/80) (classification)<br><fancybox><img src="http://image-cos.test.upcdn.net/%E6%AF%95%E8%AE%BE/model.png"></fancybox><br><br></p><h3 id="模型预测"><a href="#模型预测" class="headerlink" title="模型预测"></a>模型预测</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[label_test,instance_test]=libsvmread(&apos;7features_test_dataset.txt&apos;);</span><br><span class="line">[predictlabel]=svmpredict(label_test, instance_test,model);</span><br></pre></td></tr></table></figure><hr><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
     
     <summary type="html">
     
@@ -433,26 +459,6 @@
     </summary>
     
       <category term="Movie" scheme="http://kongzhongfeima.github.io/categories/Movie/"/>
-    
-    
-      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>制动器</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E5%88%B6%E5%8A%A8%E5%99%A8.html"/>
-    <id>http://kongzhongfeima.github.io//blog/制动器.html</id>
-    <published>2020-01-17T22:31:00.000Z</published>
-    <updated>2020-01-18T05:43:59.789Z</updated>
-    
-    <content type="html"><![CDATA[<p>我的制动器 你在哪里啊<br>你再不出现 我就像《今日诸事大吉》里点火阻止婚礼的小傻子<br>给我踩个刹车 别让我一再跌落 or 在歧途越走越远</p><a id="more"></a><p>我靠 可爱的菇凉全是别人家的<br>我什么都没有<br>对同性下手这么早、眼光这么好充满了鄙视<br>都不能等到谈婚论嫁的时候大家公平竞争吗（真是的）</p><hr><p>话说为啥小火柴上面这么多魅力值高的吓人的女生？（性别待定）<br>这么多傻乎乎的土豪送礼、加好友吗 （不懂）</p><hr><p>年纪轻轻就想着灭绝世界、给宇宙重生<br>对了 不知道 恐龙灭绝属不属于自然选择 毕竟我对恐龙人的智商还是很信任的（当初在哪个书上看的三个指头的小龙人）<br>如果是的话 那如今澳洲大火消灭这么多动物 是不是也属于自然选择</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;我的制动器 你在哪里啊&lt;br&gt;你再不出现 我就像《今日诸事大吉》里点火阻止婚礼的小傻子&lt;br&gt;给我踩个刹车 别让我一再跌落 or 在歧途越走越远&lt;/p&gt;
-    
-    </summary>
     
     
       <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
