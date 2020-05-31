@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://kongzhongfeima.github.io/"/>
-  <updated>2020-05-28T12:12:24.909Z</updated>
+  <updated>2020-05-31T01:58:31.747Z</updated>
   <id>http://kongzhongfeima.github.io/</id>
   
   <author>
@@ -17,23 +17,42 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>淘宝京东618脚本</title>
+    <link href="http://kongzhongfeima.github.io//blog/%E6%B7%98%E5%AE%9D%E4%BA%AC%E4%B8%9C618%E8%84%9A%E6%9C%AC.html"/>
+    <id>http://kongzhongfeima.github.io//blog/淘宝京东618脚本.html</id>
+    <published>2020-05-31T09:49:19.000Z</published>
+    <updated>2020-05-31T01:58:31.747Z</updated>
+    
+    <content type="html"><![CDATA[<p>来水水博客吧<br>最近有点脑阔疼</p><a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><br><p>没错 今年的618剁手活动（。。。把买149的鼠标称为“剁手”也就你了）<br>进入正题 吾爱破解属实牛批！！！！</p><h4 id="🌱-淘宝autojs软件加js脚本（在手机上运行）"><a href="#🌱-淘宝autojs软件加js脚本（在手机上运行）" class="headerlink" title="🌱  淘宝autojs软件加js脚本（在手机上运行）"></a>🌱  淘宝autojs软件加js脚本（在手机上运行）</h4><p><a href="https://www.52pojie.cn/thread-1188963-1-1.html" target="_blank" rel="noopener">https://www.52pojie.cn/thread-1188963-1-1.html</a></p><h4 id="🌱-京东软件包含傻瓜式拿ck-exe-、叠蛋糕任务-exe（在电脑上运行）"><a href="#🌱-京东软件包含傻瓜式拿ck-exe-、叠蛋糕任务-exe（在电脑上运行）" class="headerlink" title="🌱  京东软件包含傻瓜式拿ck.exe 、叠蛋糕任务.exe（在电脑上运行）"></a>🌱  京东软件包含傻瓜式拿ck.exe 、叠蛋糕任务.exe（在电脑上运行）</h4><p><a href="https://www.52pojie.cn/thread-1185794-1-1.html" target="_blank" rel="noopener">https://www.52pojie.cn/thread-1185794-1-1.html</a></p><hr><p>不保证软件是否仍然有效 发文时还可正常运行<br>节省时间 对健康评估很有好处（去你妈的 老阴阳人 f-word）</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;来水水博客吧&lt;br&gt;最近有点脑阔疼&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="薅羊毛" scheme="http://kongzhongfeima.github.io/tags/%E8%96%85%E7%BE%8A%E6%AF%9B/"/>
+    
+  </entry>
+  
+  <entry>
     <title>商品历史价格</title>
     <link href="http://kongzhongfeima.github.io//blog/%E5%95%86%E5%93%81%E5%8E%86%E5%8F%B2%E4%BB%B7%E6%A0%BC.html"/>
     <id>http://kongzhongfeima.github.io//blog/商品历史价格.html</id>
     <published>2020-05-28T20:08:09.000Z</published>
-    <updated>2020-05-28T12:12:24.909Z</updated>
+    <updated>2020-05-31T01:48:11.564Z</updated>
     
-    <content type="html"><![CDATA[<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><script type="text/javascript">  jinrishici.load(function(result) {    // 自己的处理逻辑    console.log(result)  });</script><a id="more"></a><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><br><p><a href="http://asd-price.com/" target="_blank" rel="noopener">http://asd-price.com/</a><br>用　法：</p><p>在地址栏中的电商域名后加入字母asd即可查询当前商品历史价格，如：</p><p>第一步：</p><p>正常浏览商品，假设商品原链接为：<br><a href="https://item.jd.com/3505714.html" target="_blank" rel="noopener">https://item.jd.com/3505714.html</a></p><p>第二步：</p><p>在地址栏中域名后添加“asd”后回车，添加“asd”后的商品页面为：<br><a href="https://item.jdasd.com/3505714.html" target="_blank" rel="noopener">https://item.jdasd.com/3505714.html</a></p><p>第三步：</p><p>网页从商品页面跳转至本页，显示历史价格。</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
+    <content type="html"><![CDATA[<a id="more"></a><p><span id="jinrishici-sentence">正在加载今日诗词….</span></p><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script><script type="text/javascript">  jinrishici.load(function(result) {    // 自己的处理逻辑    console.log(result)  });</script><center><img src="http://image-cos.test.upcdn.net/%E6%9D%A8%E6%9F%B3.png"> </center><br><p><a href="http://asd-price.com/" target="_blank" rel="noopener">http://asd-price.com/</a><br>用　法：</p><p>在地址栏中的电商域名后加入字母asd即可查询当前商品历史价格，如：</p><p>第一步：</p><p>正常浏览商品，假设商品原链接为：<br><a href="https://item.jd.com/3505714.html" target="_blank" rel="noopener">https://item.jd.com/3505714.html</a></p><p>第二步：</p><p>在地址栏中域名后添加“asd”后回车，添加“asd”后的商品页面为：<br><a href="https://item.jdasd.com/3505714.html" target="_blank" rel="noopener">https://item.jdasd.com/3505714.html</a></p><p>第三步：</p><p>网页从商品页面跳转至本页，显示历史价格。</p><div align="right"><img src="http://image-cos.test.upcdn.net/%E6%A2%AF%E5%AD%90.png" width="8%" height="8%"></div>]]></content>
     
     <summary type="html">
     
-      &lt;script src=&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot; charset=&quot;utf-8&quot;&gt;&lt;/script&gt;
-&lt;script type=&quot;text/javascript&quot;&gt;
-  jinrishici.load(function(result) {
-    // 自己的处理逻辑
-    console.log(result)
-  });
-&lt;/script&gt;
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;p&gt;&lt;span id=&quot;jinrishici-sentence&quot;&gt;正在加载今日诗词….&lt;/span&gt;&lt;/p&gt;
+&lt;script src=&quot;https://sdk.jinrishici.com/v2/browser/jinrishici.js&quot; 
+      
     
     </summary>
     
@@ -489,26 +508,6 @@
     
     
       <category term="薅羊毛" scheme="http://kongzhongfeima.github.io/tags/%E8%96%85%E7%BE%8A%E6%AF%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>最幸福</title>
-    <link href="http://kongzhongfeima.github.io//blog/%E6%9C%80%E5%B9%B8%E7%A6%8F.html"/>
-    <id>http://kongzhongfeima.github.io//blog/最幸福.html</id>
-    <published>2020-02-19T21:52:59.000Z</published>
-    <updated>2020-02-19T14:00:53.141Z</updated>
-    
-    <content type="html"><![CDATA[<p>昨天冒险在陡坡上滑滑板 向后摔的很痛 幸好没人看到<br>不过胳膊肘流血了 今天才发觉脖子好像也受伤了 贼难受</p><a id="more"></a><p>今天下午在床上小睡了一会儿 我妈一直问身体受伤严不严重<br>真好 感觉自己真的超级幸福 有对我最好的爸爸妈妈<br>有大方的姐姐 有伶俐活泼的外甥、外甥女<br>故乡的星空依旧迷人、深邃<br>唯一不足之处是父母年纪已大 我却尚未成家立业（心痛）</p>]]></content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;昨天冒险在陡坡上滑滑板 向后摔的很痛 幸好没人看到&lt;br&gt;不过胳膊肘流血了 今天才发觉脖子好像也受伤了 贼难受&lt;/p&gt;
-    
-    </summary>
-    
-    
-      <category term="手记" scheme="http://kongzhongfeima.github.io/tags/%E6%89%8B%E8%AE%B0/"/>
     
   </entry>
   
