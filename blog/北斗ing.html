@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head hexo-theme="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.5"><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  <!-- SEO相关 -->
+  
+    
+  
+  <!-- 渲染优化 -->
+  <meta http-equiv="x-dns-prefetch-control" content="on">
+  <link rel="dns-prefetch" href="https://cdn.jsdelivr.net">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <meta name="renderer" content="webkit">
+  <meta name="force-rendering" content="webkit">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- 页面元数据 -->
+  
+  <title>北斗ing - 空中飞马</title>
+  
+    <meta name="keywords" content="折腾ing">
+  
+
+  
+    <meta name="description" content="RIENX格式（上）：2.10版本内容解析和说明">
+  
+
+  <!-- feed -->
+  
+    <link rel="alternate" href="/atom.xml" title="空中飞马">
+  
+
+  <!-- import meta -->
+  
+
+  <!-- link -->
+  
+    <link rel="shortcut icon" type="image/x-icon" href="https://www.z4a.net/images/2019/10/14/beauty.png">
+  
+
+  <!-- import link -->
+  
+
+  
+    <link rel="stylesheet" href="/css/first.css">
+  
+
+  
+  <link rel="stylesheet" href="/css/style.css" media="print" onload="this.media='all';this.onload=null">
+  <noscript><link rel="stylesheet" href="/css/style.css"></noscript>
+  
+
+  <script id="loadcss"></script>
+
+</head>
+
+<body>
+  
+
+<header id="l_header" class="l_header auto shadow blur show" style='opacity: 0' >
+  <div class='container'>
+  <div id='wrapper'>
+    <div class='nav-sub'>
+      <p class="title"></p>
+      <ul class='switcher nav-list-h m-phone' id="pjax-header-nav-list">
+        <li><a id="s-comment" class="fas fa-comments fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+          <li><a id="s-toc" class="s-toc fas fa-list fa-fw" target="_self" href='javascript:void(0)'></a></li>
+        
+      </ul>
+    </div>
+		<div class="nav-main">
+      
+        
+        <a class="title flat-box" target="_self" href='/'>
+          
+            <img no-lazy class='logo' src='https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/blog/Logo-NavBar@3x.png'/>
+          
+          
+          
+        </a>
+      
+
+			<div class='menu navigation'>
+				<ul class='nav-list-h m-pc'>
+          
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+          
+				</ul>
+			</div>
+
+      <div class="m_search">
+        <form name="searchform" class="form u-search-form">
+          <i class="icon fas fa-search fa-fw"></i>
+          <input type="text" class="input u-search-input" placeholder="Search..." />
+        </form>
+      </div>
+
+			<ul class='switcher nav-list-h m-phone'>
+				
+					<li><a class="s-search fas fa-search fa-fw" target="_self" href='javascript:void(0)'></a></li>
+				
+				<li>
+          <a class="s-menu fas fa-bars fa-fw" target="_self" href='javascript:void(0)'></a>
+          <ul class="menu-phone list-v navigation white-box">
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/
+                  
+                  
+                  
+                    id="home"
+                  >
+                  <i class='fas fa-rss fa-fw'></i>博客
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/categories/
+                  
+                  
+                  
+                    id="categories"
+                  >
+                  <i class='fas fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/tags/
+                  
+                  
+                  
+                    id="tags"
+                  >
+                  <i class='fas fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/archives/
+                  
+                  
+                  
+                    id="archives"
+                  >
+                  <i class='fas fa-archive fa-fw'></i>归档
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/friends/
+                  
+                  
+                  
+                    id="friends"
+                  >
+                  <i class='fas fa-link fa-fw'></i>友链
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover" href=/about/
+                  
+                  
+                  
+                    id="about"
+                  >
+                  <i class='fas fa-info-circle fa-fw'></i>关于
+                </a>
+                
+              </li>
+            
+          
+            
+          </ul>
+        </li>
+			</ul>
+		</div>
+	</div>
+  </div>
+</header>
+
+  <div id="l_body">
+    <div id="l_cover">
+  
+    
+        <div id="full" class='cover-wrapper post dock' style="display: none;">
+          
+            <div class='cover-bg lazyload placeholder' data-bg="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/033.jpg"></div>
+          
+          <div class='cover-body'>
+  <div class='top'>
+    
+    
+      <p class="title">Volantis</p>
+    
+    
+  </div>
+  <div class='bottom'>
+    <div class='menu navigation'>
+      <div class='list-h'>
+        
+          
+            <a href="/v4/getting-started/"
+              
+              
+              id="v4getting-started">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f5c3.svg'><p>文档</p>
+            </a>
+          
+            <a href="/faqs/"
+              
+              
+              id="faqs">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f516.svg'><p>帮助</p>
+            </a>
+          
+            <a href="/examples/"
+              
+              
+              id="examples">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f396.svg'><p>示例</p>
+            </a>
+          
+            <a href="/contributors/"
+              
+              
+              id="contributors">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f389.svg'><p>社区</p>
+            </a>
+          
+            <a href="/archives/"
+              
+              
+              id="archives">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f4f0.svg'><p>博客</p>
+            </a>
+          
+            <a href="https://github.com/volantis-x/hexo-theme-volantis/"
+              
+              
+              id="https:githubcomvolantis-xhexo-theme-volantis">
+              <img src='https://cdn.jsdelivr.net/gh/twitter/twemoji@13.0/assets/svg/1f9ec.svg'><p>源码</p>
+            </a>
+          
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+          <div id="scroll-down" style="display: none;"><i class="fa fa-chevron-down scroll-down-effects"></i></div>
+        </div>
+    
+  
+  </div>
+
+    <div id='safearea'>
+      <div class='body-wrapper' id="pjax-container">
+        
+
+<div class='l_main'>
+  <article class="article post white-box reveal md shadow article-type-post" id="post" itemscope itemprop="blogPost">
+  
+
+
+  
+  <div class="article-meta" id="top">
+    
+    
+    
+      <h1 class="title">
+        北斗ing
+      </h1>
+      <div class='new-meta-box'>
+        
+          
+            
+<div class='new-meta-item author'>
+  <a class='author' href="/" rel="nofollow">
+    <img no-lazy src="">
+    <p>请设置文章作者</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class='new-meta-item category'>
+    <a class='notlink'>
+      <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+      <a class="category-link" href="/categories/Project/">Project</a>
+    </a>
+  </div>
+
+
+          
+        
+          
+            <div class="new-meta-item date">
+  <a class='notlink'>
+    <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+    <p>发布于：2019年8月27日</p>
+  </a>
+</div>
+
+          
+        
+          
+            
+  <div class="new-meta-item browse leancloud">
+    <a class='notlink'>
+      
+      <div id="lc-pv" data-title="北斗ing" data-path="/blog/北斗ing.html">
+        <i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
+        次浏览
+      </div>
+    </a>
+  </div>
+
+
+          
+        
+      </div>
+    
+  </div>
+
+
+  
+  <p>RIENX格式（上）：2.10版本内容解析和说明</p>
+<a id="more"></a>
+
+<center>
+<fancybox><img src="http://image-cos.test.upcdn.net/1.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/1.png" srcset="data:image/png;base64,666"></fancybox>
+<fancybox><img src="http://image-cos.test.upcdn.net/2.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/2.png" srcset="data:image/png;base64,666"></fancybox>
+<fancybox><img src="http://image-cos.test.upcdn.net/3.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/3.png" srcset="data:image/png;base64,666"></fancybox>
+<fancybox><img src="http://image-cos.test.upcdn.net/4.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/4.png" srcset="data:image/png;base64,666"></fancybox>
+<fancybox><img src="http://image-cos.test.upcdn.net/5.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/5.png" srcset="data:image/png;base64,666"></fancybox>
+</center>
+
+<h4 id="RTK（-Real-time-kinematic）指的是实时动态测量，也叫载波相位差分定位"><a href="#RTK（-Real-time-kinematic）指的是实时动态测量，也叫载波相位差分定位" class="headerlink" title="RTK（ Real-time kinematic）指的是实时动态测量，也叫载波相位差分定位"></a>RTK（ Real-time kinematic）指的是实时动态测量，也叫载波相位差分定位</h4><p>是 GNSS 相对定位技术的一种，主要通过基准站和流动站（接收机位置）之间的实时数据链路和载波相对定位快速解算技术，实现高精度动态相对定位。</p>
+<p>具体实现方法就是，在地面设置固定的基准站（要保证位置精准标定），用来接收卫星信号，通过两种方式为用户提供差分服务，一种是用已知的基准站位置解算所收到信号中的误差，误差通过网络播发的形式传输给附近的用户接收机，由于参考站和接收机端的误差存在时间和空间上的相关性，在接收机端减掉误差后，得到的就是一个高精度位置信息了。另一种方法是将基准站接收机收到的观测量直接发送给用户，用户端通过“求差”的方式消除或减少误差的影响。这就是高精度 GNSS 定位技术的基本原理。第二种方法的效果较好，所以被广泛采用。</p>
+<h4 id="可以用的"><a href="#可以用的" class="headerlink" title="可以用的"></a>可以用的</h4><p>由于载波相位观测值的波长仅为对应伪距观测值的1/100，其测量精度相对较高，所以在精密定位时通常使用载波相位方法。但由于GPS信号结构的限制，在相位观测量中总是包含着一个初始相位整周数，因此，GPS整周模糊度的解算成了采用载波相位进行精密相对定位的关键问题。准确、快速的解算出整周模糊度，不仅能够缩短定位时间，还能够保障相对定位的精度。<br>其主要思路可分为3个步骤：（1）标准最小二乘平差求基线和整周模糊度浮点解；（2）整数最小二乘估计求整周模糊度固定解；（3）基线固定解。</p>
+<p><a href="https://blog.csdn.net/yuan22900/article/details/50435499" target="_blank" rel="noopener">RIENX格式（上）：2.10版本内容解析和说明</a><a href="https://blog.csdn.net/yuan22900/article/details/50435499" target="_blank" rel="noopener">https://blog.csdn.net/yuan22900/article/details/50435499</a><br>MATLAB算法VIP可见：<br><a href="https://blog.csdn.net/iamlsj/article/details/38061929" target="_blank" rel="noopener">MATLAB算法VIP可见：</a><a href="https://blog.csdn.net/iamlsj/article/details/38061929" target="_blank" rel="noopener">https://blog.csdn.net/iamlsj/article/details/38061929</a><br><a href="https://blog.csdn.net/weixin_41498178/article/details/79304849" target="_blank" rel="noopener">VIP</a><br><a href="https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default" target="_blank" rel="noopener">载波相位 单差法 双查发 三叉发</a> <a href="https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default" target="_blank" rel="noopener">https://wenku.baidu.com/view/54fde5f1f61fb7360b4c653a.html?rec_flag=default</a><br><a href="https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html" target="_blank" rel="noopener">载波毕设</a><a href="https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html" target="_blank" rel="noopener">https://wenku.baidu.com/view/fb3ff54efe4733687e21aa24.html</a><br><a href="https://www.dssz.com/user/down.php" target="_blank" rel="noopener">记得领完积分下东西 搜载波相位 （看过1—4）</a><a href="https://www.dssz.com/user/down.php" target="_blank" rel="noopener">https://www.dssz.com/user/down.php</a><br><a href="http://www.doc88.com/p-536463024180.html" target="_blank" rel="noopener">matlab载波相位符号定时联合估计</a><a href="http://www.doc88.com/p-536463024180.html" target="_blank" rel="noopener">http://www.doc88.com/p-536463024180.html</a><br><a href="https://download.csdn.net/download/songliang12/9563542" target="_blank" rel="noopener">GPS载波相位平滑伪距</a><a href="https://download.csdn.net/download/songliang12/9563542" target="_blank" rel="noopener">https://download.csdn.net/download/songliang12/9563542</a><br><a href="http://www.pudn.com/Download/item/id/1774260.html" target="_blank" rel="noopener">纯下载无介绍 不靠谱</a><a href="http://www.pudn.com/Download/item/id/1774260.html" target="_blank" rel="noopener">http://www.pudn.com/Download/item/id/1774260.html</a><br>Google  载波相位 测距 程序<br>Google 载波相位观测值的组成部分<br><a href="https://www.docin.com/p-2126879971.html" target="_blank" rel="noopener">貌似同一个毕设</a><a href="https://www.docin.com/p-2126879971.html" target="_blank" rel="noopener">https://www.docin.com/p-2126879971.html</a><br><a href="https://www.bilibili.com/video/av39735562/" target="_blank" rel="noopener">武汉大学老师讲解</a><a href="https://www.bilibili.com/video/av39735562/" target="_blank" rel="noopener">https://www.bilibili.com/video/av39735562/</a><br><a href="https://www.bilibili.com/video/av39840214/?p=2" target="_blank" rel="noopener">武汉大学老师继续讲解</a><a href="https://www.bilibili.com/video/av39840214/?p=2" target="_blank" rel="noopener">https://www.bilibili.com/video/av39840214/?p=2</a><br><a href="https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3" target="_blank" rel="noopener">GPS测距码测量合集</a><a href="https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3" target="_blank" rel="noopener">https://www.bilibili.com/video/av39761085/?spm_id_from=333.788.videocard.3</a><br><a href="https://mp.weixin.qq.com/s/cx3gF6sRMwyPTg81fGUrwg" target="_blank" rel="noopener">高精度GNSS技术如何解决IoT场景下的时空定位问题</a><br><a href="http://kom.aau.dk/~borre/easy/" target="_blank" rel="noopener">莫名其妙的网站还有一些零碎的源代码</a></p>
+<h4 id="DGPS简介"><a href="#DGPS简介" class="headerlink" title="DGPS简介"></a>DGPS简介</h4><p>DGPS:差分全球定位系统(Differential Global Position System).</p>
+<p>目前 GPS 系统提供的定位精度是优于 10 米，而为得到更高的定位精度，我们通常采用差分 GPS 技术：将一台 GPS 接收机安置在基准站上进行观测。根据基准站已知精密坐标，计算出基准站到卫星的距离改正数，并由基准站实时将这一数据发送出去。用户接收机在进行 GPS 观测的同时，也接收到基准站发出的改正数，并对其定位结果进行改正，从而提高定位精度。</p>
+<h4 id="差分-GPS-分为两大类：伪距差分和载波相位差分"><a href="#差分-GPS-分为两大类：伪距差分和载波相位差分" class="headerlink" title="差分 GPS 分为两大类：伪距差分和载波相位差分"></a>差分 GPS 分为两大类：伪距差分和载波相位差分</h4><p>差分的优点</p>
+<p>（1）消除卫星钟钟差</p>
+<p>（2）消除卫星星历误差</p>
+<p>（3）消除电离层延迟</p>
+<p>（4）消除对流层延迟</p>
+<p>（5）将接收机钟钟差做为未知数求出以上措施将有效地提高GPS定位精度，一般而言，以坐标方式差分可达±5m的精度，以伪距方式可达±（1～3）m级精度，以载波相位方式可达±（1～3）cm的精度，高程精度为平面精度的2～3倍。</p>
+<h4 id="导航电文概述"><a href="#导航电文概述" class="headerlink" title="导航电文概述"></a>导航电文概述</h4><p> 导航电文划分<br>根据速率和结构不同，导航电文分为 D1 导航电文和 D2 导航电文。D1<br>导航电文速率为 50 bps，并调制有速率为 1 kbps 的二次编码，内容包含基<br>本导航信息（本卫星基本导航信息、全部卫星历书信息、与其它系统时间<br>同步信息）；D2 导航电文速率为 500 bps，内容包含基本导航信息和增强服<br>务信息（北斗系统的差分及完好性信息和格网点电离层信息）。<br>MEO/IGSO 卫星的 B1I 信号播发 D1 导航电文，GEO 卫星的 B1I 信号<br>播发 D2 导航电文。</p>
+<h4 id="整周模糊度"><a href="#整周模糊度" class="headerlink" title="整周模糊度"></a>整周模糊度</h4><p>如果需要高精度定位，需要用到载波相位测量值，一般是N个载波波长加上相位差再加上其他误差（如电离层延迟、对流层延迟、时钟误差、多径效应误差等），这里的N就是整周模糊度，因为信号发射和接收存在时钟误差，所以是一个未知的模糊值。</p>
+<h4 id="LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。"><a href="#LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。" class="headerlink" title="LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。"></a>LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。</h4><br>
+<fancybox><img src="http://image-cos.test.upcdn.net/9.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/9.png" srcset="data:image/png;base64,666"></fancybox>
+<br>
+<br>
+<fancybox><img src="http://image-cos.test.upcdn.net/10.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/10.png" srcset="data:image/png;base64,666"></fancybox>  
+<br>
+#### 整周模糊度的求解技术  
+按精密相对定位的应用不同，整周模糊度求解算法大致可以分为两类：一类是，用于接收机可静止几小时甚至几天的静态定位；一类是包括实时动态RTK在内的非静态定位。
+
+<p>整周模糊度的求解不但要求移动中用户接收机在不经静态初始化的情况下完成整周模糊度的求解，而且还要求接收机能够容忍不时发生的对卫星信号的跟踪失锁。</p>
+<p>不同的整周模糊度求解算法有着不同的求解思路。</p>
+<p>1.利用伪距帮助估算整周模糊度的取整算法是最简单，最直接的一种。</p>
+<p>2.其他的算法则集中在求解一个整数型最小二乘问题。基于求解整数型最小二乘问题的整周模糊度求解算法一般是将某个目标函数最小化。目前应用最多的是使模糊度残余平方和最小。</p>
+<p>因为一类整周模糊度求解算法是依据某种准则通过搜索的方式来确定整周模糊度，因而在那些基于模糊度残余平方和最小原则的整数型最小二乘估计算法中，较为著名的是最小二乘模糊度搜索法（LSAST），LAMBDA算法等。</p>
+<p>还有一类整周模糊度求解算法不需要搜索，他是利用不同频率测量值组合出不同波长的测量值，并逐级确定他们的整周模糊度。</p>
+<p>整周模糊度的求解一般需要两步完成：首先是通过一定算法求解出整周模糊度，然后再验证所解得的整周模糊度值得正确性。模糊度残差值的大小通常被用来验证整周模糊度求解值得正误，而有的验证方法需要首先求解出最优和次优两个整周模糊度。</p>
+<p>评价一个整周模糊度求解算法的好坏通常是依据他的计算量和准确度。同时，既然载波相位测量值中的整周模糊度能被求解出来，那么测量值中的周跳错误自然也就能被检测出来，并且还有可能被修复。</p>
+<h4 id="快速求解整周模糊度："><a href="#快速求解整周模糊度：" class="headerlink" title="快速求解整周模糊度："></a>快速求解整周模糊度：</h4><br>
+<fancybox><img src="http://image-cos.test.upcdn.net/6.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/6.png" srcset="data:image/png;base64,666"></fancybox>  
+<br>
+<br>
+<fancybox><img src="http://image-cos.test.upcdn.net/7.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/7.png" srcset="data:image/png;base64,666"></fancybox>  
+<br><br>
+<fancybox><img src="http://image-cos.test.upcdn.net/11.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/11.png" srcset="data:image/png;base64,666"></fancybox>  
+<br>
+<blockquote class="blockquote-center">O : 观测数据   N ： 星历数据</blockquote>
+[发布源码功能目前已关闭。](http://www.biguo100.com/user/unew.asp)
+
+<h4 id="LAMBDA法"><a href="#LAMBDA法" class="headerlink" title="LAMBDA法"></a>LAMBDA法</h4><p>LAMBDA法全称最小二乘模糊度降相关平差法（Least-square AMBiguity Decorrelation Adjustment）是由荷兰Delft大学的Teunissen教授提出的。该方法可缩小搜索的范围，加快搜索过程，是目前快速静态定位中最成功的一种模糊度搜索方法。</p>
+<p>整数变换<br>经典算法中在确定整数模糊度组合主要遇到问题为，由于观测时间短，初始解中的实数模糊度参数精度低，参数的相关性又很强。<br>在LAMBDA中，不直接对实数模糊度参数进行搜索，而是先对初始解中的实数模糊度N^及其协因数阵QN^进行整数变换。N^及其协因数阵QN^进行整数变换。<br><br><br><fancybox><img src="http://image-cos.test.upcdn.net/8.png" class="lazyload" data-srcset="http://image-cos.test.upcdn.net/8.png" srcset="data:image/png;base64,666"></fancybox><br><br><br>逆变换求得的参数NN就是我们最初要寻找的最佳的整数模糊度向量。<br>书上讲到，通过对协因数阵Q−1N^进行LTDL分解进行整数变换，但是具体方法并未进行详细的叙述</p>
+<h4 id="LAMDA1"><a href="#LAMDA1" class="headerlink" title="LAMDA1"></a>LAMDA1</h4><p>This version (lambda1) is intended to be used mainly for research.<br>% It has more options than the original code, such as output of<br>% intermediate results, optional number of candidates to be returned<br>% and so on. If you are not interested in these options, you can use<br>% “lambda2”</p>
+<h4 id="LAMDA2"><a href="#LAMDA2" class="headerlink" title="LAMDA2"></a>LAMDA2</h4><p>This is the other one of the main routines. Compared to routine lambda1.m, this routine is simplified. It is not<br>possible to generate intermediate output, and it is not possible to select the number of candidates to be computed<br>(the routine will return 2 candidates).<br>Usage: [afixed,sqnorm,Qahat,Z] = lambda2 (afloat,Qahat);</p>
+<p>afloat  Input  Original float ambiguities<br>Qahat   Input  Corresponding variance-covariance matrix<br>afixed   Output Array with estimated integer candidates, sorted according<br>to the corresponding squared norms, best candidate first<br>sqnorm  Output Corresponding squared norms<br>Qzhat   Output Decorrelated variance-covariance matrix<br>Z      Output Z-transformation matrix</p>
+
+  
+  
+    
+    <div class='footer'>
+      
+      
+      
+        <div class='copyright'>
+          <blockquote>
+            
+              
+                <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
+
+              
+            
+              
+                <p>本文永久链接是：<a href=http://kongzhongfeima.github.io/blog/北斗ing.html>http://kongzhongfeima.github.io/blog/北斗ing.html</a></p>
+              
+            
+          </blockquote>
+        </div>
+      
+      
+    </div>
+  
+  
+    
+
+
+  <div class='article-meta' id="bottom">
+    <div class='new-meta-box'>
+      
+        
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-04-21T08:50:19+08:00">
+  <a class='notlink'>
+    <i class="fas fa-edit fa-fw" aria-hidden="true"></i>
+    <p>更新于：2020年4月21日</p>
+  </a>
+</div>
+
+        
+      
+        
+          
+  
+  <div class="new-meta-item meta-tags"><a class="tag" href="/tags/折腾ing/" rel="nofollow"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i><p>折腾ing</p></a></div>
+
+
+        
+      
+        
+          
+  <div class="new-meta-item share -mob-share-list">
+  <div class="-mob-share-list share-body">
+    
+      
+        <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://connect.qq.com/widget/shareqq/index.html?url=http://kongzhongfeima.github.io/blog/北斗ing.html&title=北斗ing - 空中飞马&summary=RIENX格式（上）：2.10版本内容解析和说明"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qq.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer"
+          
+          href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://kongzhongfeima.github.io/blog/北斗ing.html&title=北斗ing - 空中飞马&summary=RIENX格式（上）：2.10版本内容解析和说明"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/qzone.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+        <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer"
+          
+          href="http://service.weibo.com/share/share.php?url=http://kongzhongfeima.github.io/blog/北斗ing.html&title=北斗ing - 空中飞马&summary=RIENX格式（上）：2.10版本内容解析和说明"
+          
+          >
+          
+            <img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-org/logo/128/weibo.png" srcset="data:image/png;base64,666">
+          
+        </a>
+      
+    
+      
+    
+      
+    
+  </div>
+</div>
+
+
+
+        
+      
+    </div>
+  </div>
+
+
+  
+  
+
+  
+    <div class="prev-next">
+      
+        <a class='prev' href='/blog/梦呓.html'>
+          <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>梦呓</p>
+          <p class='content'>🌱昨天晚上做梦梦见一只小猫咪，忽然变大然后咬了我一口🌱感觉好真实，不知道要不要去打疫苗
+
+🌱好像又梦见漂亮的女朋友不想结婚🌱大概是爱情保卫战看多了吧
+
+🌱偶然看到 神的逻辑、夏与冬、钟...</p>
+        </a>
+      
+      
+        <a class='next' href='/blog/未完成的.html'>
+          <p class='title'>未完成的<i class="fas fa-chevron-right" aria-hidden="true"></i></p>
+          <p class='content'>我好菜啊！
+
+本地搜索 七牛存储 音乐框大小 文章置顶 主题颜色 背景图片 邮箱链接 阅读电影前图片 menu中文 readmore 
+</p>
+        </a>
+      
+    </div>
+  
+</article>
+
+
+  
+
+  <article class="post white-box reveal shadow" id="comments">
+    <p ct><i class='fas fa-comments'></i> 评论</p>
+    
+    <div id="valine_container" class="valine_thread">
+  <i class="fas fa-cog fa-spin fa-fw fa-2x"></i>
+</div>
+
+  </article>
+
+
+
+
+
+
+</div>
+<aside class='l_side'>
+  
+  
+    
+    
+
+
+
+  <section class="widget toc-wrapper shadow desktop mobile" id="toc-div" >
+    
+  <header>
+    
+      <i class="fas fa-list fa-fw" aria-hidden="true"></i><span class='name'>本文目录</span>
+    
+  </header>
+
+
+    <div class='content'>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#RTK（-Real-time-kinematic）指的是实时动态测量，也叫载波相位差分定位"><span class="toc-text">RTK（ Real-time kinematic）指的是实时动态测量，也叫载波相位差分定位</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#可以用的"><span class="toc-text">可以用的</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#DGPS简介"><span class="toc-text">DGPS简介</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#差分-GPS-分为两大类：伪距差分和载波相位差分"><span class="toc-text">差分 GPS 分为两大类：伪距差分和载波相位差分</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#导航电文概述"><span class="toc-text">导航电文概述</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#整周模糊度"><span class="toc-text">整周模糊度</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。"><span class="toc-text">LAMBDA方法基于模糊度及其方差协方差矩阵提供模糊度的整数最小二乘估计。</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#快速求解整周模糊度："><span class="toc-text">快速求解整周模糊度：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LAMBDA法"><span class="toc-text">LAMBDA法</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LAMDA1"><span class="toc-text">LAMDA1</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#LAMDA2"><span class="toc-text">LAMDA2</span></a></li></ol>
+    </div>
+  </section>
+
+
+  
+
+
+</aside>
+
+
+
+        
+        
+          <!--此文件用来存放一些不方便取值的变量-->
+<!--思路大概是将值藏到重加载的区域内-->
+
+<script>
+  window.pdata={}
+  pdata.ispage=true;
+  pdata.postTitle="北斗ing";
+  pdata.commentPath="";
+  pdata.commentPlaceholder="";
+
+  var l_header=document.getElementById("l_header");
+  
+  l_header.classList.add("show");
+  
+</script>
+
+        
+      </div>
+      
+  
+  <footer class="footer clearfix">
+    <br><br>
+    
+      
+        <div class="aplayer-container">
+          
+
+
+        </div>
+      
+    
+      
+        <br>
+        <div class="social-wrapper">
+          
+            
+          
+            
+          
+            
+          
+        </div>
+      
+    
+      
+        <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+      
+    
+      
+        
+          <div><p><span id="lc-sv">本站总访问量为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 次</span> <span id="lc-uv">访客数为 <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span> 人</span></p>
+</div>
+        
+      
+    
+      
+        本站使用
+        <a href="https://github.com/volantis-x/hexo-theme-volantis/tree/4.1.5" target="_blank" class="codename">Volantis</a>
+        作为主题
+      
+    
+      
+        <div class='copyright'>
+        <p><a href="/">Copyright © 2017-2020 XXX</a></p>
+
+        </div>
+      
+    
+  </footer>
+
+
+      <a id="s-top" class="fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+  </div>
+  <div>
+    <script>
+window.volantis={};
+window.volantis.loadcss=document.getElementById("loadcss");
+/********************脚本懒加载函数********************************/
+function loadScript(src, cb) {
+var HEAD = document.getElementsByTagName('head')[0] || document.documentElement;
+var script = document.createElement('script');
+script.setAttribute('type','text/javascript');
+if (cb) script.onload = cb;
+script.setAttribute('src', src);
+HEAD.appendChild(script);
+}
+//https://github.com/filamentgroup/loadCSS
+var loadCSS = function( href, before, media, attributes ){
+	var doc = window.document;
+	var ss = doc.createElement( "link" );
+	var ref;
+	if( before ){
+		ref = before;
+	}
+	else {
+		var refs = ( doc.body || doc.getElementsByTagName( "head" )[ 0 ] ).childNodes;
+		ref = refs[ refs.length - 1];
+	}
+	var sheets = doc.styleSheets;
+	if( attributes ){
+		for( var attributeName in attributes ){
+			if( attributes.hasOwnProperty( attributeName ) ){
+				ss.setAttribute( attributeName, attributes[attributeName] );
+			}
+		}
+	}
+	ss.rel = "stylesheet";
+	ss.href = href;
+	ss.media = "only x";
+	function ready( cb ){
+		if( doc.body ){
+			return cb();
+		}
+		setTimeout(function(){
+			ready( cb );
+		});
+	}
+	ready( function(){
+		ref.parentNode.insertBefore( ss, ( before ? ref : ref.nextSibling ) );
+	});
+	var onloadcssdefined = function( cb ){
+		var resolvedHref = ss.href;
+		var i = sheets.length;
+		while( i-- ){
+			if( sheets[ i ].href === resolvedHref ){
+				return cb();
+			}
+		}
+		setTimeout(function() {
+			onloadcssdefined( cb );
+		});
+	};
+	function loadCB(){
+		if( ss.addEventListener ){
+			ss.removeEventListener( "load", loadCB );
+		}
+		ss.media = media || "all";
+	}
+	if( ss.addEventListener ){
+		ss.addEventListener( "load", loadCB);
+	}
+	ss.onloadcssdefined = onloadcssdefined;
+	onloadcssdefined( loadCB );
+	return ss;
+};
+</script>
+<script>
+  
+  loadCSS("https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.14/css/all.min.css", window.volantis.loadcss);
+  
+  
+  
+  
+</script>
+<!-- required -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5/dist/jquery.min.js"></script>
+<script>
+  function pjax_fancybox() {
+    $(".md .gallery").find("img").each(function () { //渲染 fancybox
+      var element = document.createElement("a"); // a 标签
+      $(element).attr("class", "fancybox");
+      $(element).attr("pjax-fancybox", "");  // 过滤 pjax
+      $(element).attr("href", $(this).attr("src"));
+      if ($(this).attr("data-original")) {
+        $(element).attr("href", $(this).attr("data-original"));
+      }
+      $(element).attr("data-fancybox", "images");
+      var caption = "";   // 描述信息
+      if ($(this).attr('alt')) {  // 判断当前页面是否存在描述信息
+        $(element).attr('data-caption', $(this).attr('alt'));
+        caption = $(this).attr('alt');
+      }
+      var div = document.createElement("div");
+      $(div).addClass("fancybox");
+      $(this).wrap(div); // 最外层套 div ，其实主要作用还是 class 样式
+      var span = document.createElement("span");
+      $(span).addClass("image-caption");
+      $(span).text(caption); // 加描述
+      $(this).after(span);  // 再套一层描述
+      $(this).wrap(element);  // 最后套 a 标签
+    })
+    $(".md .gallery").find("img").fancybox({
+      selector: '[data-fancybox="images"]',
+      hash: false,
+      loop: false,
+      closeClick: true,
+      helpers: {
+        overlay: {closeClick: true}
+      },
+      buttons: [
+        "zoom",
+        "close"
+      ]
+    });
+  };
+  function SCload_fancybox() {
+    if ($(".md .gallery").find("img").length == 0) return;
+    loadCSS("https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css", document.getElementById("loadcss"));
+    setTimeout(function() {
+      loadScript('https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js', pjax_fancybox)
+    }, 1);
+  };
+  $(function () {
+    SCload_fancybox();
+  });
+</script>
+
+
+<!-- internal -->
+
+
+
+
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.0/dist/lazyload.min.js"></script>
+<script>
+  // https://www.npmjs.com/package/vanilla-lazyload
+  // Set the options globally
+  // to make LazyLoad self-initialize
+  window.lazyLoadOptions = {
+    elements_selector: ".lazyload",
+    threshold: 0
+  };
+  // Listen to the initialization event
+  // and get the instance of LazyLoad
+  window.addEventListener(
+    "LazyLoad::Initialized",
+    function (event) {
+      window.lazyLoadInstance = event.detail.instance;
+    },
+    false
+  );
+  document.addEventListener('DOMContentLoaded', function () {
+    lazyLoadInstance.update();
+  });
+  document.addEventListener('pjax:complete', function () {
+    lazyLoadInstance.update();
+  });
+</script>
+
+
+
+
+  
+  
+    <script>
+      window.FPConfig = {
+        delay: 0,
+        ignoreKeywords: [],
+        maxRPS: 5,
+        hoverDelay: 25
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/gh/gijo-varghese/flying-pages@2.1.2/flying-pages.min.js"></script>
+  
+
+
+
+
+
+
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@4.1.5/source/js/valine.min.js"></script>
+
+<script>
+  var GUEST_INFO = ['nick', 'mail', 'link'];
+  var meta = 'nick,mail,link'.split(',').filter(function (item) {
+    return GUEST_INFO.indexOf(item) > -1
+  });
+  var REQUIRED_FIELDS = ['nick', 'mail', 'link'];
+  var requiredFields = 'nick,mail'.split(',').filter(function (item) {
+    return REQUIRED_FIELDS.indexOf(item) > -1
+  });
+
+  function emoji(path, idx, ext) {
+    return path + "/" + path + "-" + idx + "." + ext;
+  }
+
+  var emojiMaps = {};
+  for (var i = 1; i <= 54; i++) {
+    emojiMaps['tieba-' + i] = emoji('tieba', i, 'png');
+  }
+  for (var i = 1; i <= 101; i++) {
+    emojiMaps['qq-' + i] = emoji('qq', i, 'gif');
+  }
+  for (var i = 1; i <= 116; i++) {
+    emojiMaps['aru-' + i] = emoji('aru', i, 'gif');
+  }
+  for (var i = 1; i <= 125; i++) {
+    emojiMaps['twemoji-' + i] = emoji('twemoji', i, 'png');
+  }
+  for (var i = 1; i <= 4; i++) {
+    emojiMaps['weibo-' + i] = emoji('weibo', i, 'png');
+  }
+
+  function pjax_valine() {
+    if(!document.querySelectorAll("#valine_container")[0])return;
+
+    let pagePlaceholder = pdata.commentPlaceholder || "快来评论吧~";
+
+    let path = pdata.commentPath;
+    if (path.length == 0) {
+      let defaultPath = '';
+      path = defaultPath || decodeURI(window.location.pathname);
+    }
+
+    var valine = new Valine();
+    valine.init({
+      el: '#valine_container',
+      meta: meta,
+      placeholder: pagePlaceholder,
+      path: path,
+      appId: "",
+      appKey: "",
+      pageSize: '10',
+      avatar: 'robohash',
+      lang: 'zh-cn',
+      visitor: 'true',
+      highlight: 'true',
+      mathJax: 'false',
+      enableQQ: 'true',
+      recordIP: 'false',
+      requiredFields: requiredFields,
+      emojiCDN: 'https://cdn.jsdelivr.net/gh/volantis-x/cdn-emoji/valine/',
+      emojiMaps: emojiMaps
+    })
+  }
+
+  $(function () {
+    pjax_valine();
+  });
+</script>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@4.1.5/source/js/app.min.js"></script>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/hexo-theme-volantis@4.1.5/source/js/search.min.js"></script>
+  
+
+
+<!-- optional -->
+
+  <script>
+const SearchServiceimagePath="https://cdn.jsdelivr.net/gh/volantis-x/cdn-volantis@master/img/";
+const ROOT =  ("/" || "/").endsWith('/') ? ("/" || "/") : ("//" || "/" );
+function listenSearch(){
+  
+    customSearch = new HexoSearch({
+      imagePath: SearchServiceimagePath
+    });
+  
+}
+document.addEventListener("DOMContentLoaded", listenSearch);
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  <script defer>
+
+  const LCCounter = {
+    app_id: 'u9j57bwJod4EDmXWdxrwuqQT-MdYXbMMI',
+    app_key: 'jfHtEKVE24j0IVCGHbvuFClp',
+    custom_api_server: '',
+
+    // 查询存储的记录
+    getRecord(Counter, url, title) {
+      return new Promise(function (resolve, reject) {
+        Counter('get', '/classes/Counter?where=' + encodeURIComponent(JSON.stringify({url})))
+          .then(resp => resp.json())
+          .then(({results, code, error}) => {
+            if (code === 401) {
+              throw error;
+            }
+            if (results && results.length > 0) {
+              var record = results[0];
+              resolve(record);
+            } else {
+              Counter('post', '/classes/Counter', {url, title: title, times: 0})
+                .then(resp => resp.json())
+                .then((record, error) => {
+                  if (error) {
+                    throw error;
+                  }
+                  resolve(record);
+                }).catch(error => {
+                console.error('Failed to create', error);
+                reject(error);
+              });
+            }
+          }).catch((error) => {
+          console.error('LeanCloud Counter Error:', error);
+          reject(error);
+        });
+      })
+    },
+
+    // 发起自增请求
+    increment(Counter, incrArr) {
+      return new Promise(function (resolve, reject) {
+        Counter('post', '/batch', {
+          "requests": incrArr
+        }).then((res) => {
+          res = res.json();
+          if (res.error) {
+            throw res.error;
+          }
+          resolve(res);
+        }).catch((error) => {
+          console.error('Failed to save visitor count', error);
+          reject(error);
+        });
+      });
+    },
+
+    // 构建自增请求体
+    buildIncrement(objectId) {
+      return {
+        "method": "PUT",
+        "path": `/1.1/classes/Counter/${ objectId }`,
+        "body": {
+          "times": {
+            '__op': 'Increment',
+            'amount': 1
+          }
+        }
+      }
+    },
+
+    // 校验是否为有效的 UV
+    validUV() {
+      var key = 'LeanCloudUVTimestamp';
+      var flag = localStorage.getItem(key);
+      if (flag) {
+        // 距离标记小于 24 小时则不计为 UV
+        if (new Date().getTime() - parseInt(flag) <= 86400000) {
+          return false;
+        }
+      }
+      localStorage.setItem(key, new Date().getTime().toString());
+      return true;
+    },
+
+    addCount(Counter) {
+      var enableIncr = '' === 'true' && window.location.hostname !== 'localhost';
+      enableIncr = true;
+      var getterArr = [];
+      var incrArr = [];
+      // 请求 PV 并自增
+      var pvCtn = document.querySelector('#lc-sv');
+      if (pvCtn || enableIncr) {
+        var pvGetter = this.getRecord(Counter, 'http://kongzhongfeima.github.io' + '/#lc-sv', 'Visits').then((record) => {
+          incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-sv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + 1;
+              if (pvCtn) {
+                pvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(pvGetter);
+      }
+
+      // 请求 UV 并自增
+      var uvCtn = document.querySelector('#lc-uv');
+      if (uvCtn || enableIncr) {
+        var uvGetter = this.getRecord(Counter, 'http://kongzhongfeima.github.io' + '/#lc-uv', 'Visitors').then((record) => {
+          var vuv = this.validUV();
+          vuv && incrArr.push(this.buildIncrement(record.objectId))
+          var eles = document.querySelectorAll('#lc-uv #number');
+          if (eles.length > 0) {
+            eles.forEach((el,index,array)=>{
+              el.innerText = record.times + (vuv ? 1 : 0);
+              if (uvCtn) {
+                uvCtn.style.display = 'inline';
+              }
+            })
+          }
+        });
+        getterArr.push(uvGetter);
+      }
+
+      // 请求文章的浏览数，如果是当前页面就自增
+      var allPV = document.querySelectorAll('#lc-pv');
+      if (allPV.length > 0 || enableIncr) {
+        for (i = 0; i < allPV.length; i++) {
+          let pv = allPV[i];
+          let title = pv.getAttribute('data-title');
+          var url = 'http://kongzhongfeima.github.io' + pv.getAttribute('data-path');
+          if (url) {
+            var viewGetter = this.getRecord(Counter, url, title).then((record) => {
+              // 是当前页面就自增
+              let curPath = window.location.pathname;
+              if (curPath.includes('index.html')) {
+                curPath = curPath.substring(0, curPath.lastIndexOf('index.html'));
+              }
+              if (pv.getAttribute('data-path') == curPath) {
+                incrArr.push(this.buildIncrement(record.objectId));
+              }
+              if (pv) {
+                var ele = pv.querySelector('#lc-pv #number');
+                if (ele) {
+                  if (pv.getAttribute('data-path') == curPath) {
+                    ele.innerText = (record.times || 0) + 1;
+                  } else {
+                    ele.innerText = record.times || 0;
+                  }
+                  pv.style.display = 'inline';
+                }
+              }
+            });
+            getterArr.push(viewGetter);
+          }
+        }
+      }
+
+      // 如果启动计数自增，批量发起自增请求
+      if (enableIncr) {
+        Promise.all(getterArr).then(() => {
+          incrArr.length > 0 && this.increment(Counter, incrArr);
+        })
+      }
+
+    },
+
+
+    fetchData(api_server) {
+      var Counter = (method, url, data) => {
+        return fetch(`${ api_server }/1.1${ url }`, {
+          method,
+          headers: {
+            'X-LC-Id': this.app_id,
+            'X-LC-Key': this.app_key,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data)
+        });
+      };
+      this.addCount(Counter);
+    },
+
+    refreshCounter() {
+      var api_server = this.app_id.slice(-9) !== '-MdYXbMMI' ? this.custom_api_server : `https://${ this.app_id.slice(0, 8).toLowerCase() }.api.lncldglobal.com`;
+      if (api_server) {
+        this.fetchData(api_server);
+      } else {
+        fetch('https://app-router.leancloud.cn/2/route?appId=' + this.app_id)
+          .then(resp => resp.json())
+          .then(({api_server}) => {
+            this.fetchData('https://' + api_server);
+          });
+      }
+    }
+
+  };
+
+  LCCounter.refreshCounter();
+
+  document.addEventListener('pjax:complete', function () {
+    LCCounter.refreshCounter();
+  });
+</script>
+
+
+
+
+
+
+
+
+<script>
+function listennSidebarTOC() {
+  const navItems = document.querySelectorAll(".toc li");
+  if (!navItems.length) return;
+  const sections = [...navItems].map((element) => {
+    const link = element.querySelector(".toc-link");
+    const target = document.getElementById(
+      decodeURI(link.getAttribute("href")).replace("#", "")
+    );
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      window.scrollTo({
+		top: target.offsetTop + 100,
+		
+		behavior: "smooth"
+		
+	  });
+    });
+    return target;
+  });
+
+  function activateNavByIndex(target) {
+    if (target.classList.contains("active-current")) return;
+
+    document.querySelectorAll(".toc .active").forEach((element) => {
+      element.classList.remove("active", "active-current");
+    });
+    target.classList.add("active", "active-current");
+    let parent = target.parentNode;
+    while (!parent.matches(".toc")) {
+      if (parent.matches("li")) parent.classList.add("active");
+      parent = parent.parentNode;
+    }
+  }
+
+  function findIndex(entries) {
+    let index = 0;
+    let entry = entries[index];
+    if (entry.boundingClientRect.top > 0) {
+      index = sections.indexOf(entry.target);
+      return index === 0 ? 0 : index - 1;
+    }
+    for (; index < entries.length; index++) {
+      if (entries[index].boundingClientRect.top <= 0) {
+        entry = entries[index];
+      } else {
+        return sections.indexOf(entry.target);
+      }
+    }
+    return sections.indexOf(entry.target);
+  }
+
+  function createIntersectionObserver(marginTop) {
+    marginTop = Math.floor(marginTop + 10000);
+    let intersectionObserver = new IntersectionObserver(
+      (entries, observe) => {
+        let scrollHeight = document.documentElement.scrollHeight + 100;
+        if (scrollHeight > marginTop) {
+          observe.disconnect();
+          createIntersectionObserver(scrollHeight);
+          return;
+        }
+        let index = findIndex(entries);
+        activateNavByIndex(navItems[index]);
+      },
+      {
+        rootMargin: marginTop + "px 0px -100% 0px",
+        threshold: 0,
+      }
+    );
+    sections.forEach((element) => {
+      element && intersectionObserver.observe(element);
+    });
+  }
+  createIntersectionObserver(document.documentElement.scrollHeight);
+}
+
+document.addEventListener("DOMContentLoaded", listennSidebarTOC);
+document.addEventListener("pjax:success", listennSidebarTOC);
+</script>
+
+<!-- more -->
+
+
+
+
+    
+      
+
+<script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+
+<script>
+    var pjax;
+    document.addEventListener('DOMContentLoaded', function () {
+      pjax = new Pjax({
+        elements: 'a[href]:not([href^="#"]):not([href="javascript:void(0)"]):not([pjax-fancybox])',
+        selectors: [
+          "title",
+          "#l_cover",
+          "#pjax-container",
+          "#pjax-header-nav-list"
+        ],
+        cacheBust: false,   // url 地址追加时间戳，用以避免浏览器缓存
+        timeout: 5000
+      });
+    });
+
+    document.addEventListener('pjax:send', function (e) {
+      //window.stop(); // 相当于点击了浏览器的停止按钮
+
+      try {
+        var currentUrl = window.location.pathname;
+        var targetUrl = e.triggerElement.href;
+        var banUrl = [""];
+        if (banUrl[0] != "") {
+          banUrl.forEach(item => {
+            if(currentUrl.indexOf(item) != -1 || targetUrl.indexOf(item) != -1) {
+              window.location.href = targetUrl;
+            }
+          });
+        }
+      } catch (error) {}
+
+      window.subData = null; // 移除标题（用于一二级导航栏切换处）
+      if (typeof $.fancybox != "undefined") {
+        $.fancybox.close();    // 关闭弹窗
+      }
+      volantis.$switcher.removeClass('active'); // 关闭移动端激活的搜索框
+      volantis.$header.removeClass('z_search-open'); // 关闭移动端激活的搜索框
+      volantis.$wrapper.removeClass('sub'); // 跳转页面时关闭二级导航
+
+      // 解绑事件 避免重复监听
+      volantis.$topBtn.unbind('click');
+      $('.menu a').unbind('click');
+      $(window).unbind('resize');
+      $(window).unbind('scroll');
+      $(document).unbind('scroll');
+      $(document).unbind('click');
+      $('body').unbind('click');
+	  
+    });
+
+    document.addEventListener('pjax:complete', function () {
+      // 关于百度统计对 SPA 页面的处理：
+      // 方案一：百度统计>管理>单页应用设置中，打开开启按钮即可对SPA进行统计。 https://tongji.baidu.com/web/help/article?id=324
+      // 方案二：取消注释下列代码。 https://tongji.baidu.com/web/help/article?id=235
+      // 
+
+      // 关于谷歌统计对 SPA 页面的处理：
+      // 当应用以动态方式加载内容并更新地址栏中的网址时，也应该更新通过 gtag.js 存储的网页网址。
+      // https://developers.google.cn/analytics/devguides/collection/gtagjs/single-page-applications?hl=zh-cn
+      
+
+      $('.nav-main').find('.list-v').not('.menu-phone').removeAttr("style",""); // 移除小尾巴的移除
+      $('.menu-phone.list-v').removeAttr("style",""); // 移除小尾巴的移除
+      $('script[data-pjax], .pjax-reload script').each(function () {
+        $(this).parent().append($(this).remove());
+      });
+      try{
+          if (typeof $.fancybox == "undefined") {
+            SCload_fancybox();
+          } else {
+            pjax_fancybox();
+          }
+        
+        
+        
+        
+        
+        
+          pjax_valine();
+        
+        
+        
+        
+      } catch (e) {
+        console.log(e);
+      }
+	  
+    });
+
+    document.addEventListener('pjax:error', function (e) {
+	  
+      window.location.href = e.triggerElement.href;
+    });
+</script>
+
+    
+  </div>
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body>
+</html>
